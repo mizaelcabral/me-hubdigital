@@ -100,7 +100,7 @@ const Agency = () => {
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Engenharia de software e IA para sua empresa
+                Tecnologia & IA para sua empresa
               </h2>
               <div className="paragraph">
                 <p>
