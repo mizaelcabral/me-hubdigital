@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import thumb from "public/images/footer/footer-three-thumb.png";
@@ -15,39 +15,39 @@ const FooterThree = () => {
               <div className="footer-thumb">
                 <Image src={thumb} alt="Image" />
                 <div className="footer-thumb__content">
-                  <h5>head quarters, USA</h5>
+                  <h5>Matriz Brasil, São Paulo</h5>
                 </div>
               </div>
               <div className="footer-three__group ps-0">
                 <ul>
                   <li>
                     <Link
-                      href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                      href="https://maps.google.com"
                       target="_blank"
                     >
                       <i className="fa-sharp fa-solid fa-location-dot"></i>
-                      901 N Pitt Str., Suite 170 Alexandria, USA
+                      Av. Paulista, 1000 - Bela Vista, SP
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:406-555-0120">
+                    <Link href="tel:+5511999999999">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (406) 555-0120
+                      (11) 99999-9999
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:info@xpovio.com">
+                    <Link href="mailto:contato@mehubdigital.com.br">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      info@xpovio.com
+                      contato@mehubdigital.com.br
                     </Link>
                   </li>
                 </ul>
                 <div className="cta">
                   <Link
-                    href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                    href="https://maps.google.com"
                     target="_blank"
                   >
-                    View Map
+                    Ver no Mapa
                     <i className="fa-sharp fa-solid fa-paper-plane"></i>
                   </Link>
                 </div>
@@ -58,74 +58,74 @@ const FooterThree = () => {
             <div className="group-wrapper">
               <div className="footer-three__group">
                 <div className="intro">
-                  <h5>Germany</h5>
+                  <h5>Rio de Janeiro</h5>
                 </div>
                 <ul>
                   <li>
                     <Link
-                      href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                      href="https://maps.google.com"
                       target="_blank"
                     >
                       <i className="fa-sharp fa-solid fa-location-dot"></i>
-                      Wolfhager Strasse 425 - 70 Germany
+                      Av. Rio Branco, 156 - Centro, RJ
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:406-555-0120">
+                    <Link href="tel:+5511999999999">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (406) 555-0120
+                      (11) 99999-9999
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:info@xpovio.com">
+                    <Link href="mailto:contato@mehubdigital.com.br">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      info@xpovio.com
+                      contato@mehubdigital.com.br
                     </Link>
                   </li>
                 </ul>
                 <div className="cta">
                   <Link
-                    href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                    href="https://maps.google.com"
                     target="_blank"
                   >
-                    View Map
+                    Ver no Mapa
                     <i className="fa-sharp fa-solid fa-paper-plane"></i>
                   </Link>
                 </div>
               </div>
               <div className="footer-three__group section__content-cta">
                 <div className="intro">
-                  <h5>India</h5>
+                  <h5>Belo Horizonte</h5>
                 </div>
                 <ul>
                   <li>
                     <Link
-                      href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                      href="https://maps.google.com"
                       target="_blank"
                     >
                       <i className="fa-sharp fa-solid fa-location-dot"></i>
-                      Wolfhager Strasse 425 - 70 Germany
+                      Av. do Contorno, 6594 - Savassi, MG
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:406-555-0120">
+                    <Link href="tel:+5511999999999">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (406) 555-0120
+                      (11) 99999-9999
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:info@xpovio.com">
+                    <Link href="mailto:contato@mehubdigital.com.br">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      info@xpovio.com
+                      contato@mehubdigital.com.br
                     </Link>
                   </li>
                 </ul>
                 <div className="cta">
                   <Link
-                    href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                    href="https://maps.google.com"
                     target="_blank"
                   >
-                    View Map
+                    Ver no Mapa
                     <i className="fa-sharp fa-solid fa-paper-plane"></i>
                   </Link>
                 </div>
@@ -136,74 +136,74 @@ const FooterThree = () => {
             <div className="group-wrapper">
               <div className="footer-three__group">
                 <div className="intro">
-                  <h5>Poland</h5>
+                  <h5>Curitiba</h5>
                 </div>
                 <ul>
                   <li>
                     <Link
-                      href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                      href="https://maps.google.com"
                       target="_blank"
                     >
                       <i className="fa-sharp fa-solid fa-location-dot"></i>
-                      Hans-Günther Meier, JCB-256, Poland
+                      Rua XV de Novembro, 1200 - Centro, PR
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:406-555-0120">
+                    <Link href="tel:+5511999999999">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (406) 555-0120
+                      (11) 99999-9999
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:info@xpovio.com">
+                    <Link href="mailto:contato@mehubdigital.com.br">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      info@xpovio.com
+                      contato@mehubdigital.com.br
                     </Link>
                   </li>
                 </ul>
                 <div className="cta">
                   <Link
-                    href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                    href="https://maps.google.com"
                     target="_blank"
                   >
-                    View Map
+                    Ver no Mapa
                     <i className="fa-sharp fa-solid fa-paper-plane"></i>
                   </Link>
                 </div>
               </div>
               <div className="footer-three__group section__content-cta">
                 <div className="intro">
-                  <h5>Bangladesh</h5>
+                  <h5>Florianópolis</h5>
                 </div>
                 <ul>
                   <li>
                     <Link
-                      href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                      href="https://maps.google.com"
                       target="_blank"
                     >
                       <i className="fa-sharp fa-solid fa-location-dot"></i>
-                      Hans-Günther Meier, JCB-256, Poland
+                      Rodovia SC-401, 4150 - Florianópolis, SC
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:406-555-0120">
+                    <Link href="tel:+5511999999999">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (406) 555-0120
+                      (11) 99999-9999
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:info@xpovio.com">
+                    <Link href="mailto:contato@mehubdigital.com.br">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      info@xpovio.com
+                      contato@mehubdigital.com.br
                     </Link>
                   </li>
                 </ul>
                 <div className="cta">
                   <Link
-                    href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                    href="https://maps.google.com"
                     target="_blank"
                   >
-                    View Map
+                    Ver no Mapa
                     <i className="fa-sharp fa-solid fa-paper-plane"></i>
                   </Link>
                 </div>
@@ -221,15 +221,8 @@ const FooterThree = () => {
                   <div className="col-12 col-lg-8">
                     <div className="footer__copyright-text text-center text-lg-start">
                       <p>
-                        Copyright &copy;
-                        <span id="copyYear">{currentYear}</span> Xpovio by{" "}
-                        <Link
-                          href="https://themeforest.net/user/UltraDevs"
-                          target="_blank"
-                        >
-                          UltraDevs
-                        </Link>{" "}
-                        . All Rights Reserved
+                        Copyright &copy;{" "}
+                        <span id="copyYear">{currentYear}</span> ME Hubdigital . Todos os Direitos Reservados
                       </p>
                     </div>
                   </div>

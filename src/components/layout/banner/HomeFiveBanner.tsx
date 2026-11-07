@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
@@ -53,7 +53,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">SaaS & Web App Pro</Link>
               </h4>
             </div>
           </div>
@@ -67,7 +67,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">Agente IA Suporte</Link>
               </h4>
             </div>
           </div>
@@ -81,7 +81,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">E-commerce Escala</Link>
               </h4>
             </div>
           </div>
@@ -95,7 +95,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">Checkout Integrado</Link>
               </h4>
             </div>
           </div>
@@ -109,7 +109,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">Automação WhatsApp</Link>
               </h4>
             </div>
           </div>
@@ -123,7 +123,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">UI/UX Product Design</Link>
               </h4>
             </div>
           </div>
@@ -137,7 +137,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">Infraestrutura Cloud</Link>
               </h4>
             </div>
           </div>
@@ -151,7 +151,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">Integração de APIs</Link>
               </h4>
             </div>
           </div>
@@ -165,7 +165,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">Agente IA de Vendas</Link>
               </h4>
             </div>
           </div>
@@ -179,7 +179,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Kaizen Psychology</Link>
+                <Link href="project-single">Ecossistema Digital</Link>
               </h4>
             </div>
           </div>

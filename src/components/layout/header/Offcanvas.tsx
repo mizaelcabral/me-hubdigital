@@ -98,37 +98,37 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                   </button>
                   <ul className={`navbar__sub-menu ${isSubMenuOpen("home")}`}>
                     <li>
-                      <Link href="/">Creative Agency</Link>
+                      <Link href="/">Agência Criativa</Link>
                     </li>
                     <li>
-                      <Link href="index-light">Creative Agency Light</Link>
+                      <Link href="index-light">Agência Criativa Light</Link>
                     </li>
                     <li>
-                      <Link href="index-two">Digital Agency</Link>
+                      <Link href="index-two">Agência Digital</Link>
                     </li>
                     <li>
-                      <Link href="index-two-light">Digital Agency Light</Link>
+                      <Link href="index-two-light">Agência Digital Light</Link>
                     </li>
                     <li>
-                      <Link href="index-three">It Solution</Link>
+                      <Link href="index-three">Soluções em TI</Link>
                     </li>
                     <li>
-                      <Link href="index-three-light">It Solution Light</Link>
+                      <Link href="index-three-light">Soluções em TI Light</Link>
                     </li>
                     <li>
-                      <Link href="index-four">Personal Portfolio</Link>
+                      <Link href="index-four">Portfólio Pessoal</Link>
                     </li>
                     <li>
                       <Link href="index-four-light">
-                        Personal Portfolio Light
+                        Portfólio Pessoal Light
                       </Link>
                     </li>
                     <li>
-                      <Link href="index-five">Interactive Portfolio</Link>
+                      <Link href="index-five">Portfólio Interativo</Link>
                     </li>
                     <li>
                       <Link href="index-five-light">
-                        Interactive Portfolio Light
+                        Portfólio Interativo Light
                       </Link>
                     </li>
                   </ul>

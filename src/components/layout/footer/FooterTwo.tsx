@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "public/images/logo.png";
@@ -118,19 +118,19 @@ const FooterTwo = () => {
               </div>
               <div className="paragraph">
                 <p>
-                  Welcome to our digital agency We specialize in helping
-                  business most like yours succeed online. From website design
-                  and development.
+                  Agência de engenharia digital especializada em agentes
+                  autônomos de IA, plataformas web sob medida e ecossistemas de
+                  alta conversão.
                 </p>
               </div>
               <div className="section__content-cta">
                 <h2>
                   <Link
-                    href="mailto:info@gmail.com"
+                    href="mailto:contato@mehubdigital.com.br"
                     className="folks-text animated-text"
                     ref={animatedTextRef}
                   >
-                    info@gmail.com
+                    contato@mehubdigital.com.br
                     {animatedTextContent.split("").map((char, index) => (
                       <span
                         aria-hidden="true"
@@ -171,19 +171,19 @@ const FooterTwo = () => {
               </div>
               <div className="footer__single-meta section__content-cta">
                 <Link
-                  href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                  href="https://maps.google.com"
                   target="_blank"
                 >
                   <i className="fa-sharp fa-solid fa-location-dot"></i>
-                  901 N Pitt Str., Suite 170 Alexandria, USA
+                  São Paulo, SP — Brasil
                 </Link>
-                <Link href="tel:406-555-0120">
+                <Link href="tel:+5511999999999">
                   <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                  (406) 555-0120
+                  (11) 99999-9999
                 </Link>
-                <Link href="mailto:info@xpovio.com">
+                <Link href="mailto:contato@mehubdigital.com.br">
                   <i className="fa-sharp fa-solid fa-envelope"></i>
-                  info@xpovio.com
+                  contato@mehubdigital.com.br
                 </Link>
               </div>
             </div>
@@ -196,16 +196,8 @@ const FooterTwo = () => {
             <div className="col-12 col-xl-6">
               <div className="footer__copyright-text text-center text-xl-start">
                 <p>
-                  Copyright &copy;
-                  <span id="copyYear">{currentYear}</span> Xpovio by{" "}
-                  <Link
-                    href="https://themeforest.net/user/UltraDevs"
-                    target="_blank"
-                  >
-                    {" "}
-                    UltraDevs
-                  </Link>{" "}
-                  . All Rights Reserved
+                  Copyright &copy;{" "}
+                  <span id="copyYear">{currentYear}</span> ME Hubdigital . Todos os Direitos Reservados
                 </p>
               </div>
             </div>
@@ -215,16 +207,16 @@ const FooterTwo = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="about-us">About</Link>
+                  <Link href="about-us">Sobre Nós</Link>
                 </li>
                 <li>
-                  <Link href="our-services">Services</Link>
+                  <Link href="our-services">Serviços</Link>
                 </li>
                 <li>
                   <Link href="blog">Blog</Link>
                 </li>
                 <li>
-                  <Link href="contact-us">Contact</Link>
+                  <Link href="contact-us">Contato</Link>
                 </li>
               </ul>
             </div>

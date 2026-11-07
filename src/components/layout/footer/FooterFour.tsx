@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -27,19 +27,19 @@ const FooterFour = () => {
             <div className="footer-four__content">
               <div className="intro text-center">
                 <h2 className="light-title text-uppercase title-anim">
-                  Let&apos;s make some magic ✨ happen and show the world what
-                  your brand is all about!
+                  Vamos construir soluções digitais de alto impacto e acelerar a
+                  escala do seu negócio!
                 </h2>
               </div>
               <div className="row justify-content-center cta-t section__content-cta">
                 <div className="col-12 col-md-8">
                   <h3>
                     <Link href="contact-us">
-                      Let&apos;s Talk
+                      Fale Conosco
                       <i className="fa-regular fa-comment-dots"></i>
                     </Link>
                   </h3>
-                  <p>Let&apos;s make your brand the talk of the town</p>
+                  <p>Engenharia web, IA e inovação contínua</p>
                 </div>
               </div>
             </div>
@@ -67,8 +67,8 @@ const FooterFour = () => {
           </div>
           <div className="col-12 col-lg-6">
             <div className="text-center text-lg-end">
-              <Link href="mailto:hello@website.com" className="text-capitalize">
-                hello@website.com
+              <Link href="mailto:contato@mehubdigital.com.br" className="text-capitalize">
+                contato@mehubdigital.com.br
               </Link>
             </div>
           </div>
@@ -84,14 +84,7 @@ const FooterFour = () => {
                     <div className="footer__copyright-text text-center text-lg-start">
                       <p>
                         Copyright &copy;{" "}
-                        <span id="copyYear">{currentYear}</span> Xpovio by{" "}
-                        <Link
-                          href="https://themeforest.net/user/UltraDevs"
-                          target="_blank"
-                        >
-                          UltraDevs{" "}
-                        </Link>
-                        . All Rights Reserved
+                        <span id="copyYear">{currentYear}</span> ME Hubdigital . Todos os Direitos Reservados
                       </p>
                     </div>
                   </div>
