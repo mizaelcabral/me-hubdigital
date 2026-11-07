@@ -99,7 +99,7 @@ const Agency = () => {
                 QUEM SOMOS
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-              <h2 className="title title-anim">
+              <h2 className="title title-anim" style={{ textTransform: "none" }}>
                 Tecnologia & IA para sua empresa
               </h2>
               <div className="paragraph">

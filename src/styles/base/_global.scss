@@ -219,7 +219,7 @@ i {
     font-weight: 700;
     color: var(--theme-color);
     margin-bottom: 16px;
-    text-transform: none;
+    text-transform: capitalize;
   }
 }
 
@@ -249,7 +249,7 @@ i {
   }
 
   .title {
-    text-transform: none;
+    text-transform: capitalize;
     font-weight: 700;
   }
 }
