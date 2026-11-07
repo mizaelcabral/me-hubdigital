@@ -68,7 +68,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    agentes autônomos de IA
+                    agentes de IA
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -83,7 +83,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    sites & e-commerce pro
+                    sites & e-commerce
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -98,7 +98,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    aplicações web e saas
+                    aplicações web
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -128,7 +128,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    automação & crm moderno
+                    automação & crm
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -143,7 +143,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    ui/ux & product design
+                    ui/ux & design
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -158,7 +158,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    hospedagem & nuvem cloud
+                    hospedagem & cloud
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
