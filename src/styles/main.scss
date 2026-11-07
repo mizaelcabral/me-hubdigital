@@ -105,13 +105,3 @@
 
 // responsive styles
 @import "./responsive";
-
-// Preserve exact casing (sentence case, uppercase acronyms like IA) across titles
-h1, h2, h3, h4, h5, h6,
-.title,
-.title-anim,
-.offer__cta-single h2 a,
-.service-t__slider-single .intro h4 a,
-.portfolio__single-content h4 a {
-  text-transform: none !important;
-}

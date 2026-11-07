@@ -15,7 +15,7 @@ const HomeBlog = () => {
                 INSIGHTS & BLOG
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-              <h2 className="title title-anim">Artigos & tendências de tecnologia</h2>
+              <h2 className="title title-anim">Artigos & Tendências de Tecnologia</h2>
             </div>
           </div>
         </div>

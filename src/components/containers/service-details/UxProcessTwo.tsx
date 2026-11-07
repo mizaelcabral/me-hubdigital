@@ -13,7 +13,7 @@ const UxProcessTwo = () => {
                 METODOLOGIA
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-              <h2 className="title title-anim">Como nós trabalhamos</h2>
+              <h2 className="title title-anim">Como Nós Trabalhamos</h2>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>Diagnóstico & arquitetura</h4>
+                    <h4>Diagnóstico & Arquitetura</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
@@ -74,7 +74,7 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>Engenharia web & SaaS</h4>
+                    <h4>Engenharia Web & SaaS</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
@@ -97,7 +97,7 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>Agentes de IA & automação</h4>
+                    <h4>Agentes de IA & Automação</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
@@ -120,7 +120,7 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>Gateways & checkouts</h4>
+                    <h4>Gateways & Checkouts</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
@@ -143,7 +143,7 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>Deploy cloud & escala</h4>
+                    <h4>Deploy Cloud & Escala</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
