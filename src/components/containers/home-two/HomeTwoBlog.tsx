@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,11 +19,11 @@ const HomeTwoBlog = () => {
                 <div className="col-12 col-lg-8">
                   <div className="section__header text-center text-lg-start mb-0">
                     <span className="sub-title">
-                      news & Blog
+                      insights & blog
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                     <h2 className="title title-anim">
-                      what&apos;s new in blog
+                      artigos & novidades
                     </h2>
                   </div>
                 </div>
@@ -88,15 +88,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    A Simple Social Media Marketing Checklist
+                    Como agentes de IA reduzem custos operacionais em 60%
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>
@@ -111,15 +111,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    Transforming Challenges into Opportunities
+                    Arquitetura web de alta performance para escalar seu SaaS
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>
@@ -134,15 +134,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    A Simple Social Media Marketing Checklist
+                    Como agentes de IA reduzem custos operacionais em 60%
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>
@@ -157,15 +157,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    A Simple Social Media Marketing Checklist
+                    Como agentes de IA reduzem custos operacionais em 60%
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>
@@ -180,15 +180,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    Transforming Challenges into Opportunities
+                    Arquitetura web de alta performance para escalar seu SaaS
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>
@@ -203,15 +203,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    A Simple Social Media Marketing Checklist
+                    Como agentes de IA reduzem custos operacionais em 60%
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>
@@ -226,15 +226,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    A Simple Social Media Marketing Checklist
+                    Como agentes de IA reduzem custos operacionais em 60%
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>
@@ -249,15 +249,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    Transforming Challenges into Opportunities
+                    Arquitetura web de alta performance para escalar seu SaaS
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>
@@ -272,15 +272,15 @@ const HomeTwoBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    A Simple Social Media Marketing Checklist
+                    Como agentes de IA reduzem custos operacionais em 60%
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    tecnologia
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>24 DE OUTUBRO, 2024</p>
                 </div>
               </div>
             </div>

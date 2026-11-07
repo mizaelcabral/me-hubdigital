@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -38,7 +38,7 @@ const HomeTwoPortfolio = () => {
             <div className="portfolio__text-slider-single">
               <h2 className="h1">
                 <Link href="portfolio">
-                  digital portfolio
+                  projetos & cases
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -48,7 +48,7 @@ const HomeTwoPortfolio = () => {
             <div className="portfolio__text-slider-single">
               <h2 className="h1 str">
                 <Link href="portfolio">
-                  digital portfolio
+                  projetos & cases
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -58,7 +58,7 @@ const HomeTwoPortfolio = () => {
             <div className="portfolio__text-slider-single">
               <h2 className="h1">
                 <Link href="portfolio">
-                  digital portfolio
+                  projetos & cases
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -68,7 +68,7 @@ const HomeTwoPortfolio = () => {
             <div className="portfolio__text-slider-single">
               <h2 className="h1 str">
                 <Link href="portfolio">
-                  digital portfolio
+                  projetos & cases
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -78,7 +78,7 @@ const HomeTwoPortfolio = () => {
             <div className="portfolio__text-slider-single">
               <h2 className="h1">
                 <Link href="portfolio">
-                  digital portfolio
+                  projetos & cases
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -88,7 +88,7 @@ const HomeTwoPortfolio = () => {
             <div className="portfolio__text-slider-single">
               <h2 className="h1 str">
                 <Link href="portfolio">
-                  digital portfolio
+                  projetos & cases
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -98,7 +98,7 @@ const HomeTwoPortfolio = () => {
             <div className="portfolio__text-slider-single">
               <h2 className="h1">
                 <Link href="portfolio">
-                  digital portfolio
+                  projetos & cases
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -116,7 +116,7 @@ const HomeTwoPortfolio = () => {
                 onClick={() => handleTabClick("*")}
               >
                 <span>01</span>
-                All
+                Todos
               </button>
               <button
                 aria-label="Filter Portfolio"
@@ -132,7 +132,7 @@ const HomeTwoPortfolio = () => {
                 onClick={() => handleTabClick(".development")}
               >
                 <span>03</span>
-                Development
+                Engenharia
               </button>
               <button
                 aria-label="Filter Portfolio"
@@ -140,7 +140,7 @@ const HomeTwoPortfolio = () => {
                 onClick={() => handleTabClick(".technology")}
               >
                 <span>04</span>
-                Technology
+                Inteligência Artificial
               </button>
             </div>
           </div>
@@ -162,7 +162,7 @@ const HomeTwoPortfolio = () => {
                   <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                 </Link>
                 <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
+                  <Link href="portfolio">SaaS & Web App</Link>
                 </h4>
               </div>
             </div>
@@ -181,7 +181,7 @@ const HomeTwoPortfolio = () => {
                   <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                 </Link>
                 <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
+                  <Link href="portfolio">Agente IA Suporte</Link>
                 </h4>
               </div>
             </div>
@@ -202,7 +202,7 @@ const HomeTwoPortfolio = () => {
                   <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                 </Link>
                 <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
+                  <Link href="portfolio">E-commerce Alta Escala</Link>
                 </h4>
               </div>
             </div>
@@ -223,7 +223,7 @@ const HomeTwoPortfolio = () => {
                   <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                 </Link>
                 <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
+                  <Link href="portfolio">Checkout Integrado</Link>
                 </h4>
               </div>
             </div>
@@ -242,7 +242,7 @@ const HomeTwoPortfolio = () => {
                   <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                 </Link>
                 <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
+                  <Link href="portfolio">Automação WhatsApp</Link>
                 </h4>
               </div>
             </div>
@@ -263,7 +263,7 @@ const HomeTwoPortfolio = () => {
                   <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                 </Link>
                 <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
+                  <Link href="portfolio">UI/UX & Design Figma</Link>
                 </h4>
               </div>
             </div>

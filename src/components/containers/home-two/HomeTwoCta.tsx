@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Image from "next/image";
 import star from "public/images/testimonial/star.png";
 
@@ -16,7 +16,7 @@ const HomeTwoCta = () => {
                 <div className="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-9">
                   <div className="section__header text-center">
                     <h2 className="title">
-                      Stay Ahead With Our Top Notch Digital Services
+                      Escale sua operação com nossas soluções digitais
                     </h2>
                   </div>
                   <div className="footer__single-form">
@@ -26,7 +26,7 @@ const HomeTwoCta = () => {
                           type="email"
                           name="subscribe-news"
                           id="subscribeNews"
-                          placeholder="Enter Your Email"
+                          placeholder="Seu melhor e-mail"
                           required
                         />
                         <button type="submit" className="subscribe">

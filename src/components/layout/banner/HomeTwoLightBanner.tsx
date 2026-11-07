@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
@@ -51,25 +51,25 @@ const HomeTwoLightBanner = () => {
                 </div>
                 <div className="cta section__content-cta m-0">
                   <div className="single">
-                    <h5 className="fw-7">12+</h5>
-                    <p className="fw-5">years of experience</p>
+                    <h5 className="fw-7">99.9%</h5>
+                    <p className="fw-5">uptime garantido</p>
                   </div>
                   <div className="single">
-                    <h5 className="fw-7">25k</h5>
-                    <p className="fw-5">completed projects</p>
+                    <h5 className="fw-7">10x+</h5>
+                    <p className="fw-5">eficiência operacional</p>
                   </div>
                 </div>
               </div>
               <div className="banner-two__content">
                 <h1 className="title-anim">
-                  THE <span>UI UX DESIGN</span> AGENCY FOR BETTER METRICS
+                  ENGENHARIA <span>DIGITAL & IA</span> PARA MÁXIMA PERFORMANCE
                 </h1>
                 <div className="banner-two__content-cta section__content-cta">
                   <div className="paragraph">
                     <p>
-                      We are a data-driven UI UX design agency delivering
-                      complete end-to-end web, mobile, and Web3 user experience
-                      design solutions for better core metrics.
+                      Desenvolvemos agentes autônomos de IA, plataformas web sob
+                      medida e ecossistemas digitais de alta performance para
+                      escalar a operação do seu negócio.
                     </p>
                   </div>
                   <div className="arrow-wrapper d-none d-lg-block">
@@ -77,7 +77,7 @@ const HomeTwoLightBanner = () => {
                   </div>
                   <div className="cta">
                     <Link href="contact-us" className="btn btn--tertiary">
-                      book a call now
+                      agendar conversa
                       <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                     </Link>
                   </div>

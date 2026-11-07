@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -48,11 +48,11 @@ const HomeTwoTestimonial = () => {
           <div className="col-12 col-lg-7 col-xxl-7 offset-xxl-1">
             <div className="testimonial-two__content section__content testimonial-g-con">
               <span className="sub-title">
-                testimonial
+                depoimentos
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Some Of Our Respected Happy Clients Says
+                O que Nossos Clientes Dizem Sobre a ME
               </h2>
               <div className="quote">
                 <i className="fa-sharp fa-solid fa-quote-right"></i>
@@ -78,10 +78,10 @@ const HomeTwoTestimonial = () => {
                       <div className="paragraph">
                         <blockquote className="secondary-text">
                           <q>
-                            Welcome to our digital agency We specialize in
-                            helping business most like yours succeed online.
-                            From website design and development to digital
-                            marketing agency
+                            A ME Hub desenvolveu nossa plataforma web e integrou
+                            agentes de IA para o suporte ao cliente. Reduzimos o
+                            tempo de resposta em 75% e a taxa de conversão do
+                            produto dobrou em três meses.
                           </q>
                         </blockquote>
                       </div>
@@ -90,8 +90,8 @@ const HomeTwoTestimonial = () => {
                           <Image src={avatar} alt="Image" />
                         </div>
                         <div className="author-meta__content">
-                          <h5>Delores Olivo</h5>
-                          <p>From UK</p>
+                          <h5>Marcelo Ribeiro</h5>
+                          <p>Diretor de Operações</p>
                         </div>
                       </div>
                     </div>
@@ -101,10 +101,10 @@ const HomeTwoTestimonial = () => {
                       <div className="paragraph">
                         <blockquote className="secondary-text">
                           <q>
-                            Welcome to our digital agency We specialize in
-                            helping business most like yours succeed online.
-                            From website design and development to digital
-                            marketing agency
+                            A equipe reestruturou toda a nossa infraestrutura
+                            cloud e o gateway de pagamento. A estabilidade passou
+                            para 99.9% de uptime e as falhas de checkout foram
+                            completamente eliminadas.
                           </q>
                         </blockquote>
                       </div>
@@ -113,8 +113,8 @@ const HomeTwoTestimonial = () => {
                           <Image src={avatar} alt="Image" />
                         </div>
                         <div className="author-meta__content">
-                          <h5>Delores Olivo</h5>
-                          <p>From UK</p>
+                          <h5>Camila Fernandes</h5>
+                          <p>COO & Head de Produto</p>
                         </div>
                       </div>
                     </div>
@@ -124,10 +124,10 @@ const HomeTwoTestimonial = () => {
                       <div className="paragraph">
                         <blockquote className="secondary-text">
                           <q>
-                            Welcome to our digital agency We specialize in
-                            helping business most like yours succeed online.
-                            From website design and development to digital
-                            marketing agency
+                            Profissionalismo impecável na criação de automações
+                            avançadas e agentes inteligentes. A ME Hub entrega
+                            código limpo, design sofisticado e acompanhamento
+                            técnico de altíssimo padrão.
                           </q>
                         </blockquote>
                       </div>
@@ -136,8 +136,8 @@ const HomeTwoTestimonial = () => {
                           <Image src={avatar} alt="Image" />
                         </div>
                         <div className="author-meta__content">
-                          <h5>Delores Olivo</h5>
-                          <p>From UK</p>
+                          <h5>Renato Silveira</h5>
+                          <p>CTO & Co-fundador</p>
                         </div>
                       </div>
                     </div>

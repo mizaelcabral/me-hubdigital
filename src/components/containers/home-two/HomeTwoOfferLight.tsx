@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,10 +37,10 @@ const HomeTwoOfferLight = () => {
           <div className="col-12 col-lg-8">
             <div className="section__header text-center">
               <span className="sub-title">
-                what we offer
+                nossos serviços
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-              <h2 className="title title-anim">our main services</h2>
+              <h2 className="title title-anim">soluções completas</h2>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">uI / uX experience</Link>
+                  <Link href="service-single">Agentes de IA Pro</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -85,7 +85,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Product Design</Link>
+                  <Link href="service-single">Sites & E-commerce</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -101,7 +101,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Digital Marketing</Link>
+                  <Link href="service-single">Aplicações Web & SaaS</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -117,7 +117,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Web Development</Link>
+                  <Link href="service-single">Gateways de Pagamento</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -133,7 +133,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Mobile App</Link>
+                  <Link href="service-single">Automação & CRM</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -149,7 +149,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Custom Solutions</Link>
+                  <Link href="service-single">UI/UX & Design Pro</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -165,7 +165,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Ecommerce Solutions</Link>
+                  <Link href="service-single">Hospedagem & Nuvem</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -181,7 +181,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Photography</Link>
+                  <Link href="service-single">Consultoria Tech</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -197,7 +197,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Mobile App</Link>
+                  <Link href="service-single">Automação & CRM</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -213,7 +213,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Custom Solutions</Link>
+                  <Link href="service-single">UI/UX & Design Pro</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -229,7 +229,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Ecommerce Solutions</Link>
+                  <Link href="service-single">Hospedagem & Nuvem</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -245,7 +245,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Photography</Link>
+                  <Link href="service-single">Consultoria Tech</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -279,7 +279,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">uI / uX experience</Link>
+                  <Link href="service-single">Agentes de IA Pro</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -295,7 +295,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Product Design</Link>
+                  <Link href="service-single">Sites & E-commerce</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -311,7 +311,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Digital Marketing</Link>
+                  <Link href="service-single">Aplicações Web & SaaS</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -327,7 +327,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Web Development</Link>
+                  <Link href="service-single">Gateways de Pagamento</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -343,7 +343,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Mobile App</Link>
+                  <Link href="service-single">Automação & CRM</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -359,7 +359,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Custom Solutions</Link>
+                  <Link href="service-single">UI/UX & Design Pro</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -375,7 +375,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Ecommerce Solutions</Link>
+                  <Link href="service-single">Hospedagem & Nuvem</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -391,7 +391,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Photography</Link>
+                  <Link href="service-single">Consultoria Tech</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -407,7 +407,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Mobile App</Link>
+                  <Link href="service-single">Automação & CRM</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -423,7 +423,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Custom Solutions</Link>
+                  <Link href="service-single">UI/UX & Design Pro</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -439,7 +439,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Ecommerce Solutions</Link>
+                  <Link href="service-single">Hospedagem & Nuvem</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
@@ -455,7 +455,7 @@ const HomeTwoOfferLight = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">Photography</Link>
+                  <Link href="service-single">Consultoria Tech</Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
                   <Image src={ball} alt="Image" />
