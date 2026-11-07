@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Image from "next/image";
 import thumbone from "public/images/service/thumb-one.png";
 import thumbtwo from "public/images/service/thumb-two.png";

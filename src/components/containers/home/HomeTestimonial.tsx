@@ -37,7 +37,7 @@ const HomeTestimonial = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem os clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -47,7 +47,7 @@ const HomeTestimonial = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem os clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -57,7 +57,7 @@ const HomeTestimonial = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem os clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -67,7 +67,7 @@ const HomeTestimonial = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem os clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -77,7 +77,7 @@ const HomeTestimonial = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem os clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -87,7 +87,7 @@ const HomeTestimonial = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem os clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -97,7 +97,7 @@ const HomeTestimonial = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem os clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -159,16 +159,15 @@ const HomeTestimonial = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              A ME Hubdigital transformou a operação da nossa
+                              empresa. A automação com agentes de IA e a nova
+                              plataforma web aumentaram nossa taxa de conversão em
+                              mais de 300% com total estabilidade e suporte técnico.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>Carlos Mendes</h5>
+                            <p>Diretor de Operações</p>
                           </div>
                         </div>
                       </div>
@@ -203,16 +202,15 @@ const HomeTestimonial = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              Excelente trabalho na integração do checkout e na
+                              nossa infraestrutura cloud. Zero lentidão nas vendas
+                              e suporte imediato. Uma agência que realmente entrega
+                              engenharia de software com foco em faturamento.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>Mariana Alencar</h5>
+                            <p>Co-fundadora & COO</p>
                           </div>
                         </div>
                       </div>
@@ -247,16 +245,15 @@ const HomeTestimonial = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              O redesign completo das nossas interfaces e a
+                              arquitetura em nuvem escalável elevaram a percepção
+                              de valor do nosso produto a outro patamar. Parceria
+                              indispensável para quem quer crescer rápido.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>Rodrigo Fontana</h5>
+                            <p>Head de Produto</p>
                           </div>
                         </div>
                       </div>

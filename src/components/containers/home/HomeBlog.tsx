@@ -12,10 +12,10 @@ const HomeBlog = () => {
           <div className="col-12 col-lg-8">
             <div className="section__header text-center">
               <span className="sub-title">
-                news & Blog
+                INSIGHTS & BLOG
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-              <h2 className="title title-anim">what&apos;s new in blog</h2>
+              <h2 className="title title-anim">Artigos & Tendências de Tecnologia</h2>
             </div>
           </div>
         </div>
@@ -30,15 +30,15 @@ const HomeBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    A Simple Social Media Marketing Checklist
+                    Como Agentes de IA Reduzem Custos em Operações Web
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    inteligência artificial
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>DESTAQUE</p>
                 </div>
               </div>
             </div>
@@ -53,15 +53,15 @@ const HomeBlog = () => {
               <div className="blog__single-content">
                 <h4>
                   <Link href="blog-single">
-                    Transforming Challenges into Opportunities
+                    Arquitetura Cloud e Gateways: Maximizando o Seu ROI
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    creative
+                    engenharia web
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>MARCH 23, 2023</p>
+                  <p>DESTAQUE</p>
                 </div>
               </div>
             </div>

@@ -53,26 +53,26 @@ const HomeOneBanner = () => {
             <div className="col-12">
               <div className="banner__content">
                 <h1 className="text-uppercase text-start fw-9 mb-0 title-anim">
-                  We are
-                  <span className="text-stroke">creative</span>
+                  ME HUB
+                  <span className="text-stroke">DIGITAL</span>
                   <span className="interval">
-                    <i className="icon-arrow-top-right"></i> digital agency
+                    <i className="icon-arrow-top-right"></i> ENGENHARIA & IA
                   </span>
                 </h1>
                 <div className="banner__content-inner">
                   <p>
-                    We are a full-service website design, development and
-                    digital marketing company specializing in SEO, content
-                    marketing that grows brands.
+                    Desenvolvemos agentes autônomos de IA, plataformas web sob
+                    medida e ecossistemas digitais de alta conversão para escalar
+                    operações corporativas.
                   </p>
                   <div className="cta section__content-cta">
                     <div className="single">
-                      <h5 className="fw-7">12+</h5>
-                      <p className="fw-5">years of experience</p>
+                      <h5 className="fw-7">99.9%</h5>
+                      <p className="fw-5">uptime garantido</p>
                     </div>
                     <div className="single">
-                      <h5 className="fw-7">25k</h5>
-                      <p className="fw-5">completed projects</p>
+                      <h5 className="fw-7">10x+</h5>
+                      <p className="fw-5">eficiência operacional</p>
                     </div>
                   </div>
                 </div>
@@ -87,8 +87,8 @@ const HomeOneBanner = () => {
         />
         <Image src={star} alt="Image" className="star" />
         <div className="banner-left-text banner-social-text d-none d-md-flex">
-          <Link href="mailto:info@xpovio.com">mail : info@xpovio.com</Link>
-          <Link href="tel:99-2158-003-6980">Call : +99 2158 003 6980</Link>
+          <Link href="mailto:contato@mehubdigital.com.br">mail : contato@mehubdigital.com.br</Link>
+          <Link href="tel:+5511999999999">Call : +55 11 99999 9999</Link>
         </div>
         <div className="banner-right-text banner-social-text d-none d-md-flex">
           <Link href="https://www.instagram.com/" target="_blank">

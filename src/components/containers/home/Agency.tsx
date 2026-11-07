@@ -96,27 +96,27 @@ const Agency = () => {
           <div className="col-12 col-lg-6">
             <div className="agency__content section__content">
               <span className="sub-title">
-                WELCOME
+                QUEM SOMOS
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                We are digital creative agency in London
+                Engenharia de software e IA para sua empresa
               </h2>
               <div className="paragraph">
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation on the runway
-                  heading towards a streamlined cloud solution going forward
-                  porttitor dictum sapien.
+                  Transformamos gargalos operacionais em vantagens competitivas
+                  por meio de sistemas web sob medida, inteligência artificial
+                  integrada e arquiteturas de alta disponibilidade. Unimos
+                  design sofisticado a código escalável para entregar resultados
+                  mensuráveis ao seu faturamento.
                 </p>
               </div>
               <div className="skill-wrap">
                 <div className="skill-bar-single d-none">
                   <div className="skill-bar-title">
-                    <p className="primary-text">Website design</p>
+                    <p className="primary-text">Aplicações Web & SaaS</p>
                   </div>
-                  <div className="skill-bar-wrapper" data-percent="75%">
+                  <div className="skill-bar-wrapper" data-percent="98%">
                     <div className="skill-bar">
                       <div className="skill-bar-percent">
                         <span className="percent-value"></span>
@@ -126,9 +126,9 @@ const Agency = () => {
                 </div>
                 <div className="skill-bar-single">
                   <div className="skill-bar-title">
-                    <p className="primary-text">Website design</p>
+                    <p className="primary-text">Aplicações Web & SaaS</p>
                   </div>
-                  <div className="skill-bar-wrapper" data-percent="75%">
+                  <div className="skill-bar-wrapper" data-percent="98%">
                     <div className="skill-bar">
                       <div className="skill-bar-percent">
                         <span className="percent-value"></span>
@@ -138,9 +138,9 @@ const Agency = () => {
                 </div>
                 <div className="skill-bar-single">
                   <div className="skill-bar-title">
-                    <p className="primary-text">Digital Marketing</p>
+                    <p className="primary-text">Agentes de IA & Automação</p>
                   </div>
-                  <div className="skill-bar-wrapper" data-percent="90%">
+                  <div className="skill-bar-wrapper" data-percent="95%">
                     <div className="skill-bar">
                       <div className="skill-bar-percent">
                         <span className="percent-value"></span>
@@ -151,7 +151,7 @@ const Agency = () => {
               </div>
               <div className="section__content-cta">
                 <Link href="about-us" className="btn btn--primary">
-                  Know More
+                  Conhecer Mais
                 </Link>
               </div>
             </div>

@@ -33,7 +33,7 @@ const FaqMain = () => {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    I&apos;m a total beginner. Can I still follow along?
+                    Como a ME Hubdigital ajuda minha empresa a faturar?
                   </button>
                 </h5>
                 <div
@@ -46,10 +46,10 @@ const FaqMain = () => {
                 >
                   <div className="accordion-body">
                     <p>
-                      We have facility to produce advance work various
-                      industrial applications based on specially developed
-                      technol-ogy. We are also ready to developement by
-                      according to users changing needs. Infrastructure.
+                      Criamos desde plataformas web e landing pages até agentes
+                      autônomos de IA e funis automatizados de alta performance
+                      que cortam custos operacionais e aceleram o fechamento de
+                      novos contratos com previsibilidade.
                     </p>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ const FaqMain = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    Will you be updating the program?
+                    Qual o prazo de entrega do projeto?
                   </button>
                 </h5>
                 <div
@@ -85,10 +85,10 @@ const FaqMain = () => {
                 >
                   <div className="accordion-body">
                     <p>
-                      We have facility to produce advance work various
-                      industrial applications based on specially developed
-                      technol-ogy. We are also ready to developement by
-                      according to users changing needs. Infrastructure.
+                      Landing pages e automações podem ser entregues entre 7 e 15
+                      dias úteis; plataformas SaaS, sistemas sob medida e
+                      integrações complexas variam de 3 a 5 semanas, com entregas
+                      contínuas em sprints transparentes.
                     </p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ const FaqMain = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Can I get an invoice for my purchase?
+                    Vocês integram checkout e pagamentos?
                   </button>
                 </h5>
                 <div
@@ -124,10 +124,10 @@ const FaqMain = () => {
                 >
                   <div className="accordion-body">
                     <p>
-                      We have facility to produce advance work various
-                      industrial applications based on specially developed
-                      technol-ogy. We are also ready to developement by
-                      according to users changing needs. Infrastructure.
+                      Sim. Desenvolvemos e integramos checkouts transparentes com
+                      Pix imediato, cartões de crédito, regras de prevenção
+                      antifraude e planos de recorrência conectados diretamente ao
+                      seu CRM e à sua conta bancária.
                     </p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ const FaqMain = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    What is global search engine optimization?
+                    Como funciona o suporte e hospedagem cloud?
                   </button>
                 </h5>
                 <div
@@ -163,10 +163,10 @@ const FaqMain = () => {
                 >
                   <div className="accordion-body">
                     <p>
-                      We have facility to produce advance work various
-                      industrial applications based on specially developed
-                      technol-ogy. We are also ready to developement by
-                      according to users changing needs. Infrastructure.
+                      Gerenciamos infraestrutura em nuvem e servidores VPS
+                      dedicados de alta disponibilidade, com zonas DNS protegidas,
+                      certificados SSL, backups automáticos diários e garantia de
+                      99.9% de uptime para sua operação.
                     </p>
                   </div>
                 </div>

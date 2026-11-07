@@ -37,24 +37,24 @@ const HomeOffer = () => {
           <div className="col-12 col-lg-5">
             <div className="offer__content section__content">
               <span className="sub-title">
-                WHAT WE OFFER
+                NOSSOS SERVIÇOS
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Giving Your Business Some Great Ideas
+                Soluções Completas em Engenharia Digital
               </h2>
               <div className="paragraph">
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation on the runway
-                  heading towards a streamlined cloud solution going forward
-                  porttitor dictum sapien.
+                  Integramos tecnologia de ponta, design refinado e fluxos
+                  inteligentes para construir ecossistemas de alta conversão.
+                  Desenvolvemos desde agentes autônomos e portais SaaS até a
+                  gestão de gateways de pagamento e infraestrutura em nuvem,
+                  eliminando qualquer atrito na operação.
                 </p>
               </div>
               <div className="section__content-cta">
                 <Link href="our-services" className="btn btn--secondary">
-                  view all services
+                  ver todos serviços
                 </Link>
               </div>
             </div>
@@ -67,8 +67,8 @@ const HomeOffer = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">
-                    uI / uX experience
+                  <Link href="our-services">
+                    agentes autônomos de IA
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -82,8 +82,8 @@ const HomeOffer = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">
-                    web development
+                  <Link href="our-services">
+                    sites & e-commerce pro
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -97,8 +97,8 @@ const HomeOffer = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">
-                    digital marketing
+                  <Link href="our-services">
+                    aplicações web e saas
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -112,8 +112,53 @@ const HomeOffer = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
                 <h2>
-                  <Link href="service-single">
-                    product design
+                  <Link href="our-services">
+                    gateways de pagamento
+                    <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                  </Link>
+                </h2>
+                <div className="offer-thumb-hover d-none d-md-block">
+                  <Image src={blogthumb} alt="Image" />
+                </div>
+              </div>
+              <div className="offer__cta-single fade-top">
+                <span className="sub-title">
+                  05
+                  <i className="fa-solid fa-arrow-right"></i>
+                </span>
+                <h2>
+                  <Link href="our-services">
+                    automação & crm moderno
+                    <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                  </Link>
+                </h2>
+                <div className="offer-thumb-hover d-none d-md-block">
+                  <Image src={two} alt="Image" />
+                </div>
+              </div>
+              <div className="offer__cta-single fade-top">
+                <span className="sub-title">
+                  06
+                  <i className="fa-solid fa-arrow-right"></i>
+                </span>
+                <h2>
+                  <Link href="our-services">
+                    ui/ux & product design
+                    <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                  </Link>
+                </h2>
+                <div className="offer-thumb-hover d-none d-md-block">
+                  <Image src={three} alt="Image" />
+                </div>
+              </div>
+              <div className="offer__cta-single fade-top">
+                <span className="sub-title">
+                  07
+                  <i className="fa-solid fa-arrow-right"></i>
+                </span>
+                <h2>
+                  <Link href="our-services">
+                    hospedagem & nuvem cloud
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>

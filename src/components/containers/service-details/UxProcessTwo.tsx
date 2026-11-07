@@ -10,10 +10,10 @@ const UxProcessTwo = () => {
           <div className="col-12 col-lg-8">
             <div className="section__header text-center">
               <span className="sub-title">
-                UX Process
+                METODOLOGIA
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-              <h2 className="title title-anim">working UX Process</h2>
+              <h2 className="title title-anim">Como Nós Trabalhamos</h2>
             </div>
           </div>
         </div>
@@ -28,14 +28,14 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>User Research</h4>
+                    <h4>Diagnóstico & Arquitetura</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
                   <p>
-                    To deliver the best experience, we thoroughly research and
-                    evaluate your product and its users to create a strategic
-                    foundation for the brand.
+                    Mapeamos sua operação, gargalos técnicos e objetivos comerciais para
+                    desenhar uma arquitetura digital de alta performance, integrada e sem
+                    desperdícios.
                   </p>
                 </div>
                 <button
@@ -51,14 +51,14 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>story board</h4>
+                    <h4>Prototipagem & UI/UX</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
                   <p>
-                    To deliver the best experience, we thoroughly research and
-                    evaluate your product and its users to create a strategic
-                    foundation for the brand.
+                    Criamos interfaces modernas e intuitivas no Figma com foco
+                    absoluto em conversão, usabilidade simplificada e valor imediato
+                    percebido pelo seu cliente.
                   </p>
                 </div>
                 <button
@@ -74,14 +74,14 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>wireframing</h4>
+                    <h4>Engenharia Web & SaaS</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
                   <p>
-                    To deliver the best experience, we thoroughly research and
-                    evaluate your product and its users to create a strategic
-                    foundation for the brand.
+                    Codificamos plataformas web, landing pages e portais sob medida com
+                    as melhores práticas de código limpo, segurança e carregamento
+                    ultrarrápido.
                   </p>
                 </div>
                 <button
@@ -97,14 +97,14 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>Prototyping</h4>
+                    <h4>Agentes de IA & Automação</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
                   <p>
-                    To deliver the best experience, we thoroughly research and
-                    evaluate your product and its users to create a strategic
-                    foundation for the brand.
+                    Implementamos assistentes inteligentes e integrações diretas no
+                    WhatsApp e CRM para automatizar o atendimento, qualificar leads e
+                    cortar custos.
                   </p>
                 </div>
                 <button
@@ -120,14 +120,14 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>usability testing</h4>
+                    <h4>Gateways & Checkouts</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
                   <p>
-                    To deliver the best experience, we thoroughly research and
-                    evaluate your product and its users to create a strategic
-                    foundation for the brand.
+                    Integramos checkouts transparentes com Pix e cartão, regras
+                    antifraude e automações de faturamento diretamente conectadas à
+                    sua gestão.
                   </p>
                 </div>
                 <button
@@ -143,14 +143,14 @@ const UxProcessTwo = () => {
               >
                 <div className="single-item">
                   <div className="intro-btn">
-                    <h4>UI Design</h4>
+                    <h4>Deploy Cloud & Escala</h4>
                   </div>
                 </div>
                 <div className="single-item p-single p-sm body-cn">
                   <p>
-                    To deliver the best experience, we thoroughly research and
-                    evaluate your product and its users to create a strategic
-                    foundation for the brand.
+                    Configuramos infraestrutura em nuvem de alta disponibilidade,
+                    zonas DNS blindadas e monitoramento ativo 24/7 para garantir 99.9%
+                    de uptime.
                   </p>
                 </div>
                 <button
