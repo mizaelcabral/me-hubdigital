@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
@@ -18,10 +18,10 @@ const HomeThreeBlog = () => {
           <div className="col-12 col-lg-8">
             <div className="section__header text-center">
               <span className="sub-title">
-                news & Blog
+                insights & blog
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-              <h2 className="title title-anim">what&apos;s new in blog</h2>
+              <h2 className="title title-anim">artigos & novidades</h2>
             </div>
           </div>
         </div>
@@ -37,16 +37,16 @@ const HomeThreeBlog = () => {
                     <div className="blog__single-content">
                       <h4>
                         <Link href="blog-single">
-                          How manage business in online, The passage experienced
-                          a surge
+                          Como gerenciar operações online com agentes autônomos e
+                          IA integrada em 2024
                         </Link>
                       </h4>
                       <div className="blog__single-meta">
                         <Link href="blog" className="sub-title">
-                          creative
+                          tecnologia
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
-                        <p>MARCH 23, 2023</p>
+                        <p>24 DE OUTUBRO, 2024</p>
                       </div>
                     </div>
                   </div>
@@ -57,16 +57,16 @@ const HomeThreeBlog = () => {
                     <div className="blog__single-content">
                       <h4>
                         <Link href="blog-single">
-                          Pellentesque dignissim malesuada varius et semper
-                          semper rutrum ad risus felis eros.
+                          Arquitetura de microsserviços e engenharia Next.js para
+                          plataformas de alta conversão
                         </Link>
                       </h4>
                       <div className="blog__single-meta">
                         <Link href="blog" className="sub-title">
-                          creative
+                          engenharia
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
-                        <p>MARCH 23, 2023</p>
+                        <p>18 DE OUTUBRO, 2024</p>
                       </div>
                     </div>
                   </div>
@@ -77,16 +77,16 @@ const HomeThreeBlog = () => {
                     <div className="blog__single-content">
                       <h4>
                         <Link href="blog-single">
-                          non sit libero viverra mollis Non ligula tincidunt
-                          congue porta attention simply
+                          Otimização de gateways de pagamento e fluxo antifraude
+                          para escalar seu faturamento
                         </Link>
                       </h4>
                       <div className="blog__single-meta">
                         <Link href="blog" className="sub-title">
-                          creative
+                          automação
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
-                        <p>MARCH 23, 2023</p>
+                        <p>12 DE OUTUBRO, 2024</p>
                       </div>
                     </div>
                   </div>

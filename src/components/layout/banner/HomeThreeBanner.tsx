@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -49,7 +49,7 @@ const HomeThreeBanner = () => {
                     <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                       <div className="banner-three__content">
                         <h1 className="light-title">
-                          Awesome IT Services for Your Business
+                          Engenharia Web e Soluções Digitais
                         </h1>
                         <div className="section__content-cta cta">
                           <div className="arrow-wrapper d-none d-md-block">
@@ -59,7 +59,7 @@ const HomeThreeBanner = () => {
                             href="our-services"
                             className="btn btn--secondary"
                           >
-                            our services
+                            nossos serviços
                             <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                           </Link>
                         </div>
@@ -82,7 +82,7 @@ const HomeThreeBanner = () => {
                     <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                       <div className="banner-three__content">
                         <h1 className="light-title">
-                          Awesome IT Services for Your Business
+                          Agentes de IA e Automação Avançada
                         </h1>
                         <div className="section__content-cta cta">
                           <div className="arrow-wrapper d-none d-md-block">
@@ -92,7 +92,7 @@ const HomeThreeBanner = () => {
                             href="our-services"
                             className="btn btn--secondary"
                           >
-                            our services
+                            nossos serviços
                             <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                           </Link>
                         </div>
@@ -115,7 +115,7 @@ const HomeThreeBanner = () => {
                     <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                       <div className="banner-three__content">
                         <h1 className="light-title">
-                          Awesome IT Services for Your Business
+                          Plataformas SaaS e Alta Escalabilidade
                         </h1>
                         <div className="section__content-cta cta">
                           <div className="arrow-wrapper d-none d-md-block">
@@ -125,7 +125,7 @@ const HomeThreeBanner = () => {
                             href="our-services"
                             className="btn btn--secondary"
                           >
-                            our services
+                            nossos serviços
                             <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                           </Link>
                         </div>
@@ -163,7 +163,7 @@ const HomeThreeBanner = () => {
                 }
               >
                 <span>01</span>
-                <p>TECHNOLOGY CONSULTANTS</p>
+                <p>CONSULTORIA EM TECNOLOGIA</p>
                 <div className="slider-progress"></div>
               </div>
               <div
@@ -173,7 +173,7 @@ const HomeThreeBanner = () => {
                 }
               >
                 <span>02</span>
-                <p>SOFTWARE ENGINEERS</p>
+                <p>ENGENHARIA DE SOFTWARE</p>
                 <div className="slider-progress"></div>
               </div>
               <div
@@ -183,7 +183,7 @@ const HomeThreeBanner = () => {
                 }
               >
                 <span>03</span>
-                <p>PRODUCT STRATEGY ADVISORS</p>
+                <p>ARQUITETURA DE SOLUÇÕES</p>
                 <div className="slider-progress"></div>
               </div>
             </div>
@@ -192,12 +192,12 @@ const HomeThreeBanner = () => {
         <div className="banner-three__meta ban-three-g-meta">
           <div className="cta">
             <div className="single">
-              <h5 className="fw-7">12+</h5>
-              <p className="fw-5">years of experience</p>
+              <h5 className="fw-7">99.9%</h5>
+              <p className="fw-5">uptime garantido</p>
             </div>
             <div className="single">
-              <h5 className="fw-7">25k</h5>
-              <p className="fw-5">completed projects</p>
+              <h5 className="fw-7">10x+</h5>
+              <p className="fw-5">eficiência operacional</p>
             </div>
           </div>
           <div className="banner-three__video">

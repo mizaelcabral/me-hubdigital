@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
 import videoframe from "public/images/video-frame.png";
@@ -46,19 +46,19 @@ const WorkStepsLight = () => {
                   <div className="col-12 col-lg-5 col-xxl-5">
                     <div className="section__header text-center text-lg-start mb-0">
                       <span className="sub-title">
-                        working steps
+                        metodologia
                         <i className="fa-solid fa-arrow-right"></i>
                       </span>
-                      <h2 className="title title-anim">Our Work Process</h2>
+                      <h2 className="title title-anim">Como nós trabalhamos</h2>
                     </div>
                   </div>
                   <div className="col-12 col-lg-7 col-xxl-5 offset-xxl-2">
                     <div className="text-center text-lg-start">
                       <p>
-                        Bring to the table win-win survival strategies to ensure
-                        proactive domination. At the end of the day, going
-                        forward, a new normal that has evolved from generation
-                        on the runway heading towards
+                        Conduzimos cada projeto através de um fluxo estruturado
+                        e ágil, garantindo máxima transparência, validação
+                        contínua e entregas de alto padrão técnico desde o
+                        diagnóstico até a escala em produção.
                       </p>
                     </div>
                   </div>
@@ -79,7 +79,7 @@ const WorkStepsLight = () => {
                   25
                   <br />%
                 </span>
-                <h5>Discover & Strategy.</h5>
+                <h5>Diagnóstico & Estratégia</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{
@@ -100,7 +100,7 @@ const WorkStepsLight = () => {
                   50
                   <br />%
                 </span>
-                <h5>Wireframes & User-flows</h5>
+                <h5>Prototipagem & UI/UX</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{
@@ -121,7 +121,7 @@ const WorkStepsLight = () => {
                   75
                   <br />%
                 </span>
-                <h5>Hi-Fidelity design</h5>
+                <h5>Engenharia & Automação</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{
@@ -142,7 +142,7 @@ const WorkStepsLight = () => {
                   100
                   <br />%
                 </span>
-                <h5>Development Phase</h5>
+                <h5>Deploy & Escala Contínua</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{

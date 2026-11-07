@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Link from "next/link";
 
 const CtaThree = () => {
@@ -14,11 +14,11 @@ const CtaThree = () => {
               <div className="row gaper align-items-center">
                 <div className="col-12 col-lg-8">
                   <div className="cta-two__content">
-                    <span>Hello !</span>
-                    <h2 className="title-anim">ready to work with us?</h2>
+                    <span>Olá !</span>
+                    <h2 className="title-anim">Pronto para escalar com a gente?</h2>
                     <h5>
-                      <Link href="tel:19-3265-003-420">
-                        call: +19 3265 003 420
+                      <Link href="tel:+5511999999999">
+                        call: +55 (11) 99999-9999
                       </Link>
                     </h5>
                   </div>
@@ -26,7 +26,7 @@ const CtaThree = () => {
                 <div className="col-12 col-lg-4">
                   <div className="text-start text-lg-end">
                     <Link href="contact-us" className="btn btn--tertiary">
-                      start a project
+                      iniciar projeto
                       <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                     </Link>
                   </div>

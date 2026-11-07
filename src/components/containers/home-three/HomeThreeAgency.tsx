@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import star from "public/images/star.png";
@@ -19,33 +19,33 @@ const HomeThreeAgency = () => {
           <div className="col-12 col-lg-6">
             <div className="agency__content section__content">
               <span className="sub-title">
-                About Us
+                QUEM SOMOS
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                We are digital creative agency in London
+                Engenharia de software e IA corporativa
               </h2>
               <div className="paragraph">
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation on the runway
-                  heading towards a streamlined cloud solution going forward
-                  porttitor dictum sapien.
+                  Transformamos gargalos operacionais em vantagens competitivas
+                  sustentáveis por meio de sistemas web sob medida, inteligência
+                  artificial avançada e arquiteturas de nuvem de alta
+                  disponibilidade, unindo design de conversão a código escalável
+                  para acelerar seus resultados.
                 </p>
               </div>
               <div className="cta section__content-cta">
                 <div className="single">
-                  <h5 className="fw-7">12+</h5>
-                  <p className="fw-5">years of experience</p>
+                  <h5 className="fw-7">99.9%</h5>
+                  <p className="fw-5">uptime garantido</p>
                 </div>
                 <div className="single">
-                  <h5 className="fw-7">25k</h5>
-                  <p className="fw-5">completed projects</p>
+                  <h5 className="fw-7">10x+</h5>
+                  <p className="fw-5">eficiência operacional</p>
                 </div>
                 <div className="single">
-                  <h5 className="fw-7">120+</h5>
-                  <p className="fw-5">Team members</p>
+                  <h5 className="fw-7">100%</h5>
+                  <p className="fw-5">código sob medida</p>
                 </div>
               </div>
               <div className="section__content-cta cta-group">
@@ -56,7 +56,7 @@ const HomeThreeAgency = () => {
                   href="contact-us"
                   className="btn btn--primary text-capitalize"
                 >
-                  Book A Call
+                  Agendar Conversa
                 </Link>
               </div>
             </div>

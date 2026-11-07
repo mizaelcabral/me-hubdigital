@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import dotlarge from "public/images/agency/dot-large.png";
@@ -16,10 +16,10 @@ const HomeThreeServicesLight = () => {
                 <div className="col-12 col-lg-8">
                   <div className="section__header text-center text-lg-start mb-0">
                     <span className="sub-title">
-                      What we offer
+                      nossos serviços
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
-                    <h2 className="title title-anim">our main services</h2>
+                    <h2 className="title title-anim">soluções corporativas</h2>
                   </div>
                 </div>
                 <div className="col-12 col-lg-4">
@@ -28,7 +28,7 @@ const HomeThreeServicesLight = () => {
                       href="our-services"
                       className="btn btn--primary text-capitalize"
                     >
-                      view all service
+                      ver todos serviços
                     </Link>
                   </div>
                 </div>
@@ -50,12 +50,12 @@ const HomeThreeServicesLight = () => {
                     01
                     <i className="fa-solid fa-arrow-right"></i>
                   </span>
-                  <h4>Digitalization</h4>
+                  <h4>Agentes de IA</h4>
                   <div className="p-single">
                     <p>
-                      We build intelligent next-generation solutions at the
-                      intersection of new business opportunities and
-                      technological innovations.
+                      Desenvolvemos agentes inteligentes e autônomos integrados
+                      aos seus sistemas para automatizar operações, atendimento
+                      e fluxos de alta complexidade.
                     </p>
                   </div>
                 </div>
@@ -63,19 +63,19 @@ const HomeThreeServicesLight = () => {
                   <ul>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Legacy Modernization
+                      Automação de Suporte 24/7
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Solution Design
+                      Triagem Inteligente de Leads
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Technology Enabling
+                      Integração LLM & RAG
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Mobile-First Systems
+                      Agentes de Vendas no WhatsApp
                     </li>
                   </ul>
                 </div>
@@ -98,12 +98,12 @@ const HomeThreeServicesLight = () => {
                     02
                     <i className="fa-solid fa-arrow-right"></i>
                   </span>
-                  <h4>Modernization</h4>
+                  <h4>Aplicações Web</h4>
                   <div className="p-single">
                     <p>
-                      We build intelligent next-generation solutions at the
-                      intersection of new business opportunities and
-                      technological innovations.
+                      Construímos portais corporativos, plataformas SaaS e
+                      aplicações sob medida com arquitetura modular, microsserviços
+                      e máxima eficiência operacional.
                     </p>
                   </div>
                 </div>
@@ -111,19 +111,19 @@ const HomeThreeServicesLight = () => {
                   <ul>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Legacy Modernization
+                      Painéis Administrativos
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Solution Design
+                      Plataformas SaaS Escaláveis
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Technology Enabling
+                      APIs RESTful & GraphQL
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Mobile-First Systems
+                      Engenharia Next.js & Cloud
                     </li>
                   </ul>
                 </div>
@@ -146,12 +146,12 @@ const HomeThreeServicesLight = () => {
                     03
                     <i className="fa-solid fa-arrow-right"></i>
                   </span>
-                  <h4>Accelerating Innovation</h4>
+                  <h4>E-commerce & Gateways</h4>
                   <div className="p-single">
                     <p>
-                      We build intelligent next-generation solutions at the
-                      intersection of new business opportunities and
-                      technological innovations.
+                      Projetamos ecossistemas de e-commerce robustos e integramos
+                      gateways de pagamento com split transparente, antifraude
+                      ativo e altíssima conversão.
                     </p>
                   </div>
                 </div>
@@ -159,19 +159,19 @@ const HomeThreeServicesLight = () => {
                   <ul>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Legacy Modernization
+                      Lojas Virtuais de Alta Escala
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Solution Design
+                      Checkouts Transparentes
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Technology Enabling
+                      Split de Pagamentos & Pix
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Mobile-First Systems
+                      Regras Antifraude Avançadas
                     </li>
                   </ul>
                 </div>
@@ -194,12 +194,12 @@ const HomeThreeServicesLight = () => {
                     04
                     <i className="fa-solid fa-arrow-right"></i>
                   </span>
-                  <h4>Business consulting</h4>
+                  <h4>Hospedagem & Nuvem Cloud</h4>
                   <div className="p-single">
                     <p>
-                      We build intelligent next-generation solutions at the
-                      intersection of new business opportunities and
-                      technological innovations.
+                      Estruturamos servidores dedicados e ambientes serverless
+                      otimizados para 99.9% de uptime, segurança cibernética e
+                      baixa latência em todo o Brasil.
                     </p>
                   </div>
                 </div>
@@ -207,19 +207,19 @@ const HomeThreeServicesLight = () => {
                   <ul>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Legacy Modernization
+                      Arquitetura AWS & Vercel
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Solution Design
+                      Monitoramento 24/7 & SLA
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Technology Enabling
+                      Backups Diários Automatizados
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Mobile-First Systems
+                      Certificados SSL & Segurança
                     </li>
                   </ul>
                 </div>

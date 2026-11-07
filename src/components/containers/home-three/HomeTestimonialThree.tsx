@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,7 +37,7 @@ const HomeTestimonialThree = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem nossos clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -47,7 +47,7 @@ const HomeTestimonialThree = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem nossos clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -57,7 +57,7 @@ const HomeTestimonialThree = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem nossos clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -67,7 +67,7 @@ const HomeTestimonialThree = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem nossos clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -77,7 +77,7 @@ const HomeTestimonialThree = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem nossos clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -87,7 +87,7 @@ const HomeTestimonialThree = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem nossos clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -97,7 +97,7 @@ const HomeTestimonialThree = () => {
             <div className="testimonial__text-slider-single">
               <h2 className="h1">
                 <Link href="client-feedback">
-                  client&apos;s testimonial
+                  o que dizem nossos clientes
                   <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                 </Link>
               </h2>
@@ -159,16 +159,15 @@ const HomeTestimonialThree = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              A ME Hub reformulou toda a arquitetura de sistemas
+                              da nossa empresa. A integração dos agentes de IA no
+                              fluxo operacional gerou ganho imediato de
+                              produtividade e reduziu o tempo de atendimento.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>Guilherme Prado</h5>
+                            <p>Diretor de Engenharia</p>
                           </div>
                         </div>
                       </div>
@@ -203,16 +202,15 @@ const HomeTestimonialThree = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              A equipe entregou nossa plataforma SaaS com
+                              qualidade técnica impecável. O sistema suporta
+                              picos de tráfego sem instabilidades e a taxa de
+                              conversão superou todas as metas projetadas.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>Beatriz Siqueira</h5>
+                            <p>Head de Produto</p>
                           </div>
                         </div>
                       </div>
@@ -247,16 +245,15 @@ const HomeTestimonialThree = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              Trabalhar com a ME Hub trouxe segurança para nossa
+                              infraestrutura cloud e processos críticos.
+                              Automações precisas, código limpo e atendimento
+                              consultivo sênior em todas as fases da operação.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>Lucas Vasconcelos</h5>
+                            <p>CTO & Co-fundador</p>
                           </div>
                         </div>
                       </div>
