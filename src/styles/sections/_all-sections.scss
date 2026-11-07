@@ -3820,10 +3820,10 @@
 .section__content {
   .title {
     div {
-      text-transform: lowercase !important;
+      text-transform: none !important;
       font-weight: 600;
       &:nth-child(1) {
-        text-transform: capitalize !important;
+        text-transform: none !important;
       }
     }
   }

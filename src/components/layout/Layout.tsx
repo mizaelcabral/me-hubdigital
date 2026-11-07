@@ -1,4 +1,4 @@
-﻿import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import Head from "next/head";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -180,11 +180,11 @@ const Layout = ({
           href="/images/favicon.png"
           type="image/x-icon"
         />
-        <title>Xpovio | Digital Agency Creative Portfolio Template</title>
-        <meta name="keywords" content="creative, agency, portfolio" />
+        <title>ME Hubdigital — Engenharia Web, IA & Automação</title>
+        <meta name="keywords" content="agentes ia, automação, web, software, cloud" />
         <meta
           name="description"
-          content="Digital Agency Creative Portfolio Template"
+          content="Engenharia web de alto impacto, agentes autônomos de IA e soluções completas para acelerar sua operação."
         />
       </Head>
       <div className={combinedClassName}>

@@ -278,7 +278,11 @@ i {
   .title {
     margin-bottom: 30px;
     font-weight: 700;
-    text-transform: none;
+    text-transform: none !important;
+
+    * {
+      text-transform: none !important;
+    }
   }
 }
 
