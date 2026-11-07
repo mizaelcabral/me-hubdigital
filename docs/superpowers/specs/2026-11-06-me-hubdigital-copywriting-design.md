@@ -18,7 +18,7 @@ Adaptar todo o conteúdo textual do template Next.js atual para a marca oficial 
    3. Aplicações Web
    4. Gateways de Pagamento
    5. Automação & CRM
-   6. UI/UX & Design de Embalagens
+   6. UI/UX & Product Design
    7. Hospedagem & Cloud
 
 ---
@@ -70,7 +70,7 @@ Adaptar todo o conteúdo textual do template Next.js atual para a marca oficial 
   3. `03` ➔ `aplicações web e saas`
   4. `04` ➔ `gateways de pagamento`
   5. `05` ➔ `automação & crm moderno`
-  6. `06` ➔ `ui/ux & packaging 3d`
+  6. `06` ➔ `ui/ux & product design`
   7. `07` ➔ `hospedagem & nuvem cloud`
 
 ### 2.5 Catálogo Completo de Serviços (`src/components/containers/ServiceMain.tsx`)
