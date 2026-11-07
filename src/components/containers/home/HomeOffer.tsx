@@ -41,7 +41,7 @@ const HomeOffer = () => {
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Soluções Completas em Engenharia Digital
+                Soluções completas em engenharia digital
               </h2>
               <div className="paragraph">
                 <p>
@@ -68,7 +68,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    agentes de IA
+                    Agentes de IA
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -83,7 +83,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    sites & e-commerce
+                    Sites & e-commerce
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -98,7 +98,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    aplicações web
+                    Aplicações web
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -113,7 +113,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    gateways de pagamento
+                    Gateways de pagamento
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -128,7 +128,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    automação & crm
+                    Automação & CRM
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -143,7 +143,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    ui/ux & design
+                    UI/UX & design
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>
@@ -158,7 +158,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href="our-services">
-                    hospedagem & cloud
+                    Hospedagem & cloud
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
                 </h2>

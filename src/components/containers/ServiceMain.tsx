@@ -78,7 +78,7 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">Sites & E-commerce</Link>
+                          <Link href="service-single">Sites & e-commerce</Link>
                         </h4>
                       </div>
                       <ul>
@@ -106,7 +106,7 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">Aplicações Web</Link>
+                          <Link href="service-single">Aplicações web</Link>
                         </h4>
                       </div>
                       <ul>
@@ -134,7 +134,7 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">Gateways de Pagamento</Link>
+                          <Link href="service-single">Gateways de pagamento</Link>
                         </h4>
                       </div>
                       <ul>
@@ -190,15 +190,15 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">UI/UX & Product Design</Link>
+                          <Link href="service-single">UI/UX & product design</Link>
                         </h4>
                       </div>
                       <ul>
                         <li>Design no Figma</li>
-                        <li>Identidade Visual</li>
-                        <li>Design de Interfaces</li>
-                        <li>Prototipagem Ágil</li>
-                        <li>Design System Escalável</li>
+                        <li>Identidade visual</li>
+                        <li>Design de interfaces</li>
+                        <li>Prototipagem ágil</li>
+                        <li>Design system escalável</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -218,7 +218,7 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">Hospedagem & Cloud</Link>
+                          <Link href="service-single">Hospedagem & cloud</Link>
                         </h4>
                       </div>
                       <ul>
