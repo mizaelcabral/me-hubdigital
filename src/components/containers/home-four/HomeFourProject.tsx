@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import one from "public/images/projects/one.png";
@@ -25,12 +25,12 @@ const HomeFourProject = () => {
               <div className="content">
                 <h4>
                   <Link href="project-single">
-                    Vivamus vehicula ligula augue, id porttitor
+                    Plataforma SaaS de Gestão de Operações B2B
                   </Link>
                 </h4>
                 <p>
-                  Helping people in their journey self-improvement through
-                  incrementalchanges from behavioural changes and attitudes
+                  Desenvolvimento de software completo com dashboard em tempo
+                  real, controle de acessos corporativos e alta disponibilidade.
                 </p>
               </div>
             </div>
@@ -44,11 +44,11 @@ const HomeFourProject = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link href="project-single">Kaizen Psychology</Link>
+                  <Link href="project-single">Agente IA Suporte</Link>
                 </h4>
                 <p>
-                  Helping people in their journey self-improvement through
-                  incrementalchanges from behavioural changes and attitudes
+                  Implantação de agente autônomo com LLM treinada na base da
+                  empresa, atendendo clientes 24/7 com resolução ágil de dúvidas.
                 </p>
               </div>
             </div>
@@ -65,12 +65,13 @@ const HomeFourProject = () => {
               <div className="content">
                 <h4>
                   <Link href="project-single">
-                    varius suscipit lectus. Suspendisse
+                    E-commerce Global de Alta Conversão
                   </Link>
                 </h4>
                 <p>
-                  Helping people in their journey self-improvement through
-                  incrementalchanges from behavioural changes and attitudes
+                  Ecossistema de vendas digitais com catálogo dinâmico,
+                  navegação ultrarrápida e arquitetura modular pronta para alta
+                  escala.
                 </p>
               </div>
             </div>
@@ -85,12 +86,13 @@ const HomeFourProject = () => {
               <div className="content">
                 <h4>
                   <Link href="project-single">
-                    Quisque sit amet felis non mi conse ullamcorper
+                    Gateway de Pagamento com Split e Checkout Seguro
                   </Link>
                 </h4>
                 <p>
-                  Helping people in their journey self-improvement through
-                  incrementalchanges from behavioural changes and attitudes
+                  Infraestrutura financeira com integração via webhook,
+                  aprovação inteligente de pagamentos e conformidade com padrão
+                  PCI-DSS.
                 </p>
               </div>
             </div>
@@ -107,12 +109,12 @@ const HomeFourProject = () => {
               <div className="content">
                 <h4>
                   <Link href="project-single">
-                    Contrary to popular belief, Lorem Ipsum is not
+                    Automação Inteligente de Atendimento WhatsApp
                   </Link>
                 </h4>
                 <p>
-                  Helping people in their journey self-improvement through
-                  incrementalchanges from behavioural changes and attitudes
+                  Fluxos conversacionais com inteligência artificial para
+                  qualificação de leads, agendamentos automáticos e suporte ágil.
                 </p>
               </div>
             </div>
@@ -127,12 +129,13 @@ const HomeFourProject = () => {
               <div className="content">
                 <h4>
                   <Link href="project-single">
-                    Internet tend to repeat predefined
+                    Design System & Interface Corporativa
                   </Link>
                 </h4>
                 <p>
-                  Helping people in their journey self-improvement through
-                  incrementalchanges from behavioural changes and attitudes
+                  Criação de identidade visual, prototipagem no Figma e
+                  componentes reutilizáveis para garantir coesão em todos os
+                  produtos.
                 </p>
               </div>
             </div>
@@ -149,12 +152,13 @@ const HomeFourProject = () => {
               <div className="content">
                 <h4>
                   <Link href="project-single">
-                    available, but the majority have
+                    Migração Cloud & Microsserviços
                   </Link>
                 </h4>
                 <p>
-                  Helping people in their journey self-improvement through
-                  incrementalchanges from behavioural changes and attitudes
+                  Reestruturação de infraestrutura em nuvem na AWS com
+                  contêineres Docker, esteiras CI/CD e monitoramento contínuo
+                  com SLA.
                 </p>
               </div>
             </div>
@@ -169,12 +173,13 @@ const HomeFourProject = () => {
               <div className="content">
                 <h4>
                   <Link href="project-single">
-                    The generated Lorem Ipsum is therefore always
+                    Portal Institucional com Blog Otimizado para SEO
                   </Link>
                 </h4>
                 <p>
-                  Helping people in their journey self-improvement through
-                  incrementalchanges from behavioural changes and attitudes
+                  Arquitetura moderna em Next.js com carregamento instantâneo,
+                  métricas Core Web Vitals no verde e alta visibilidade
+                  orgânica.
                 </p>
               </div>
             </div>
@@ -184,7 +189,7 @@ const HomeFourProject = () => {
           <div className="col-12">
             <div className="text-center">
               <Link href="our-projects" className="btn btn--secondary">
-                Load More
+                carregar mais
               </Link>
             </div>
           </div>

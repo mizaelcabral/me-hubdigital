@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -26,7 +26,7 @@ const ProjectSlider = () => {
           <div className="project__text-slider-single">
             <h2 className="light-title">
               <Link href="our-projects">
-                Projects
+                Projetos
                 <i className="fa-sharp fa-solid fa-star"></i>
               </Link>
             </h2>
@@ -36,7 +36,7 @@ const ProjectSlider = () => {
           <div className="project__text-slider-single">
             <h2 className="light-title">
               <Link href="our-projects">
-                Projects
+                Projetos
                 <i className="fa-sharp fa-solid fa-star"></i>
               </Link>
             </h2>
@@ -46,7 +46,7 @@ const ProjectSlider = () => {
           <div className="project__text-slider-single">
             <h2 className="light-title">
               <Link href="our-projects">
-                Projects
+                Projetos
                 <i className="fa-sharp fa-solid fa-star"></i>
               </Link>
             </h2>
@@ -56,7 +56,7 @@ const ProjectSlider = () => {
           <div className="project__text-slider-single">
             <h2 className="light-title">
               <Link href="our-projects">
-                Projects
+                Projetos
                 <i className="fa-sharp fa-solid fa-star"></i>
               </Link>
             </h2>
@@ -66,7 +66,7 @@ const ProjectSlider = () => {
           <div className="project__text-slider-single">
             <h2 className="light-title">
               <Link href="our-projects">
-                Projects
+                Projetos
                 <i className="fa-sharp fa-solid fa-star"></i>
               </Link>
             </h2>
@@ -76,7 +76,7 @@ const ProjectSlider = () => {
           <div className="project__text-slider-single">
             <h2 className="light-title">
               <Link href="our-projects">
-                Projects
+                Projetos
                 <i className="fa-sharp fa-solid fa-star"></i>
               </Link>
             </h2>
@@ -86,7 +86,7 @@ const ProjectSlider = () => {
           <div className="project__text-slider-single">
             <h2 className="light-title">
               <Link href="our-projects">
-                Projects
+                Projetos
                 <i className="fa-sharp fa-solid fa-star"></i>
               </Link>
             </h2>

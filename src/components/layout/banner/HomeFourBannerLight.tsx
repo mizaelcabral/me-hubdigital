@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
@@ -44,9 +44,9 @@ const HomeFourBannerLight = () => {
             <div className="banner-four__content">
               <div className="intro">
                 <p>
-                  I&apos;m a brand led designer that combines creative with
-                  strategy to create compelling brand identity and digital
-                  design experiences.
+                  Criamos produtos digitais, agentes de IA e plataformas web
+                  unindo engenharia de alta performance a um design sofisticado
+                  e focado em escala.
                 </p>
                 <div className="arrow-wrapper">
                   <span className="arrow"></span>
@@ -54,12 +54,12 @@ const HomeFourBannerLight = () => {
               </div>
               <div className="banner-four__title">
                 <h1>
-                  i am a digital designer
+                  somos engenharia digital
                   <Link className="frame g-ban-frame" href="about-us">
                     <Image src={videoframethree} alt="Image" />
                     <i className="fa-solid fa-arrow-up-right"></i>
                   </Link>
-                  & dreamer
+                  & inovação
                 </h1>
               </div>
             </div>
