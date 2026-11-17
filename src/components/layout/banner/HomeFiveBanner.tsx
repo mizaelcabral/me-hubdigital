@@ -95,7 +95,7 @@ const HomeFiveBanner = () => {
             </div>
             <div className="content">
               <h4>
-                <Link href="project-single">Checkout Integrado</Link>
+                <Link href="project-single">Checkout Personalizado</Link>
               </h4>
             </div>
           </div>

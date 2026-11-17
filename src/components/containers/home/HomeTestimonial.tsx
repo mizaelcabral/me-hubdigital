@@ -179,7 +179,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumbtwo} alt="Checkout Integrado e Infraestrutura Cloud" />
+                          <Image src={sthumbtwo} alt="Checkout Personalizado e Infraestrutura Cloud" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"

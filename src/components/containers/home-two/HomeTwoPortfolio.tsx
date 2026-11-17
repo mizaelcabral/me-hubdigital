@@ -217,14 +217,14 @@ const HomeTwoPortfolio = () => {
           >
             <div className="portfolio__single topy-tilt fade-top">
               <Link href="portfolio">
-                <Image src={four} alt="Image" />
+                <Image src={four} alt="Checkout Personalizado" />
               </Link>
               <div className="portfolio__single-content">
                 <Link href="portfolio">
                   <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                 </Link>
                 <h4>
-                  <Link href="portfolio">Checkout Integrado</Link>
+                  <Link href="portfolio">Checkout Personalizado</Link>
                 </h4>
               </div>
             </div>

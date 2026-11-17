@@ -185,7 +185,7 @@ const HomeThreePortfolio = () => {
                         <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                       </Link>
                       <h4>
-                        <Link href="portfolio">Checkout Integrado</Link>
+                        <Link href="portfolio">Checkout Personalizado</Link>
                       </h4>
                     </div>
                   </div>
