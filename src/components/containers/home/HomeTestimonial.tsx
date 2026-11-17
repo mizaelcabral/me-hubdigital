@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import sthumb from "public/images/testimonial/s-thumb.png";
-import sthumbtwo from "public/images/testimonial/s-thumb-two.png";
-import sthumbthree from "public/images/testimonial/s-thumb-three.png";
+import sthumb from "public/images/testimonial/s-thumb.webp";
+import sthumbtwo from "public/images/testimonial/s-thumb-two.webp";
+import sthumbthree from "public/images/testimonial/s-thumb-three.webp";
 
 const HomeTestimonial = () => {
   const [nextSlideIndex, setNextSlideIndex] = useState<number>(1);
@@ -136,7 +136,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumb} alt="Image" />
+                          <Image src={sthumb} alt="Carlos Mendes - Diretor de Operações" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -179,7 +179,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumbtwo} alt="Image" />
+                          <Image src={sthumbtwo} alt="Mariana Alencar - Co-fundadora & COO" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -222,7 +222,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumbthree} alt="Image" />
+                          <Image src={sthumbthree} alt="Rodrigo Fontana - Head de Produto" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
