@@ -14,11 +14,11 @@ const Info = () => {
           <div className="col-12 col-lg-6">
             <div className="four-info__content">
               <p className="primary-text">
-                Uma agência de desenvolvimento digital especializada em inteligência
+                Uma agência de software digital especializada em inteligência
                 artificial, plataformas web e ecossistemas corporativos.
               </p>
               <p>
-                Na ME Hub, combinamos desenvolvimento de software de ponta,
+                Na ME Hub, combinamos software de ponta,
                 automação inteligente e design de conversão para transformar
                 desafios de negócio em vantagens competitivas sustentáveis para
                 empresas em constante crescimento e busca por inovação.

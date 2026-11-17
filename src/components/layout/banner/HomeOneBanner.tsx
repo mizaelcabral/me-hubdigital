@@ -56,7 +56,7 @@ const HomeOneBanner = () => {
                   ME HUB
                   <span className="text-stroke">DIGITAL</span>
                   <span className="interval">
-                    <i className="icon-arrow-top-right"></i> DESENVOLVIMENTO & IA
+                    <i className="icon-arrow-top-right"></i> SOFTWARE & IA
                   </span>
                 </h1>
                 <div className="banner__content-inner">

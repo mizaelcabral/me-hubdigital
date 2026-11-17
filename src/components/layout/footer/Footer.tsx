@@ -71,7 +71,7 @@ const Footer = () => {
               </div>
               <div className="footer__single-content">
                 <p>
-                  Conteúdos estratégicos sobre desenvolvimento de software, IA e
+                  Conteúdos estratégicos sobre software, IA e
                   automação comercial para acelerar sua empresa.
                 </p>
                 <div className="footer__single-form">

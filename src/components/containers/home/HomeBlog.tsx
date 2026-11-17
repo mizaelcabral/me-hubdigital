@@ -62,7 +62,7 @@ const HomeBlog = () => {
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    desenvolvimento web
+                    software web
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                   <p>DESTAQUE</p>

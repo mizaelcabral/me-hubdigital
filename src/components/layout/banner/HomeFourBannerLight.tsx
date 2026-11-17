@@ -45,7 +45,7 @@ const HomeFourBannerLight = () => {
               <div className="intro">
                 <p>
                   Criamos produtos digitais, agentes de IA e plataformas web
-                  unindo desenvolvimento de alta performance a um design sofisticado
+                  unindo software de alta performance a um design sofisticado
                   e focado em escala.
                 </p>
                 <div className="arrow-wrapper">
@@ -54,7 +54,7 @@ const HomeFourBannerLight = () => {
               </div>
               <div className="banner-four__title">
                 <h1>
-                  somos desenvolvimento digital
+                  somos software digital
                   <Link className="frame g-ban-frame" href="about-us">
                     <Image src={videoframethree} alt="Image" />
                     <i className="fa-solid fa-arrow-up-right"></i>

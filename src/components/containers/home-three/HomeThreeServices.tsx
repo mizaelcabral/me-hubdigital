@@ -123,7 +123,7 @@ const HomeThreeServices = () => {
                     </li>
                     <li>
                       <i className="fa-solid fa-angle-right"></i>
-                      Desenvolvimento Next.js & Cloud
+                      Software Next.js & Cloud
                     </li>
                   </ul>
                 </div>

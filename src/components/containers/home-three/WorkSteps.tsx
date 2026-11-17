@@ -121,7 +121,7 @@ const WorkSteps = () => {
                   75
                   <br />%
                 </span>
-                <h5>Desenvolvimento & Automação</h5>
+                <h5>Software & Automação</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{

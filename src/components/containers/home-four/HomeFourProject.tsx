@@ -29,7 +29,7 @@ const HomeFourProject = () => {
                   </Link>
                 </h4>
                 <p>
-                  Desenvolvimento de software completo com dashboard em tempo
+                  Software corporativo completo com dashboard em tempo
                   real, controle de acessos corporativos e alta disponibilidade.
                 </p>
               </div>

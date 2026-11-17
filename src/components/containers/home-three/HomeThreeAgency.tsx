@@ -23,7 +23,7 @@ const HomeThreeAgency = () => {
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Desenvolvimento de software e IA corporativa
+                Soluções em Software e IA corporativa
               </h2>
               <div className="paragraph">
                 <p>

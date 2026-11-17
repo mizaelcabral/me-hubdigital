@@ -22,7 +22,7 @@ const HomeTwoAward = () => {
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Desenvolvimento & <span>Inovação</span>
+                Software & <span>Inovação</span>
               </h2>
               <div className="paragraph">
                 <p>

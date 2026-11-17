@@ -65,7 +65,7 @@ const HomeTwoBanner = () => {
               </div>
               <div className="banner-two__content">
                 <h1 className="title-anim">
-                  DESENVOLVIMENTO <span>DIGITAL & IA</span> PARA MÁXIMA PERFORMANCE
+                  SOFTWARE <span>DIGITAL & IA</span> PARA MÁXIMA PERFORMANCE
                 </h1>
                 <div className="banner-two__content-cta section__content-cta">
                   <div className="paragraph">

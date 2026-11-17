@@ -167,7 +167,7 @@ const HomeTestimonialThree = () => {
                           </div>
                           <div className="content-cta">
                             <h5>Guilherme Prado</h5>
-                            <p>Diretor de Desenvolvimento</p>
+                            <p>Diretor de Software</p>
                           </div>
                         </div>
                       </div>

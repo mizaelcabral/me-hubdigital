@@ -45,7 +45,7 @@ const HomeOffer = () => {
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Soluções Completas em Desenvolvimento Digital
+                Soluções Completas em Software & IA
               </h2>
               <div className="paragraph">
                 <p>
