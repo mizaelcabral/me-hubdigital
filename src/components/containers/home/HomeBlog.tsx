@@ -1,21 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import one from "public/images/blog/one.png";
-import two from "public/images/blog/two.png";
+import one from "public/images/blog/one.webp";
+import two from "public/images/blog/two.webp";
 
 const HomeBlog = () => {
   return (
     <section className="section blog fade-wrapper">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-12 col-lg-8">
+          <div className="col-12">
             <div className="section__header text-center">
               <span className="sub-title">
                 INSIGHTS & BLOG
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-              <h2 className="title title-anim">Artigos & Tendências de Tecnologia</h2>
+              <h2 className="title title-anim blog-title-single-line">
+                Artigos & Tendências de Tecnologia
+              </h2>
             </div>
           </div>
         </div>
@@ -24,7 +26,7 @@ const HomeBlog = () => {
             <div className="blog__single fade-top">
               <div className="blog__single-thumb topy-tilt">
                 <Link href="blog-single">
-                  <Image src={one} alt="Image" />
+                  <Image src={one} alt="Como Agentes de IA Reduzem Custos em Operações Web" />
                 </Link>
               </div>
               <div className="blog__single-content">
@@ -47,7 +49,7 @@ const HomeBlog = () => {
             <div className="blog__single fade-top">
               <div className="blog__single-thumb topy-tilt">
                 <Link href="blog-single">
-                  <Image src={two} alt="Image" />
+                  <Image src={two} alt="Arquitetura Cloud e Gateways: Maximizando o Seu ROI" />
                 </Link>
               </div>
               <div className="blog__single-content">

@@ -937,6 +937,12 @@
 .blog {
   background-color: var(--tertiary-color);
 
+  .blog-title-single-line {
+    @media (min-width: 768px) {
+      white-space: nowrap;
+    }
+  }
+
   .blog__single-thumb {
     a {
       width: 100%;
