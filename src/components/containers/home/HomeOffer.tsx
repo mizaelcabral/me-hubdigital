@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import blogthumb from "public/images/offer/blog-thumb.png";
-import two from "public/images/offer/two.png";
-import three from "public/images/offer/three.png";
+import serviceOne from "public/images/offer/service-one.webp";
+import serviceTwo from "public/images/offer/service-two.webp";
+import serviceThree from "public/images/offer/service-three.webp";
+import serviceFour from "public/images/offer/service-four.webp";
+import serviceFive from "public/images/offer/service-five.webp";
+import serviceSix from "public/images/offer/service-six.webp";
+import serviceSeven from "public/images/offer/service-seven.webp";
 import star from "public/images/offer/star.png";
 
 const HomeOffer = () => {
@@ -73,7 +77,7 @@ const HomeOffer = () => {
                   </Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={blogthumb} alt="Image" />
+                  <Image src={serviceOne} alt="Agentes de IA" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -88,7 +92,7 @@ const HomeOffer = () => {
                   </Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={two} alt="Image" />
+                  <Image src={serviceTwo} alt="Sites & E-commerce" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -103,7 +107,7 @@ const HomeOffer = () => {
                   </Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={three} alt="Image" />
+                  <Image src={serviceThree} alt="Aplicações Web" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -118,7 +122,7 @@ const HomeOffer = () => {
                   </Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={blogthumb} alt="Image" />
+                  <Image src={serviceFour} alt="Gateways de Pagamento" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -133,7 +137,7 @@ const HomeOffer = () => {
                   </Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={two} alt="Image" />
+                  <Image src={serviceFive} alt="Automação & CRM" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -148,7 +152,7 @@ const HomeOffer = () => {
                   </Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={three} alt="Image" />
+                  <Image src={serviceSix} alt="UI/UX & Design" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -163,7 +167,7 @@ const HomeOffer = () => {
                   </Link>
                 </h2>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={blogthumb} alt="Image" />
+                  <Image src={serviceSeven} alt="Hospedagem & Cloud" />
                 </div>
               </div>
             </div>
