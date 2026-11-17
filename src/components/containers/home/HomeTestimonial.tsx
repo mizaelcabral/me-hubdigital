@@ -136,7 +136,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumb} alt="Carlos Mendes - Diretor de Operações" />
+                          <Image src={sthumb} alt="Automação com Agentes de IA e Plataforma Web" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -179,7 +179,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumbtwo} alt="Mariana Alencar - Co-fundadora & COO" />
+                          <Image src={sthumbtwo} alt="Checkout Integrado e Infraestrutura Cloud" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -222,7 +222,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumbthree} alt="Rodrigo Fontana - Head de Produto" />
+                          <Image src={sthumbthree} alt="Redesign de Interfaces UI/UX e Nuvem Escalável" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
