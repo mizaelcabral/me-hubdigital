@@ -180,11 +180,11 @@ const Layout = ({
           href="/images/favicon.png"
           type="image/x-icon"
         />
-        <title>ME Hubdigital — Engenharia Web, IA & Automação</title>
+        <title>ME Hubdigital — Desenvolvimento Web, IA & Automação</title>
         <meta name="keywords" content="agentes ia, automação, web, software, cloud" />
         <meta
           name="description"
-          content="Engenharia web de alto impacto, agentes autônomos de IA e soluções completas para acelerar sua operação."
+          content="Desenvolvimento web de alto impacto, agentes autônomos de IA e soluções completas para acelerar sua operação."
         />
       </Head>
       <div className={combinedClassName}>

@@ -39,7 +39,7 @@ const FooterFour = () => {
                       <i className="fa-regular fa-comment-dots"></i>
                     </Link>
                   </h3>
-                  <p>Engenharia web, IA e inovação contínua</p>
+                  <p>Desenvolvimento web, IA e inovação contínua</p>
                 </div>
               </div>
             </div>

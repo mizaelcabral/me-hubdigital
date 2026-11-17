@@ -18,10 +18,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>ME Hubdigital — Engenharia Web, IA & Automação</title>
+        <title>ME Hubdigital — Desenvolvimento Web, IA & Automação</title>
         <meta
           name="description"
-          content="Engenharia web de alto impacto, agentes autônomos de IA, plataformas SaaS e soluções completas para acelerar operações corporativas."
+          content="Desenvolvimento web de alto impacto, agentes autônomos de IA, plataformas SaaS e soluções completas para acelerar operações corporativas."
         />
       </Head>
       <Suspense fallback={<div>Loading...</div>}>

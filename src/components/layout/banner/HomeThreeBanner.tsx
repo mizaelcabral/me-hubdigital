@@ -49,7 +49,7 @@ const HomeThreeBanner = () => {
                     <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                       <div className="banner-three__content">
                         <h1 className="light-title">
-                          Engenharia Web e Soluções Digitais
+                          Desenvolvimento Web e Soluções Digitais
                         </h1>
                         <div className="section__content-cta cta">
                           <div className="arrow-wrapper d-none d-md-block">
@@ -173,7 +173,7 @@ const HomeThreeBanner = () => {
                 }
               >
                 <span>02</span>
-                <p>ENGENHARIA DE SOFTWARE</p>
+                <p>DESENVOLVIMENTO DE SOFTWARE</p>
                 <div className="slider-progress"></div>
               </div>
               <div

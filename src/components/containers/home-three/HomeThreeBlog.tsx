@@ -57,13 +57,13 @@ const HomeThreeBlog = () => {
                     <div className="blog__single-content">
                       <h4>
                         <Link href="blog-single">
-                          Arquitetura de microsserviços e engenharia Next.js para
+                          Arquitetura de microsserviços e desenvolvimento Next.js para
                           plataformas de alta conversão
                         </Link>
                       </h4>
                       <div className="blog__single-meta">
                         <Link href="blog" className="sub-title">
-                          engenharia
+                          desenvolvimento
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>
                         <p>18 DE OUTUBRO, 2024</p>

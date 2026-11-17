@@ -118,7 +118,7 @@ const FooterTwo = () => {
               </div>
               <div className="paragraph">
                 <p>
-                  Agência de engenharia digital especializada em agentes
+                  Agência de desenvolvimento digital especializada em agentes
                   autônomos de IA, plataformas web sob medida e ecossistemas de
                   alta conversão.
                 </p>

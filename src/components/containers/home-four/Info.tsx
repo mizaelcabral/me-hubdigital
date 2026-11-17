@@ -14,7 +14,7 @@ const Info = () => {
           <div className="col-12 col-lg-6">
             <div className="four-info__content">
               <p className="primary-text">
-                Uma agência de engenharia digital especializada em inteligência
+                Uma agência de desenvolvimento digital especializada em inteligência
                 artificial, plataformas web e ecossistemas corporativos.
               </p>
               <p>

@@ -205,7 +205,7 @@ const HomeTestimonial = () => {
                               Excelente trabalho na integração do checkout e na
                               nossa infraestrutura cloud. Zero lentidão nas vendas
                               e suporte imediato. Uma agência que realmente entrega
-                              engenharia de software com foco em faturamento.
+                              desenvolvimento de software com foco em faturamento.
                             </h4>
                           </div>
                           <div className="content-cta">

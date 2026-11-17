@@ -133,7 +133,7 @@ const HomeTwoPortfolio = () => {
                 onClick={() => handleTabClick(".development")}
               >
                 <span>03</span>
-                Engenharia
+                Desenvolvimento
               </button>
               <button
                 aria-label="Filter Portfolio"
