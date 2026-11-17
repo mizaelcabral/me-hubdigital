@@ -938,8 +938,19 @@
   background-color: var(--tertiary-color);
 
   .blog-title-single-line {
-    @media (min-width: 768px) {
-      white-space: nowrap;
+    white-space: nowrap !important;
+    font-size: clamp(24px, 3.3vw, 50px) !important;
+    display: inline-block !important;
+    max-width: 100% !important;
+
+    .line {
+      display: inline-block !important;
+      white-space: nowrap !important;
+    }
+
+    .word {
+      display: inline-block !important;
+      white-space: nowrap !important;
     }
   }
 
