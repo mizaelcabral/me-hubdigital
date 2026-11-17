@@ -4,13 +4,13 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import one from "public/images/portfolio/one.png";
-import two from "public/images/portfolio/two.png";
-import three from "public/images/portfolio/three.png";
-import four from "public/images/portfolio/four.png";
-import five from "public/images/portfolio/five.png";
-import six from "public/images/portfolio/six.png";
-import seven from "public/images/portfolio/seven.png";
+import one from "public/images/portfolio/one.webp";
+import two from "public/images/portfolio/two.webp";
+import three from "public/images/portfolio/three.webp";
+import four from "public/images/portfolio/four.webp";
+import five from "public/images/portfolio/five.webp";
+import six from "public/images/portfolio/six.webp";
+import seven from "public/images/portfolio/seven.webp";
 import dot from "public/images/portfolio/dot.png";
 
 const PortfolioText = () => {
@@ -116,7 +116,7 @@ const PortfolioText = () => {
               onMouseEnter={() => setHover(0)}
             >
               <Link href="portfolio">
-                <Image src={one} alt="Image" />
+                <Image src={one} alt="SaaS & Web App" />
               </Link>
               <div className="portfolio__single-content">
                 <Link href="portfolio">
@@ -137,7 +137,7 @@ const PortfolioText = () => {
               onMouseEnter={() => setHover(1)}
             >
               <Link href="portfolio">
-                <Image src={two} alt="Image" />
+                <Image src={two} alt="Agente IA Suporte" />
               </Link>
               <div className="portfolio__single-content">
                 <Link href="portfolio">
@@ -158,7 +158,7 @@ const PortfolioText = () => {
               onMouseEnter={() => setHover(2)}
             >
               <Link href="portfolio">
-                <Image src={three} alt="Image" />
+                <Image src={three} alt="E-commerce Alta Escala" />
               </Link>
               <div className="portfolio__single-content">
                 <Link href="portfolio">
@@ -179,7 +179,7 @@ const PortfolioText = () => {
               onMouseEnter={() => setHover(3)}
             >
               <Link href="portfolio">
-                <Image src={four} alt="Image" />
+                <Image src={four} alt="Checkout Integrado" />
               </Link>
               <div className="portfolio__single-content">
                 <Link href="portfolio">
@@ -200,7 +200,7 @@ const PortfolioText = () => {
               onMouseEnter={() => setHover(4)}
             >
               <Link href="portfolio">
-                <Image src={five} alt="Image" />
+                <Image src={five} alt="Automação WhatsApp" />
               </Link>
               <div className="portfolio__single-content">
                 <Link href="portfolio">
@@ -221,7 +221,7 @@ const PortfolioText = () => {
               onMouseEnter={() => setHover(5)}
             >
               <Link href="portfolio">
-                <Image src={six} alt="Image" />
+                <Image src={six} alt="UI/UX & Design Figma" />
               </Link>
               <div className="portfolio__single-content">
                 <Link href="portfolio">
@@ -256,7 +256,7 @@ const PortfolioText = () => {
               onMouseEnter={() => setHover(6)}
             >
               <Link href="portfolio">
-                <Image src={seven} alt="Image" />
+                <Image src={seven} alt="Cloud VPS & DevOps" />
               </Link>
               <div className="portfolio__single-content">
                 <Link href="portfolio">
