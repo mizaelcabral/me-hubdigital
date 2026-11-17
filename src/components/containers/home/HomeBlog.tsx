@@ -11,19 +11,14 @@ const HomeBlog = () => {
         <div className="row justify-content-center">
           <div className="col-12 text-center">
             <div className="section__header text-center">
-              <span className="sub-title">
-                INSIGHTS & BLOG
-                <i className="fa-solid fa-arrow-right"></i>
-              </span>
-              <h2
-                className="title title-anim blog-title-single-line"
-                style={{
-                  whiteSpace: "nowrap",
-                  fontSize: "clamp(24px, 3.3vw, 50px)",
-                  display: "inline-block",
-                }}
-              >
-                Artigos & Tendências de Tecnologia
+              <div>
+                <span className="sub-title">
+                  INSIGHTS & BLOG
+                  <i className="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+              <h2 className="title title-anim">
+                Artigos & Tendências
               </h2>
             </div>
           </div>
