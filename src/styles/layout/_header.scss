@@ -28,12 +28,18 @@
   }
 
   .navbar__item {
-    button,a
+    button,
     a {
       padding: 41px 20px;
       text-transform: uppercase;
       font-weight: 500;
       width: 100%;
+      color: inherit;
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--primary-color);
+      }
     }
   }
 
