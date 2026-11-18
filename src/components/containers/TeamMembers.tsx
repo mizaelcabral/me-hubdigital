@@ -23,11 +23,11 @@ const TeamMembers = () => {
                 <div className="col-12 col-lg-8">
                   <div className="section__header text-center text-lg-start mb-0">
                     <span className="sub-title">
-                      our awesome crew
+                      NOSSA EQUIPE
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                     <h2 className="title title-anim">
-                      our xpovio team members
+                      Quem faz a ME Hubdigital acontecer
                     </h2>
                   </div>
                 </div>
@@ -37,7 +37,7 @@ const TeamMembers = () => {
                       href="our-teams"
                       className="btn btn--primary text-capitalize"
                     >
-                      view all teams
+                      Ver toda a equipe
                     </Link>
                   </div>
                 </div>
@@ -89,14 +89,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Automatizando processos e criando o futuro com agentes de IA
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="team-single">Lucas Prado</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Automação & Agentes de IA</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -125,23 +124,23 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="team-single">Lucas Prado</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Automação & Agentes de IA</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Especialista no desenvolvimento de agentes inteligentes
+                        de IA, integrações de fluxos autônomos e automação de
+                        processos na ME Hubdigital.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
+                            <p>Agentes Autônomos de IA</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
+                          <div className="skill-bar-wrapper" data-percent="95%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -151,7 +150,7 @@ const TeamMembers = () => {
                         </div>
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Automações & Workflows</p>
                           </div>
                           <div className="skill-bar-wrapper" data-percent="90%">
                             <div className="skill-bar">
@@ -163,8 +162,8 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Potencializando a produtividade com inteligência
+                        artificial aplicada em novos fluxos.
                       </p>
                     </div>
                     <div className="social">
@@ -214,14 +213,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Capturando a essência e a identidade através das lentes
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="team-single">Beatriz Lima</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Fotógrafa da ME</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -250,23 +248,23 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="team-single">Beatriz Lima</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Fotógrafa da ME</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Especialista em fotografia profissional, produção de
+                        conteúdo visual refinado e captura de momentos autênticos
+                        para toda a ME Hubdigital.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
+                            <p>Fotografia & Iluminação</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
+                          <div className="skill-bar-wrapper" data-percent="95%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -276,7 +274,7 @@ const TeamMembers = () => {
                         </div>
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Edição & Tratamento Visual</p>
                           </div>
                           <div className="skill-bar-wrapper" data-percent="90%">
                             <div className="skill-bar">
@@ -288,8 +286,8 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Transformando cada olhar em imagens memoráveis que
+                        valorizam a identidade da empresa.
                       </p>
                     </div>
                     <div className="social">
@@ -339,14 +337,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Conectando oportunidades e gerando parcerias de sucesso
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="team-single">Carlos Silveira</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Prospecção & Vendas</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -375,23 +372,23 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="team-single">Carlos Silveira</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Prospecção & Vendas</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Atuando com prospecção estratégica de novos clientes,
+                        expansão de vendas B2B e geração de parcerias de alto
+                        impacto para a ME Hubdigital.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
+                            <p>Prospecção Estratégica</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
+                          <div className="skill-bar-wrapper" data-percent="95%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -401,7 +398,7 @@ const TeamMembers = () => {
                         </div>
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Negociação & Vendas B2B</p>
                           </div>
                           <div className="skill-bar-wrapper" data-percent="90%">
                             <div className="skill-bar">
@@ -413,8 +410,8 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Transformando oportunidades em parcerias sólidas e
+                        crescimento sustentável de vendas.
                       </p>
                     </div>
                     <div className="social">
@@ -464,14 +461,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Desenvolvendo soluções eficientes através do código
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="team-single">Rui Mendes</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Programador Júnior</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -500,23 +496,23 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="team-single">Rui Mendes</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Programador Júnior</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Atuando como programador júnior no desenvolvimento de
+                        software web, automações eficientes e suporte à
+                        implementação de soluções digitais.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
+                            <p>Desenvolvimento Web</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
+                          <div className="skill-bar-wrapper" data-percent="85%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -526,9 +522,9 @@ const TeamMembers = () => {
                         </div>
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Lógica & Automação</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="90%">
+                          <div className="skill-bar-wrapper" data-percent="80%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -538,8 +534,8 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Foco constante no aprendizado de novas tecnologias e em
+                        escrever código de qualidade.
                       </p>
                     </div>
                     <div className="social">
@@ -589,14 +585,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Inovação e tecnologia transformando o seu negócio
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="team-single">Mizael Cabral</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>CEO</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -625,16 +620,16 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="team-single">Mizael Cabral</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>CEO</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Liderando a evolução digital através de inovação ágil,
+                        inteligência artificial e soluções robustas em software
+                        web de máxima performance.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
@@ -663,8 +658,8 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Compromisso com excelência técnica e inovação contínua
+                        para o sucesso do seu negócio.
                       </p>
                     </div>
                     <div className="social">
@@ -714,14 +709,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Conectando marcas e pessoas através de conteúdo
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="team-single">Rafaela Mendes</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Social Media</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -750,33 +744,21 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="team-single">Rafaela Mendes</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Social Media</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Gestão estratégica de redes sociais, criação de conteúdo
+                        criativo, conexão com a comunidade e o fortalecimento da
+                        marca na ME Hubdigital.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
-                          </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
-                            <div className="skill-bar">
-                              <div className="skill-bar-percent">
-                                <span className="percent-value"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="skill-bar-single">
-                          <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Social Media & Conteúdo</p>
                           </div>
                           <div className="skill-bar-wrapper" data-percent="90%">
                             <div className="skill-bar">
@@ -786,10 +768,22 @@ const TeamMembers = () => {
                             </div>
                           </div>
                         </div>
+                        <div className="skill-bar-single">
+                          <div className="skill-bar-title">
+                            <p>Branding & Engajamento</p>
+                          </div>
+                          <div className="skill-bar-wrapper" data-percent="85%">
+                            <div className="skill-bar">
+                              <div className="skill-bar-percent">
+                                <span className="percent-value"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Criando narrativas autênticas e estratégias de impacto
+                        para engajar nossa comunidade.
                       </p>
                     </div>
                     <div className="social">
@@ -839,14 +833,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Garantindo solidez financeira e eficiência contábil
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="team-single">Barbara Santiago</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Financeiro & Contabilidade</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -875,23 +868,23 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="team-single">Barbara Santiago</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Financeiro & Contabilidade</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Gestão estratégica financeira e contábil, garantindo
+                        conformidade, sustentabilidade e eficiência no
+                        crescimento efetivo da ME Hubdigital.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
+                            <p>Gestão Financeira</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
+                          <div className="skill-bar-wrapper" data-percent="95%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -901,7 +894,7 @@ const TeamMembers = () => {
                         </div>
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Controladoria & Contábil</p>
                           </div>
                           <div className="skill-bar-wrapper" data-percent="90%">
                             <div className="skill-bar">
@@ -913,8 +906,8 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Compromisso com rigor contábil, controle fiscal e
+                        solidez financeira em cada decisão.
                       </p>
                     </div>
                     <div className="social">

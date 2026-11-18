@@ -11,7 +11,11 @@ import AboutCta from "@/components/containers/home-two/AboutCta";
 const AboutUs = () => {
   return (
     <Layout header={2} footer={5} video={0}>
-      <CmnBanner title="About Us" navigation="About Us" />
+      <CmnBanner
+        title="Quem Somos"
+        navigation="Quem Somos"
+        content="Somos uma empresa AI-First especializada em potencializar negócios com software web moderno, inteligência artificial integrada e agentes autônomos de alta performance."
+      />
       <HomeTwoModal />
       <Agency />
       <TeamMembers />

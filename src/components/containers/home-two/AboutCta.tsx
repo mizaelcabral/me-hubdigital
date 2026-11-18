@@ -15,8 +15,8 @@ const AboutCta = () => {
               <div className="row justify-content-center">
                 <div className="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-9">
                   <div className="section__header text-center">
-                    <h2 className="title">
-                      Stay Ahead With Our Top Notch Digital Services
+                    <h2 className="title" style={{ textTransform: "none" }}>
+                      Fique à frente com nossas soluções digitais e IA
                     </h2>
                   </div>
                   <div className="footer__single-form">
@@ -26,7 +26,7 @@ const AboutCta = () => {
                           type="email"
                           name="subscribe-news"
                           id="subscribeNews"
-                          placeholder="Enter Your Email"
+                          placeholder="Digite seu e-mail"
                           required
                         />
                         <button type="submit" className="subscribe">

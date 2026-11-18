@@ -7,6 +7,7 @@ import three from "public/images/teams/three.png";
 import four from "public/images/teams/four.png";
 import five from "public/images/teams/five.png";
 import six from "public/images/teams/six.png";
+import seven from "public/images/teams/seven.png";
 
 const TeamMain = () => {
   return (
@@ -25,13 +26,13 @@ const TeamMain = () => {
                 >
                   <div className="info">
                     <p>
-                      “Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      “Automatizando processos e criando o futuro com agentes de IA
                     </p>
                   </div>
                   <h4>
-                    <Link href="team-single">Sana p. Lesh</Link>
+                    <Link href="team-single">Lucas Prado</Link>
                   </h4>
-                  <p>Senior engineer</p>
+                  <p>Automação & Agentes de IA</p>
                   <div className="social-alt">
                     <Link
                       href="https://www.facebook.com/"
@@ -71,13 +72,13 @@ const TeamMain = () => {
                 >
                   <div className="info">
                     <p>
-                      “Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      “Capturando a essência e a identidade através das lentes
                     </p>
                   </div>
                   <h4>
-                    <Link href="team-single">Sana p. Lesh</Link>
+                    <Link href="team-single">Beatriz Lima</Link>
                   </h4>
-                  <p>Senior engineer</p>
+                  <p>Fotógrafa da ME</p>
                   <div className="social-alt">
                     <Link
                       href="https://www.facebook.com/"
@@ -117,13 +118,13 @@ const TeamMain = () => {
                 >
                   <div className="info">
                     <p>
-                      “Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      “Conectando oportunidades e gerando parcerias de sucesso
                     </p>
                   </div>
                   <h4>
-                    <Link href="team-single">Sana p. Lesh</Link>
+                    <Link href="team-single">Carlos Silveira</Link>
                   </h4>
-                  <p>Senior engineer</p>
+                  <p>Prospecção & Vendas</p>
                   <div className="social-alt">
                     <Link
                       href="https://www.facebook.com/"
@@ -163,13 +164,13 @@ const TeamMain = () => {
                 >
                   <div className="info">
                     <p>
-                      “Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      “Desenvolvendo soluções eficientes através do código
                     </p>
                   </div>
                   <h4>
-                    <Link href="team-single">Sana p. Lesh</Link>
+                    <Link href="team-single">Rui Mendes</Link>
                   </h4>
-                  <p>Senior engineer</p>
+                  <p>Programador Júnior</p>
                   <div className="social-alt">
                     <Link
                       href="https://www.facebook.com/"
@@ -209,13 +210,13 @@ const TeamMain = () => {
                 >
                   <div className="info">
                     <p>
-                      “Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      “Inovação e tecnologia transformando o seu negócio
                     </p>
                   </div>
                   <h4>
-                    <Link href="team-single">Sana p. Lesh</Link>
+                    <Link href="team-single">Mizael Cabral</Link>
                   </h4>
-                  <p>Senior engineer</p>
+                  <p>CEO</p>
                   <div className="social-alt">
                     <Link
                       href="https://www.facebook.com/"
@@ -255,13 +256,59 @@ const TeamMain = () => {
                 >
                   <div className="info">
                     <p>
-                      “Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      “Conectando marcas e pessoas através de conteúdo
                     </p>
                   </div>
                   <h4>
-                    <Link href="team-single">Sana p. Lesh</Link>
+                    <Link href="team-single">Rafaela Mendes</Link>
                   </h4>
-                  <p>Senior engineer</p>
+                  <p>Social Media</p>
+                  <div className="social-alt">
+                    <Link
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      aria-label="share us on facebook"
+                    >
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                    <Link
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                      aria-label="share us on twitter"
+                    >
+                      <i className="fa-brands fa-twitter"></i>
+                    </Link>
+                    <Link
+                      href="https://www.pinterest.com/"
+                      target="_blank"
+                      aria-label="share us on pinterest"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-md-6 col-xl-4">
+            <div className="team-m__single fade-top">
+              <div className="thumb">
+                <Link href="team-single">
+                  <Image src={seven} alt="Image" />
+                </Link>
+                <div
+                  className="thumb__content"
+                  style={{ backgroundImage: "url('/images/teams/bg.png')" }}
+                >
+                  <div className="info">
+                    <p>
+                      “Garantindo solidez financeira e eficiência contábil
+                    </p>
+                  </div>
+                  <h4>
+                    <Link href="team-single">Barbara Santiago</Link>
+                  </h4>
+                  <p>Financeiro & Contabilidade</p>
                   <div className="social-alt">
                     <Link
                       href="https://www.facebook.com/"
