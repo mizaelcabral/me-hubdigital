@@ -76,141 +76,52 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                               Agência Criativa Light
                             </Link>
                           </li>
+                        </ul>
+                      </li>
+                      <li className="navbar__item nav-fade">
+                        <Link href="about-us">Quem Somos</Link>
+                      </li>
+                      <li className="navbar__item navbar__item--has-children nav-fade">
+                        <button
+                          aria-label="dropdown menu"
+                          className="navbar__dropdown-label"
+                        >
+                          Serviços
+                        </button>
+                        <ul className="navbar__sub-menu">
                           <li>
-                            <Link href="index-two">Agência Digital</Link>
+                            <Link href="our-services">Nossos Serviços</Link>
                           </li>
                           <li>
-                            <Link href="index-two-light">
-                              Agência Digital Light
-                            </Link>
+                            <Link href="service-single">Detalhes do Serviço</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className="navbar__item navbar__item--has-children nav-fade">
+                        <button
+                          aria-label="dropdown menu"
+                          className="navbar__dropdown-label"
+                        >
+                          Projetos
+                        </button>
+                        <ul className="navbar__sub-menu">
+                          <li>
+                            <Link href="our-projects">Nossos Projetos</Link>
                           </li>
                           <li>
-                            <Link href="index-three">Soluções em TI</Link>
-                          </li>
-                          <li>
-                            <Link href="index-three-light">
-                              Soluções em TI Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-four">Portfólio Pessoal</Link>
-                          </li>
-                          <li>
-                            <Link href="index-four-light">
-                              Portfólio Pessoal Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-five">Portfólio Interativo</Link>
-                          </li>
-                          <li>
-                            <Link href="index-five-light">
-                              Portfólio Interativo Light
-                            </Link>
+                            <Link href="project-single">Detalhes do Projeto</Link>
                           </li>
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="about-us">About Us</Link>
-                      </li>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Services
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="our-services">Our Services</Link>
-                          </li>
-                          <li>
-                            <Link href="service-single">Service Details</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Projects
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="our-projects">Our Projects</Link>
-                          </li>
-                          <li>
-                            <Link href="project-single">Project Details</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Pages
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="faq">FAQ</Link>
-                          </li>
-                          <li>
-                            <Link href="404">Error</Link>
-                          </li>
-                          <li>
-                            <Link href="our-story">Our Story</Link>
-                          </li>
-                          <li>
-                            <Link href="portfolio">Portfolio</Link>
-                          </li>
-                          <li className="navbar__item navbar__item--has-children">
-                            <button
-                              aria-label="dropdown menu"
-                              className="navbar__dropdown-label navbar__dropdown-label-sub"
-                            >
-                              Team
-                            </button>
-                            <ul className="navbar__sub-menu navbar__sub-menu__nested">
-                              <li>
-                                <Link href="our-teams">Our Teams</Link>
-                              </li>
-                              <li>
-                                <Link href="team-single">Team Details</Link>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <Link href="client-feedback">Testimonials</Link>
-                          </li>
-                          <li>
-                            <Link href="contact-us">Contact Us</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Blog
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="blog">Blog</Link>
-                          </li>
-                          <li>
-                            <Link href="blog-single">Blog Details</Link>
-                          </li>
-                        </ul>
+                        <Link href="contact-us">Contato</Link>
                       </li>
                     </ul>
                   </div>
                   <div className="navbar__options">
                     <div className="navbar__mobile-options d-none d-sm-flex">
                       <Link href="contact-us" className="btn btn--secondary">
-                        Let&apos;s Talk
+                        Falar Conosco
                       </Link>
                     </div>
                     <button

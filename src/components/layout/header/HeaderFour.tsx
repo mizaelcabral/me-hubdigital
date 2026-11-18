@@ -70,7 +70,7 @@ const HeaderFour = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                     <div className="tertiary-cta d-none d-sm-flex">
                       <div className="navbar__mobile-options">
                         <Link href="contact-us" className="btn btn--secondary">
-                          Let&apos;s Talk
+                          Falar Conosco
                           <i className="fa-solid fa-arrow-up-right"></i>
                         </Link>
                       </div>

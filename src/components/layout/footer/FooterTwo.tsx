@@ -207,13 +207,13 @@ const FooterTwo = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="about-us">Sobre Nós</Link>
+                  <Link href="about-us">Quem Somos</Link>
                 </li>
                 <li>
                   <Link href="our-services">Serviços</Link>
                 </li>
                 <li>
-                  <Link href="blog">Blog</Link>
+                  <Link href="our-projects">Projetos</Link>
                 </li>
                 <li>
                   <Link href="contact-us">Contato</Link>

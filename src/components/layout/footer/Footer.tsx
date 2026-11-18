@@ -49,13 +49,13 @@ const Footer = () => {
               <div className="footer__single-content">
                 <ul>
                   <li>
-                    <Link href="about-us">Sobre Nós</Link>
+                    <Link href="about-us">Quem Somos</Link>
                   </li>
                   <li>
                     <Link href="our-services">Serviços</Link>
                   </li>
                   <li>
-                    <Link href="client-feedback">Clientes</Link>
+                    <Link href="our-projects">Projetos</Link>
                   </li>
                   <li>
                     <Link href="contact-us">Contato</Link>

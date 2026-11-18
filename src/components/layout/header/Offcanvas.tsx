@@ -10,7 +10,6 @@ interface HeaderProps {
 
 const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
-  const [openNestedMenu, setOpenNestedMenu] = useState<string | null>(null);
 
   const handleSubmenu = (submenu: string) => {
     if (submenu === openSubMenu) {
@@ -18,22 +17,6 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
     } else {
       setOpenSubMenu(submenu);
     }
-  };
-
-  const handleNestedmenu = (nestmenu: string) => {
-    if (nestmenu === openNestedMenu) {
-      setOpenNestedMenu(null);
-    } else {
-      setOpenNestedMenu(nestmenu);
-    }
-  };
-
-  const isNestedMenuOpen = (nestmenu: string) => {
-    return nestmenu === openNestedMenu ? " nav__dropdown-active" : " ";
-  };
-
-  const isNestedMenuButton = (nestmenu: string) => {
-    return nestmenu === openNestedMenu ? " navbar__item-active" : " ";
   };
 
   const isSubMenuOpen = (submenu: string) => {
@@ -103,38 +86,10 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                     <li>
                       <Link href="index-light">Agência Criativa Light</Link>
                     </li>
-                    <li>
-                      <Link href="index-two">Agência Digital</Link>
-                    </li>
-                    <li>
-                      <Link href="index-two-light">Agência Digital Light</Link>
-                    </li>
-                    <li>
-                      <Link href="index-three">Soluções em TI</Link>
-                    </li>
-                    <li>
-                      <Link href="index-three-light">Soluções em TI Light</Link>
-                    </li>
-                    <li>
-                      <Link href="index-four">Portfólio Pessoal</Link>
-                    </li>
-                    <li>
-                      <Link href="index-four-light">
-                        Portfólio Pessoal Light
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="index-five">Portfólio Interativo</Link>
-                    </li>
-                    <li>
-                      <Link href="index-five-light">
-                        Portfólio Interativo Light
-                      </Link>
-                    </li>
                   </ul>
                 </li>
                 <li className="navbar__item nav-fade">
-                  <Link href="about-us">About Us</Link>
+                  <Link href="about-us">Quem Somos</Link>
                 </li>
                 <li className="navbar__item navbar__item--has-children nav-fade">
                   <button
@@ -144,16 +99,16 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                     )}`}
                     onClick={() => handleSubmenu("services")}
                   >
-                    Services
+                    Serviços
                   </button>
                   <ul
                     className={`navbar__sub-menu ${isSubMenuOpen("services")}`}
                   >
                     <li>
-                      <Link href="our-services">Our Services</Link>
+                      <Link href="our-services">Nossos Serviços</Link>
                     </li>
                     <li>
-                      <Link href="service-single">Service Details</Link>
+                      <Link href="service-single">Detalhes do Serviço</Link>
                     </li>
                   </ul>
                 </li>
@@ -165,91 +120,21 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                     )}`}
                     onClick={() => handleSubmenu("projects")}
                   >
-                    Projects
+                    Projetos
                   </button>
                   <ul
                     className={`navbar__sub-menu ${isSubMenuOpen("projects")}`}
                   >
                     <li>
-                      <Link href="our-projects">Our Projects</Link>
+                      <Link href="our-projects">Nossos Projetos</Link>
                     </li>
                     <li>
-                      <Link href="project-single">Project Details</Link>
+                      <Link href="project-single">Detalhes do Projeto</Link>
                     </li>
                   </ul>
                 </li>
-                <li className="navbar__item navbar__item--has-children nav-fade">
-                  <button
-                    aria-label="dropdown menu"
-                    className={`navbar__dropdown-label ${isSubMenuButton(
-                      "pages"
-                    )}`}
-                    onClick={() => handleSubmenu("pages")}
-                  >
-                    Pages
-                  </button>
-                  <ul className={`navbar__sub-menu ${isSubMenuOpen("pages")}`}>
-                    <li>
-                      <Link href="faq">FAQ</Link>
-                    </li>
-                    <li>
-                      <Link href="404">Error</Link>
-                    </li>
-                    <li>
-                      <Link href="our-story">Our Story</Link>
-                    </li>
-                    <li>
-                      <Link href="portfolio">Portfolio</Link>
-                    </li>
-                    <li className="navbar__item navbar__item--has-children">
-                      <button
-                        aria-label="dropdown menu"
-                        className={`navbar__dropdown-label navbar__dropdown-label-sub ${isNestedMenuButton(
-                          "team"
-                        )}`}
-                        onClick={() => handleNestedmenu("team")}
-                      >
-                        Team
-                      </button>
-                      <ul
-                        className={`navbar__sub-menu navbar__sub-menu__nested ${isNestedMenuOpen(
-                          "team"
-                        )}`}
-                      >
-                        <li>
-                          <Link href="our-teams">Our Teams</Link>
-                        </li>
-                        <li>
-                          <Link href="team-single">Team Details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link href="client-feedback">Testimonials</Link>
-                    </li>
-                    <li>
-                      <Link href="contact-us">Contact Us</Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="navbar__item navbar__item--has-children nav-fade">
-                  <button
-                    aria-label="dropdown menu"
-                    className={`navbar__dropdown-label navbar__dropdown-label-sub ${isSubMenuButton(
-                      "blog"
-                    )}`}
-                    onClick={() => handleSubmenu("blog")}
-                  >
-                    Blog
-                  </button>
-                  <ul className={`navbar__sub-menu ${isSubMenuOpen("blog")}`}>
-                    <li>
-                      <Link href="blog">Blog</Link>
-                    </li>
-                    <li>
-                      <Link href="blog-single">Blog Details</Link>
-                    </li>
-                  </ul>
+                <li className="navbar__item nav-fade">
+                  <Link href="contact-us">Contato</Link>
                 </li>
               </ul>
             </div>

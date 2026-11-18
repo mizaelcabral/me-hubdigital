@@ -215,16 +215,16 @@ const FooterFive = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="about-us">About</Link>
+                  <Link href="about-us">Quem Somos</Link>
                 </li>
                 <li>
-                  <Link href="our-services">Services</Link>
+                  <Link href="our-services">Serviços</Link>
                 </li>
                 <li>
-                  <Link href="blog">Blog</Link>
+                  <Link href="our-projects">Projetos</Link>
                 </li>
                 <li>
-                  <Link href="contact-us">Contact</Link>
+                  <Link href="contact-us">Contato</Link>
                 </li>
               </ul>
             </div>
