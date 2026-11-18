@@ -121,6 +121,9 @@ const HeaderFive = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
+                        <Link href="faq">FAQ</Link>
+                      </li>
+                      <li className="navbar__item nav-fade">
                         <Link href="contact-us">Contato</Link>
                       </li>
                     </ul>

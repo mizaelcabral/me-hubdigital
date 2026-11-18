@@ -216,6 +216,9 @@ const FooterTwo = () => {
                   <Link href="our-projects">Projetos</Link>
                 </li>
                 <li>
+                  <Link href="faq">FAQ</Link>
+                </li>
+                <li>
                   <Link href="contact-us">Contato</Link>
                 </li>
               </ul>
