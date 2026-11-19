@@ -50,13 +50,13 @@ const HomeBlog = () => {
           <div className="col-12 col-md-6">
             <div className="blog__single fade-top">
               <div className="blog__single-thumb topy-tilt">
-                <Link href="blog-single">
+                <Link href="/arquitetura-cloud-gateways">
                   <Image src={two} alt="Arquitetura Cloud e Gateways: Maximizando o Seu ROI" />
                 </Link>
               </div>
               <div className="blog__single-content">
                 <h4>
-                  <Link href="blog-single">
+                  <Link href="/arquitetura-cloud-gateways">
                     Arquitetura Cloud e Gateways: Maximizando o Seu ROI
                   </Link>
                 </h4>

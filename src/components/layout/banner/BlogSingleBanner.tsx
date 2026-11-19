@@ -1,7 +1,15 @@
 ﻿import React from "react";
 import Link from "next/link";
 
-const BlogSingleBanner = () => {
+interface BlogSingleBannerProps {
+  title?: string;
+  category?: string;
+}
+
+const BlogSingleBanner = ({
+  title = "Como Agentes de IA Reduzem Custos em Operações Web",
+  category = "Inteligência Artificial",
+}: BlogSingleBannerProps) => {
   return (
     <section
       className="cmn-banner bg-img"
@@ -12,7 +20,7 @@ const BlogSingleBanner = () => {
           <div className="col-12">
             <div className="text-center text-lg-start">
               <h2 className="title title-anim">
-                We denounce with righteous indignation
+                {title}
               </h2>
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
@@ -22,8 +30,13 @@ const BlogSingleBanner = () => {
                       Home
                     </Link>
                   </li>
+                  <li className="breadcrumb-item">
+                    <Link href="/blog">
+                      Blog
+                    </Link>
+                  </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    Blog Details
+                    {category}
                   </li>
                 </ol>
               </nav>
