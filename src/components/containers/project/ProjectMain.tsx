@@ -9,6 +9,7 @@ import hrthree from "public/images/projects/hr-three.png";
 import hrfour from "public/images/projects/hr-four.png";
 import hrfive from "public/images/projects/hr-five.png";
 import hrsix from "public/images/projects/hr-six.png";
+import abblaCapa from "public/images/projects/projeto-abbla/PROJETO-ABBLA-CAPA.png";
 
 gsap.registerPlugin(ScrollTrigger);
 const ProjectMain = () => {
@@ -46,16 +47,16 @@ const ProjectMain = () => {
     <section className="section project-sl" ref={slider}>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrone} alt="Image" />
+          <Link href="project-abbla">
+            <Image src={abblaCapa} alt="Software CRM Atendimento" />
           </Link>
         </div>
         <div className="content">
           <h2>
-            <Link href="project-single">
-              mobile app
+            <Link href="project-abbla">
+              Software CRM
               <br />
-              development
+              Atendimento
             </Link>
           </h2>
         </div>
@@ -142,16 +143,16 @@ const ProjectMain = () => {
       </div>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrone} alt="Image" />
+          <Link href="project-abbla">
+            <Image src={abblaCapa} alt="Software CRM Atendimento" />
           </Link>
         </div>
         <div className="content">
           <h2>
-            <Link href="project-single">
-              mobile app
+            <Link href="project-abbla">
+              Software CRM
               <br />
-              development
+              Atendimento
             </Link>
           </h2>
         </div>

@@ -115,9 +115,6 @@ const HeaderFive = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           <li>
                             <Link href="our-projects">Nossos Projetos</Link>
                           </li>
-                          <li>
-                            <Link href="project-single">Detalhes do Projeto</Link>
-                          </li>
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
