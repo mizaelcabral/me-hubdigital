@@ -10,6 +10,7 @@ import hrfour from "public/images/projects/hr-four.png";
 import hrfive from "public/images/projects/hr-five.png";
 import hrsix from "public/images/projects/hr-six.png";
 import abblaCapa from "public/images/projects/projeto-abbla/PROJETO-ABBLA-CAPA.png";
+import quraCapa from "public/images/projects/projeto-qura/PROJETO-QURA-CAPA.png";
 
 gsap.registerPlugin(ScrollTrigger);
 const ProjectMain = () => {
@@ -63,16 +64,16 @@ const ProjectMain = () => {
       </div>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrtwo} alt="Image" />
+          <Link href="project-qura">
+            <Image src={quraCapa} alt="Software ID Carteira Qura" />
           </Link>
         </div>
         <div className="content">
           <h2>
-            <Link href="project-single">
-              brand identity
+            <Link href="project-qura">
+              Software ID
               <br />
-              difference
+              Carteira Qura
             </Link>
           </h2>
         </div>
@@ -159,16 +160,16 @@ const ProjectMain = () => {
       </div>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrtwo} alt="Image" />
+          <Link href="project-qura">
+            <Image src={quraCapa} alt="Software ID Carteira Qura" />
           </Link>
         </div>
         <div className="content">
           <h2>
-            <Link href="project-single">
-              brand identity
+            <Link href="project-qura">
+              Software ID
               <br />
-              difference
+              Carteira Qura
             </Link>
           </h2>
         </div>
