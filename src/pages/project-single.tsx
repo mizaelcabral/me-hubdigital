@@ -9,11 +9,11 @@ const ProjectDetails = () => {
   return (
     <Layout header={2} footer={5} video={0}>
       <Head>
-        <title>Project Abbla — Software CRM Atendimento | ME Hubdigital</title>
+        <title>Projeto Abbla — Software CRM Atendimento | ME Hubdigital</title>
       </Head>
       <CmnBanner
-        title="Project Abbla"
-        navigation="Project Abbla"
+        title="Projeto Abbla"
+        navigation="Projeto Abbla"
         parent="Projetos"
         parentLink="our-projects"
         content="Conheça o AbblaHUB: ecossistema omnichannel com atendimento inteligente, conexão com API oficial da Meta, automações no-code e agentes de IA."
