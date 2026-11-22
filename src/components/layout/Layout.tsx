@@ -140,34 +140,45 @@ const Layout = ({
 
   // split text animation
   useEffect(() => {
-    const myText = new SplitType(".title-anim");
-    const titleAnims = document.querySelectorAll(".title-anim");
+    let myText: any;
+    try {
+      myText = new SplitType(".title-anim");
+      const titleAnims = document.querySelectorAll(".title-anim");
 
-    titleAnims.forEach((titleAnim) => {
-      const charElements = titleAnim.querySelectorAll(".char");
+      titleAnims.forEach((titleAnim) => {
+        const charElements = titleAnim.querySelectorAll(".char");
 
-      charElements.forEach((char, index) => {
-        const tl2 = gsap.timeline({
-          scrollTrigger: {
-            trigger: char,
-            start: "top 90%",
-            end: "bottom 60%",
-            scrub: false,
-            markers: false,
-            toggleActions: "play none none none",
-          },
-        });
+        charElements.forEach((char, index) => {
+          const tl2 = gsap.timeline({
+            scrollTrigger: {
+              trigger: char,
+              start: "top 90%",
+              end: "bottom 60%",
+              scrub: false,
+              markers: false,
+              toggleActions: "play none none none",
+            },
+          });
 
-        const charDelay = index * 0.03;
+          const charDelay = index * 0.03;
 
-        tl2.from(char, {
-          duration: 0.8,
-          x: 70,
-          delay: charDelay,
-          autoAlpha: 0,
+          tl2.from(char, {
+            duration: 0.8,
+            x: 70,
+            delay: charDelay,
+            autoAlpha: 0,
+          });
         });
       });
-    });
+    } catch (e) {}
+
+    return () => {
+      try {
+        if (myText) {
+          myText.revert();
+        }
+      } catch (e) {}
+    };
   }, []);
 
   return (

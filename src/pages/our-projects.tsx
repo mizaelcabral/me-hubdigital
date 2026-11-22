@@ -1,4 +1,5 @@
 ﻿import React from "react";
+import Head from "next/head";
 import Layout from "@/components/layout/Layout";
 import CmnBanner from "@/components/layout/banner/CmnBanner";
 import ProjectMain from "@/components/containers/project/ProjectMain";
@@ -7,12 +8,17 @@ import CtaTwo from "@/components/containers/service-details/CtaTwo";
 
 const OurProjects = () => {
   return (
-    <Layout header={2} footer={5} video={0}>
-      <CmnBanner title="Our Projects" navigation="Our Projects" />
-      <ProjectMain />
-      <WorkStepsProject />
-      <CtaTwo />
-    </Layout>
+    <>
+      <Head>
+        <title>Nossos Projetos — ME Hubdigital</title>
+      </Head>
+      <Layout header={2} footer={5} video={0}>
+        <CmnBanner title="Nossos Projetos" navigation="Nossos Projetos" />
+        <ProjectMain />
+        <WorkStepsProject />
+        <CtaTwo />
+      </Layout>
+    </>
   );
 };
 

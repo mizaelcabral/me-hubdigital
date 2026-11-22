@@ -46,19 +46,19 @@ const WorkStepsProject = () => {
                   <div className="col-12 col-lg-5 col-xxl-5">
                     <div className="section__header text-center text-lg-start mb-0">
                       <span className="sub-title">
-                        working steps
+                        etapas do processo
                         <i className="fa-solid fa-arrow-right"></i>
                       </span>
-                      <h2 className="title title-anim">Our Work Process</h2>
+                      <h2 className="title title-anim">Processo de Trabalho</h2>
                     </div>
                   </div>
                   <div className="col-12 col-lg-7 col-xxl-5 offset-xxl-2">
                     <div className="text-center text-lg-start">
                       <p>
-                        Bring to the table win-win survival strategies to ensure
-                        proactive domination. At the end of the day, going
-                        forward, a new normal that has evolved from generation
-                        on the runway heading towards
+                        Unimos metodologia ágil, design de produto de alto
+                        impacto e engenharia moderna para entregar ecossistemas
+                        digitais escaláveis. Da estratégia à execução com IA,
+                        transformamos ideias em resultados.
                       </p>
                     </div>
                   </div>
@@ -79,7 +79,7 @@ const WorkStepsProject = () => {
                   25
                   <br />%
                 </span>
-                <h5>Discover & Strategy.</h5>
+                <h5>Descoberta & Estratégia.</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{
@@ -100,11 +100,11 @@ const WorkStepsProject = () => {
                   50
                   <br />%
                 </span>
-                <h5>Wireframes & User-flows</h5>
+                <h5>Wireframes & Fluxos UX</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{
-                    backgroundImage: "url('/images/work/thumb-one.png')",
+                    backgroundImage: "url('/images/work/thumb-two.png')",
                   }}
                 ></div>
               </div>
@@ -121,11 +121,11 @@ const WorkStepsProject = () => {
                   75
                   <br />%
                 </span>
-                <h5>Hi-Fidelity design</h5>
+                <h5>Design de Alta Fidelidade</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{
-                    backgroundImage: "url('/images/work/thumb-one.png')",
+                    backgroundImage: "url('/images/work/thumb-three.png')",
                   }}
                 ></div>
               </div>
@@ -142,11 +142,11 @@ const WorkStepsProject = () => {
                   100
                   <br />%
                 </span>
-                <h5>Development Phase</h5>
+                <h5>Engenharia & Inteligência</h5>
                 <div
                   className="work-thumb-hover d-none d-md-block"
                   style={{
-                    backgroundImage: "url('/images/work/thumb-one.png')",
+                    backgroundImage: "url('/images/work/thumb-four.png')",
                   }}
                 ></div>
               </div>
