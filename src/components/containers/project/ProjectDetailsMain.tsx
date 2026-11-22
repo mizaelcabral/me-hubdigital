@@ -1,11 +1,19 @@
 ﻿import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import abblaCenaOne from "public/images/projects/projeto-abbla/ABBLA-CENA-01.png";
 import abblaCenaTwo from "public/images/projects/projeto-abbla/ABBLA-CENA-02.png";
+import abblaCenaThree from "public/images/projects/projeto-abbla/ABBLA-CENA-03.png";
 import abblaCapa from "public/images/projects/projeto-abbla/PROJETO-ABBLA-CAPA.png";
+import abblaImgOne from "public/images/projects/projeto-abbla/PROJETO-ABBLA-IMAGE-01.png";
+import abblaImgTwo from "public/images/projects/projeto-abbla/PROJETO-ABBLA-IMAGE-02.png";
+import abblaImgThree from "public/images/projects/projeto-abbla/PROJETO-ABBLA-IMAGE-03.png";
+import abblaImgFour from "public/images/projects/projeto-abbla/PROJETO-ABBLA-IMAGE-04.png";
+import abblaImgFive from "public/images/projects/projeto-abbla/PROJETO-ABBLA-IMAGE-05.png";
+import abblaImgSix from "public/images/projects/projeto-abbla/PROJETO-ABBLA-IMAGE-06.png";
 import iconone from "public/images/projects/icon-one.png";
 import icontwo from "public/images/projects/icon-two.png";
 import iconthree from "public/images/projects/icon-three.png";
@@ -80,12 +88,22 @@ const ProjectDetailsMain = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="poster__slider-single">
+                      <Image src={abblaCenaThree} alt="AbblaHUB Cenário 03" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="poster__slider-single">
                       <Image src={abblaCenaOne} alt="AbblaHUB Cenário 01" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="poster__slider-single">
                       <Image src={abblaCenaTwo} alt="AbblaHUB Cenário 02" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="poster__slider-single">
+                      <Image src={abblaCenaThree} alt="AbblaHUB Cenário 03" />
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -122,11 +140,27 @@ const ProjectDetailsMain = () => {
           <div className="col-12 col-sm-6 col-xl-4">
             <div className="project-d-o__single fade-top">
               <div className="content">
-                <h5>Cliente</h5>
-                <p>AbblaHUB Tecnologia</p>
+                <h5>Website Oficial</h5>
+                <p>
+                  <Link
+                    href="https://www.abblahub.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="d-inline-flex align-items-center gap-1"
+                  >
+                    abblahub.com <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: "12px" }}></i>
+                  </Link>
+                </p>
               </div>
               <div className="thumb">
-                <Image src={icontwo} alt="Cliente" />
+                <Link
+                  href="https://www.abblahub.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Acessar site AbblaHUB"
+                >
+                  <Image src={icontwo} alt="Website Oficial" />
+                </Link>
               </div>
             </div>
           </div>
@@ -164,6 +198,16 @@ const ProjectDetailsMain = () => {
                 reuniões e realiza transferências com contexto completo para os
                 especialistas humanos quando necessário.
               </p>
+              <div className="btn-wrapper mt-4">
+                <Link
+                  href="https://www.abblahub.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn--primary"
+                >
+                  Visitar Site do Projeto <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -208,6 +252,16 @@ const ProjectDetailsMain = () => {
                 degradação de performance, elevando o padrão de satisfação e
                 fidelização dos clientes atendidos.
               </p>
+              <div className="btn-wrapper mt-4">
+                <Link
+                  href="https://www.abblahub.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn--primary"
+                >
+                  Conhecer o AbblaHUB <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -245,47 +299,62 @@ const ProjectDetailsMain = () => {
         >
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCenaOne} alt="AbblaHUB Tela 1" />
+              <Image src={abblaImgOne} alt="AbblaHUB Imagem 01" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCenaTwo} alt="AbblaHUB Tela 2" />
+              <Image src={abblaImgTwo} alt="AbblaHUB Imagem 02" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCapa} alt="AbblaHUB Capa" />
+              <Image src={abblaImgThree} alt="AbblaHUB Imagem 03" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCenaOne} alt="AbblaHUB Tela 1" />
+              <Image src={abblaImgFour} alt="AbblaHUB Imagem 04" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCenaTwo} alt="AbblaHUB Tela 2" />
+              <Image src={abblaImgFive} alt="AbblaHUB Imagem 05" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCapa} alt="AbblaHUB Capa" />
+              <Image src={abblaImgSix} alt="AbblaHUB Imagem 06" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCenaOne} alt="AbblaHUB Tela 1" />
+              <Image src={abblaImgOne} alt="AbblaHUB Imagem 01" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCenaTwo} alt="AbblaHUB Tela 2" />
+              <Image src={abblaImgTwo} alt="AbblaHUB Imagem 02" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="project-d__slider-single">
-              <Image src={abblaCapa} alt="AbblaHUB Capa" />
+              <Image src={abblaImgThree} alt="AbblaHUB Imagem 03" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="project-d__slider-single">
+              <Image src={abblaImgFour} alt="AbblaHUB Imagem 04" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="project-d__slider-single">
+              <Image src={abblaImgFive} alt="AbblaHUB Imagem 05" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="project-d__slider-single">
+              <Image src={abblaImgSix} alt="AbblaHUB Imagem 06" />
             </div>
           </SwiperSlide>
         </Swiper>
