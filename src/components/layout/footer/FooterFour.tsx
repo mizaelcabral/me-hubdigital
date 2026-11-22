@@ -67,8 +67,8 @@ const FooterFour = () => {
           </div>
           <div className="col-12 col-lg-6">
             <div className="text-center text-lg-end">
-              <Link href="mailto:contato@mehubdigital.com.br" className="text-capitalize">
-                contato@mehubdigital.com.br
+              <Link href="mailto:contato@mehubdigital.com" className="text-capitalize">
+                contato@mehubdigital.com
               </Link>
             </div>
           </div>

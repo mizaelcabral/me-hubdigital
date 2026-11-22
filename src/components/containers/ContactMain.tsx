@@ -17,12 +17,12 @@ const ContactMain = () => {
                 <Image src={phone} alt="Image" />
               </div>
               <div className="content">
-                <h4>Phone & Fax</h4>
+                <h4>Telefone & WhatsApp</h4>
                 <p>
-                  <Link href="tel:197-90-56-780">Mobile : +197-90-56-780</Link>
+                  <Link href="tel:+5583986817291">+55 (83) 98681-7291</Link>
                 </p>
                 <p>
-                  <Link href="tel:197-90-56-780">Fax : +44-208-1234567</Link>
+                  <Link href="https://wa.me/5583986817291" target="_blank">Atendimento WhatsApp</Link>
                 </p>
               </div>
             </div>
@@ -33,15 +33,10 @@ const ContactMain = () => {
                 <Image src={mail} alt="Image" />
               </div>
               <div className="content">
-                <h4>Mail Address</h4>
+                <h4>E-mail</h4>
                 <p>
-                  <Link href="mailto:info.company@gmail.com">
-                    Info.company@gmail.com
-                  </Link>
-                </p>
-                <p>
-                  <Link href="mailto:info.company@gmail.com">
-                    Info.company@yahoo.com
+                  <Link href="mailto:contato@mehubdigital.com">
+                    contato@mehubdigital.com
                   </Link>
                 </p>
               </div>

@@ -87,8 +87,8 @@ const HomeOneBanner = () => {
         />
         <Image src={star} alt="Image" className="star" />
         <div className="banner-left-text banner-social-text d-none d-md-flex">
-          <Link href="mailto:contato@mehubdigital.com.br">mail : contato@mehubdigital.com.br</Link>
-          <Link href="tel:+5511999999999">Call : +55 11 99999 9999</Link>
+          <Link href="mailto:contato@mehubdigital.com">mail : contato@mehubdigital.com</Link>
+          <Link href="tel:+5583986817291">Call : +55 83 98681-7291</Link>
         </div>
         <div className="banner-right-text banner-social-text d-none d-md-flex">
           <Link href="https://www.instagram.com/" target="_blank">

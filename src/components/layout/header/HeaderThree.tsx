@@ -52,15 +52,15 @@ const HeaderThree = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   <div className="navbar__menu">
                     <ul>
                       <li className="navbar__item nav-fade">
-                        <Link href="tel:406-555-0120">
+                        <Link href="tel:+5583986817291">
                           <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                          (406) 555-0120
+                          (83) 98681-7291
                         </Link>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="mailto:info@xpovio.com">
+                        <Link href="mailto:contato@mehubdigital.com">
                           <i className="fa-sharp fa-solid fa-envelope"></i>
-                          info@xpovio.com
+                          contato@mehubdigital.com
                         </Link>
                       </li>
                     </ul>

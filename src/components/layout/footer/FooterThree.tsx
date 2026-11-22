@@ -30,15 +30,15 @@ const FooterThree = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:+5511999999999">
+                    <Link href="tel:+5583986817291">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (11) 99999-9999
+                      (83) 98681-7291
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:contato@mehubdigital.com.br">
+                    <Link href="mailto:contato@mehubdigital.com">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      contato@mehubdigital.com.br
+                      contato@mehubdigital.com
                     </Link>
                   </li>
                 </ul>
@@ -71,15 +71,15 @@ const FooterThree = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:+5511999999999">
+                    <Link href="tel:+5583986817291">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (11) 99999-9999
+                      (83) 98681-7291
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:contato@mehubdigital.com.br">
+                    <Link href="mailto:contato@mehubdigital.com">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      contato@mehubdigital.com.br
+                      contato@mehubdigital.com
                     </Link>
                   </li>
                 </ul>
@@ -108,15 +108,15 @@ const FooterThree = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:+5511999999999">
+                    <Link href="tel:+5583986817291">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (11) 99999-9999
+                      (83) 98681-7291
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:contato@mehubdigital.com.br">
+                    <Link href="mailto:contato@mehubdigital.com">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      contato@mehubdigital.com.br
+                      contato@mehubdigital.com
                     </Link>
                   </li>
                 </ul>
@@ -149,15 +149,15 @@ const FooterThree = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:+5511999999999">
+                    <Link href="tel:+5583986817291">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (11) 99999-9999
+                      (83) 98681-7291
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:contato@mehubdigital.com.br">
+                    <Link href="mailto:contato@mehubdigital.com">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      contato@mehubdigital.com.br
+                      contato@mehubdigital.com
                     </Link>
                   </li>
                 </ul>
@@ -186,15 +186,15 @@ const FooterThree = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:+5511999999999">
+                    <Link href="tel:+5583986817291">
                       <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                      (11) 99999-9999
+                      (83) 98681-7291
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:contato@mehubdigital.com.br">
+                    <Link href="mailto:contato@mehubdigital.com">
                       <i className="fa-sharp fa-solid fa-envelope"></i>
-                      contato@mehubdigital.com.br
+                      contato@mehubdigital.com
                     </Link>
                   </li>
                 </ul>

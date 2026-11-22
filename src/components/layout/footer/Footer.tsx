@@ -25,13 +25,13 @@ const Footer = () => {
                   <i className="fa-sharp fa-solid fa-location-dot"></i>
                   São Paulo, SP — Brasil
                 </Link>
-                <Link href="tel:+5511999999999">
+                <Link href="tel:+5583986817291">
                   <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                  (11) 99999-9999
+                  (83) 98681-7291
                 </Link>
-                <Link href="mailto:contato@mehubdigital.com.br">
+                <Link href="mailto:contato@mehubdigital.com">
                   <i className="fa-sharp fa-solid fa-envelope"></i>
-                  contato@mehubdigital.com.br
+                  contato@mehubdigital.com
                 </Link>
               </div>
               <div className="footer__cta text-start">

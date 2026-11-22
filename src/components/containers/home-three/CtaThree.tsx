@@ -17,8 +17,8 @@ const CtaThree = () => {
                     <span>Olá !</span>
                     <h2 className="title-anim">Pronto para escalar com a gente?</h2>
                     <h5>
-                      <Link href="tel:+5511999999999">
-                        call: +55 (11) 99999-9999
+                      <Link href="tel:+5583986817291">
+                        call: +55 (83) 98681-7291
                       </Link>
                     </h5>
                   </div>

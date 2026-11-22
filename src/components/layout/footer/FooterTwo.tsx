@@ -126,11 +126,11 @@ const FooterTwo = () => {
               <div className="section__content-cta">
                 <h2>
                   <Link
-                    href="mailto:contato@mehubdigital.com.br"
+                    href="mailto:contato@mehubdigital.com"
                     className="folks-text animated-text"
                     ref={animatedTextRef}
                   >
-                    contato@mehubdigital.com.br
+                    contato@mehubdigital.com
                     {animatedTextContent.split("").map((char, index) => (
                       <span
                         aria-hidden="true"
@@ -177,13 +177,13 @@ const FooterTwo = () => {
                   <i className="fa-sharp fa-solid fa-location-dot"></i>
                   São Paulo, SP — Brasil
                 </Link>
-                <Link href="tel:+5511999999999">
+                <Link href="tel:+5583986817291">
                   <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                  (11) 99999-9999
+                  (83) 98681-7291
                 </Link>
-                <Link href="mailto:contato@mehubdigital.com.br">
+                <Link href="mailto:contato@mehubdigital.com">
                   <i className="fa-sharp fa-solid fa-envelope"></i>
-                  contato@mehubdigital.com.br
+                  contato@mehubdigital.com
                 </Link>
               </div>
             </div>
