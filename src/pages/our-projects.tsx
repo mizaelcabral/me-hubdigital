@@ -5,15 +5,21 @@ import CmnBanner from "@/components/layout/banner/CmnBanner";
 import ProjectMain from "@/components/containers/project/ProjectMain";
 import WorkStepsProject from "@/components/containers/project/WorkStepsProject";
 import CtaTwo from "@/components/containers/service-details/CtaTwo";
+import { useLanguage } from "@/context/LanguageContext";
 
 const OurProjects = () => {
+  const { t } = useLanguage();
+
   return (
     <>
       <Head>
-        <title>Nossos Projetos — ME Hubdigital</title>
+        <title>{t.meta.projectsTitle}</title>
       </Head>
       <Layout header={2} footer={5} video={0}>
-        <CmnBanner title="Nossos Projetos" navigation="Nossos Projetos" />
+        <CmnBanner
+          title={t.banner.projectsTitle}
+          navigation={t.banner.projectsTitle}
+        />
         <ProjectMain />
         <WorkStepsProject />
         <CtaTwo />

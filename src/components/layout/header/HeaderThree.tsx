@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "public/images/logo.png";
 import Offcanvas from "./Offcanvas";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface HeaderProps {
   openNav: boolean;
@@ -12,6 +14,7 @@ interface HeaderProps {
 
 const HeaderThree = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,6 +69,9 @@ const HeaderThree = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                     </ul>
                   </div>
                   <div className="navbar__options">
+                    <div className="me-3">
+                      <LanguageSwitcher />
+                    </div>
                     <button
                       className="open-offcanvas-nav d-flex"
                       aria-label="toggle mobile menu"
@@ -73,12 +79,12 @@ const HeaderThree = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                       onClick={handleNav}
                     >
                       <i className="fa-light fa-bars-staggered"></i>
-                      Menu
+                      {t.nav.menu}
                     </button>
                     <div className="tertiary-cta d-none d-sm-flex">
                       <div className="navbar__mobile-options">
                         <Link href="contact-us" className="btn btn--secondary">
-                          Falar Conosco
+                          {t.nav.talkToUs}
                         </Link>
                       </div>
                     </div>

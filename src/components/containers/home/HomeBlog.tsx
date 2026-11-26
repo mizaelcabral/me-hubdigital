@@ -3,8 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import one from "public/images/blog/one.webp";
 import two from "public/images/blog/two.webp";
+import { useLanguage } from "@/context/LanguageContext";
 
 const HomeBlog = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="section blog fade-wrapper">
       <div className="container">
@@ -13,13 +16,11 @@ const HomeBlog = () => {
             <div className="section__header text-center">
               <div>
                 <span className="sub-title">
-                  INSIGHTS & BLOG
+                  {t.homeBlog.subTitle}
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
               </div>
-              <h2 className="title title-anim">
-                Artigos & Tendências
-              </h2>
+              <h2 className="title title-anim">{t.homeBlog.title}</h2>
             </div>
           </div>
         </div>
@@ -28,21 +29,19 @@ const HomeBlog = () => {
             <div className="blog__single fade-top">
               <div className="blog__single-thumb topy-tilt">
                 <Link href="blog-single">
-                  <Image src={one} alt="Como Agentes de IA Reduzem Custos em Operações Web" />
+                  <Image src={one} alt={t.homeBlog.post1Title} />
                 </Link>
               </div>
               <div className="blog__single-content">
                 <h4>
-                  <Link href="blog-single">
-                    Como Agentes de IA Reduzem Custos em Operações Web
-                  </Link>
+                  <Link href="blog-single">{t.homeBlog.post1Title}</Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    inteligência artificial
+                    {t.homeBlog.post1Category}
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>DESTAQUE</p>
+                  <p>{t.homeBlog.featured}</p>
                 </div>
               </div>
             </div>
@@ -51,21 +50,21 @@ const HomeBlog = () => {
             <div className="blog__single fade-top">
               <div className="blog__single-thumb topy-tilt">
                 <Link href="/arquitetura-cloud-gateways">
-                  <Image src={two} alt="Arquitetura Cloud e Gateways: Maximizando o Seu ROI" />
+                  <Image src={two} alt={t.homeBlog.post2Title} />
                 </Link>
               </div>
               <div className="blog__single-content">
                 <h4>
                   <Link href="/arquitetura-cloud-gateways">
-                    Arquitetura Cloud e Gateways: Maximizando o Seu ROI
+                    {t.homeBlog.post2Title}
                   </Link>
                 </h4>
                 <div className="blog__single-meta">
                   <Link href="blog" className="sub-title">
-                    software web
+                    {t.homeBlog.post2Category}
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
-                  <p>DESTAQUE</p>
+                  <p>{t.homeBlog.featured}</p>
                 </div>
               </div>
             </div>

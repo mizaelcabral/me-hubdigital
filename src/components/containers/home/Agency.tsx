@@ -7,9 +7,11 @@ import thumbone from "public/images/agency/thumb-one.png";
 import thumbtwo from "public/images/agency/thumb-two.png";
 import star from "public/images/star.png";
 import dotlarge from "public/images/agency/dot-large.png";
+import { useLanguage } from "@/context/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 const Agency = () => {
+  const { t } = useLanguage();
   useEffect(() => {
     const percentElements = document.querySelectorAll("[data-percent]");
 
@@ -96,25 +98,19 @@ const Agency = () => {
           <div className="col-12 col-lg-6">
             <div className="agency__content section__content">
               <span className="sub-title">
-                QUEM SOMOS
+                {t.agency.subTitle}
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim" style={{ textTransform: "none" }}>
-                Tecnologia & IA para sua empresa
+                {t.agency.title}
               </h2>
               <div className="paragraph">
-                <p>
-                  Transformamos gargalos operacionais em vantagens competitivas
-                  por meio de sistemas web sob medida, inteligência artificial
-                  integrada e arquiteturas de alta disponibilidade. Unimos
-                  design sofisticado a código escalável para entregar resultados
-                  mensuráveis ao seu faturamento.
-                </p>
+                <p>{t.agency.description}</p>
               </div>
               <div className="skill-wrap">
                 <div className="skill-bar-single d-none">
                   <div className="skill-bar-title">
-                    <p className="primary-text">Aplicações Web & SaaS</p>
+                    <p className="primary-text">{t.agency.skill1}</p>
                   </div>
                   <div className="skill-bar-wrapper" data-percent="98%">
                     <div className="skill-bar">
@@ -126,7 +122,7 @@ const Agency = () => {
                 </div>
                 <div className="skill-bar-single">
                   <div className="skill-bar-title">
-                    <p className="primary-text">Aplicações Web & SaaS</p>
+                    <p className="primary-text">{t.agency.skill1}</p>
                   </div>
                   <div className="skill-bar-wrapper" data-percent="98%">
                     <div className="skill-bar">
@@ -138,7 +134,7 @@ const Agency = () => {
                 </div>
                 <div className="skill-bar-single">
                   <div className="skill-bar-title">
-                    <p className="primary-text">Agentes de IA & Automação</p>
+                    <p className="primary-text">{t.agency.skill2}</p>
                   </div>
                   <div className="skill-bar-wrapper" data-percent="95%">
                     <div className="skill-bar">
@@ -151,7 +147,7 @@ const Agency = () => {
               </div>
               <div className="section__content-cta">
                 <Link href="about-us" className="btn btn--primary">
-                  Conhecer Mais
+                  {t.agency.cta}
                 </Link>
               </div>
             </div>

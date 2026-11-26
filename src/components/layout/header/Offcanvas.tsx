@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "public/images/logo.png";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface HeaderProps {
   openNav: boolean;
@@ -10,6 +12,7 @@ interface HeaderProps {
 
 const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
+  const { t } = useLanguage();
 
   const handleSubmenu = (submenu: string) => {
     if (submenu === openSubMenu) {
@@ -77,19 +80,19 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                     )}`}
                     onClick={() => handleSubmenu("home")}
                   >
-                    Home
+                    {t.nav.home}
                   </button>
                   <ul className={`navbar__sub-menu ${isSubMenuOpen("home")}`}>
                     <li>
-                      <Link href="/">Agência Criativa</Link>
+                      <Link href="/" onClick={closeNav}>{t.nav.creativeAgency}</Link>
                     </li>
                     <li>
-                      <Link href="index-light">Agência Criativa Light</Link>
+                      <Link href="index-light" onClick={closeNav}>{t.nav.creativeAgencyLight}</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="navbar__item nav-fade">
-                  <Link href="about-us">Quem Somos</Link>
+                  <Link href="about-us" onClick={closeNav}>{t.nav.about}</Link>
                 </li>
                 <li className="navbar__item navbar__item--has-children nav-fade">
                   <button
@@ -99,13 +102,13 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                     )}`}
                     onClick={() => handleSubmenu("services")}
                   >
-                    Serviços
+                    {t.nav.services}
                   </button>
                   <ul
                     className={`navbar__sub-menu ${isSubMenuOpen("services")}`}
                   >
                     <li>
-                      <Link href="our-services">Nossos Serviços</Link>
+                      <Link href="our-services" onClick={closeNav}>{t.nav.ourServices}</Link>
                     </li>
                   </ul>
                 </li>
@@ -117,29 +120,32 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                     )}`}
                     onClick={() => handleSubmenu("projects")}
                   >
-                    Projetos
+                    {t.nav.projects}
                   </button>
                   <ul
                     className={`navbar__sub-menu ${isSubMenuOpen("projects")}`}
                   >
                     <li>
-                      <Link href="our-projects">Nossos Projetos</Link>
+                      <Link href="our-projects" onClick={closeNav}>{t.nav.ourProjects}</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="navbar__item nav-fade">
-                  <Link href="faq">FAQ</Link>
+                  <Link href="faq" onClick={closeNav}>{t.nav.faq}</Link>
                 </li>
                 <li className="navbar__item nav-fade">
-                  <Link href="contact-us">Contato</Link>
+                  <Link href="contact-us" onClick={closeNav}>{t.nav.contact}</Link>
                 </li>
               </ul>
             </div>
           </div>
+          <div className="offcanvas-menu__lang nav-fade">
+            <LanguageSwitcher />
+          </div>
           <div className="offcanvas-menu__options nav-fade">
             <div className="offcanvas__mobile-options d-flex">
-              <Link href="contact-us" className="btn btn--secondary">
-                Falar Conosco
+              <Link href="contact-us" className="btn btn--secondary" onClick={closeNav}>
+                {t.nav.talkToUs}
               </Link>
             </div>
           </div>

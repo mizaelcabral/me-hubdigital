@@ -1,5 +1,6 @@
 ﻿import React from "react";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface BannerProps {
   title?: any;
@@ -10,6 +11,8 @@ interface BannerProps {
 }
 
 const CmnBanner = ({ title, navigation, parent, parentLink, content }: BannerProps) => {
+  const { t } = useLanguage();
+
   return (
     <>
       <section
@@ -26,7 +29,7 @@ const CmnBanner = ({ title, navigation, parent, parentLink, content }: BannerPro
                     <li className="breadcrumb-item">
                       <Link href="/">
                         <i className="fa-solid fa-house"></i>
-                        Home
+                        {t.nav.home}
                       </Link>
                     </li>
                     {parent && (
@@ -44,8 +47,7 @@ const CmnBanner = ({ title, navigation, parent, parentLink, content }: BannerPro
             <div className="col-12 col-lg-7 col-xl-5">
               <div className="text-center text-lg-start">
                 <p className="primary-text">
-                  {content ||
-                    "Somos uma empresa AI-First especializada em potencializar negócios com software web moderno, inteligência artificial integrada e automações de alta performance."}
+                  {content || t.banner.defaultContent}
                 </p>
               </div>
             </div>

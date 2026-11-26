@@ -7,10 +7,12 @@ import banneronethumb from "public/images/banner/banner-one-thumb.png";
 import star from "public/images/star.png";
 import videoframe from "public/images/video-frame.png";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
+import { useLanguage } from "@/context/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 const HomeOneBanner = () => {
   const [videoActive, setVideoActive] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -56,23 +58,19 @@ const HomeOneBanner = () => {
                   ME HUB
                   <span className="text-stroke">DIGITAL</span>
                   <span className="interval">
-                    <i className="icon-arrow-top-right"></i> SOFTWARE & IA
+                    <i className="icon-arrow-top-right"></i> {t.homeBanner.softwareAi}
                   </span>
                 </h1>
                 <div className="banner__content-inner">
-                  <p>
-                    Desenvolvemos agentes autônomos de IA, plataformas web sob
-                    medida e ecossistemas digitais de alta conversão para escalar
-                    operações corporativas.
-                  </p>
+                  <p>{t.homeBanner.description}</p>
                   <div className="cta section__content-cta">
                     <div className="single">
                       <h5 className="fw-7">99.9%</h5>
-                      <p className="fw-5">uptime garantido</p>
+                      <p className="fw-5">{t.homeBanner.uptimeLabel}</p>
                     </div>
                     <div className="single">
                       <h5 className="fw-7">10x+</h5>
-                      <p className="fw-5">eficiência operacional</p>
+                      <p className="fw-5">{t.homeBanner.efficiencyLabel}</p>
                     </div>
                   </div>
                 </div>
@@ -87,8 +85,8 @@ const HomeOneBanner = () => {
         />
         <Image src={star} alt="Image" className="star" />
         <div className="banner-left-text banner-social-text d-none d-md-flex">
-          <Link href="mailto:contato@mehubdigital.com">mail : contato@mehubdigital.com</Link>
-          <Link href="tel:+5583986817291">Call : +55 83 98681-7291</Link>
+          <Link href="mailto:contato@mehubdigital.com">{t.homeBanner.mailPrefix} : contato@mehubdigital.com</Link>
+          <Link href="tel:+5583986817291">{t.homeBanner.callPrefix} : +55 83 98681-7291</Link>
         </div>
         <div className="banner-right-text banner-social-text d-none d-md-flex">
           <Link href="https://www.instagram.com/" target="_blank">

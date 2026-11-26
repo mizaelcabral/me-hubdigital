@@ -9,8 +9,11 @@ import blogTwo from "public/images/blog/two.webp";
 import portFour from "public/images/portfolio/four.webp";
 import portSeven from "public/images/portfolio/seven.webp";
 import portThree from "public/images/portfolio/three.webp";
+import { useLanguage } from "@/context/LanguageContext";
 
 const BlogDetailsCloudGateways = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="section blog-main blog-details fade-wrapper">
       <div className="container">
@@ -18,165 +21,76 @@ const BlogDetailsCloudGateways = () => {
           <div className="col-12 col-xl-8">
             <div className="blog-details__content">
               <div className="bd-thumb fade-top">
-                <Image
-                  src={bannerImg}
-                  alt="Arquitetura Cloud e Gateways: Maximizando o Seu ROI"
-                  priority
-                />
+                <Image src={bannerImg} alt={t.blogCloud.bannerTitle} priority />
               </div>
               <div className="bd-content">
                 <div className="bd-meta">
                   <div className="meta__left">
                     <p>
-                      <strong>Escrito por :</strong>
-                      Equipe de Engenharia ME Hubdigital
+                      <strong>{t.blogShared.writtenBy}</strong>{" "}
+                      {t.blogShared.author}
                     </p>
                     <span></span>
                     <p>18/11/2026</p>
                     <span></span>
-                    <p>Leitura: 6 min</p>
+                    <p>{t.blogCloud.readTime}</p>
                   </div>
                 </div>
                 <div className="bd-content-info">
-                  <h4 className="h4">
-                    Arquitetura Cloud e Gateways: Maximizando o Seu ROI
-                  </h4>
+                  <h4 className="h4">{t.blogCloud.bannerTitle}</h4>
                   <div className="paragraph">
-                    <p>
-                      Nas operações digitais de alto volume — sejam plataformas
-                      SaaS corporativas, ecossistemas de e-commerce ou serviços de
-                      assinatura —, a rentabilidade líquida é diretamente moldada
-                      pela eficiência da infraestrutura técnica. Milissegundos de
-                      latência e recusas injustificadas de transações bancárias não
-                      são meros incidentes técnicos: são vazamentos silenciosos de
-                      receita que corroem o retorno sobre o investimento (ROI).
-                    </p>
-                    <p>
-                      Muitas empresas concentram todo o orçamento em aquisição de
-                      tráfego e campanhas de marketing, ignorando que até 18% das
-                      vendas são perdidas na última milha: por lentidão de servidores,
-                      falhas de conciliação de adquirentes ou quedas durante picos
-                      de requisições. Projetar uma arquitetura de nuvem resiliente e
-                      um fluxo redundante de múltiplos gateways de pagamento é a
-                      alavanca mais rápida e sustentável para maximizar o retorno
-                      operacional.
-                    </p>
+                    <p>{t.blogCloud.p1}</p>
+                    <p>{t.blogCloud.p2}</p>
                   </div>
-                  <h4 className="h4">
-                    O Custo Invisível da Queda de Checkout e da Latência
-                  </h4>
+                  <h4 className="h4">{t.blogCloud.h2}</h4>
                   <div className="paragraph">
-                    <p>
-                      Estudos de engenharia de software comprovam que cada 100ms
-                      adicionais de tempo de carregamento no checkout resultam em
-                      uma queda média de 7% na taxa de conversão final. Em dias de
-                      campanhas agressivas ou sazonalidades, a instabilidade de um
-                      único provedor de nuvem pode paralisar totalmente o
-                      faturamento por horas.
-                    </p>
-                    <p>
-                      Além disso, depender exclusivamente de uma única adquirente
-                      ou gateway de pagamento é um dos riscos mais críticos de um
-                      negócio online. Falhas temporárias de rede, bloqueios
-                      excessivamente rigorosos de antifraude e manutenções não
-                      programadas descartam compradores legítimos sem que a equipe
-                      de gestão sequer perceba em tempo hábil.
-                    </p>
+                    <p>{t.blogCloud.p3}</p>
+                    <p>{t.blogCloud.p4}</p>
                   </div>
                 </div>
               </div>
               <div className="bd-group">
-                <Image
-                  src={routingImg}
-                  alt="Roteamento Inteligente e Failover Multi-Gateway"
-                  className="fade-top"
-                />
-                <Image
-                  src={roiImg}
-                  alt="Infraestrutura Cloud de Alta Disponibilidade e Uptime"
-                  className="fade-top"
-                />
+                <Image src={routingImg} alt={t.blogCloud.h3} className="fade-top" />
+                <Image src={roiImg} alt={t.blogCloud.h4} className="fade-top" />
               </div>
               <div className="bd-content ">
                 <div className="bd-content__alt">
-                  <h4 className="h4">
-                    4 Pilares Estratégicos para Escalar a Rentabilidade
-                  </h4>
-                  <p>
-                    A engenharia da ME Hubdigital implementa arquiteturas
-                    projetadas para eliminar gargalos, blindar o fluxo de caixa e
-                    proteger cada centavo investido na operação:
-                  </p>
+                  <h4 className="h4">{t.blogCloud.h3}</h4>
+                  <p>{t.blogCloud.p5}</p>
                   <ul>
-                    <li>
-                      <strong>Roteamento Dinâmico Multi-Gateway (Failover Inteligente):</strong>
-                      Integração com adquirentes redundantes e retentativas
-                      automáticas instantâneas com tokenização segura. Se a adquirente
-                      principal rejeitar a transação por oscilação de rede, a venda
-                      é redirecionada para a contingência em menos de 800ms.
-                    </li>
-                    <li>
-                      <strong>Auto-Scaling e Eliminação de Servidores Ociosos:</strong>
-                      Infraestrutura em nuvem híbrida (VPS de alta performance e
-                      clusters gerenciados) que escala recursos proporcionalmente
-                      ao tráfego real, reduzindo custos de nuvem ociosa em até 35%.
-                    </li>
-                    <li>
-                      <strong>Edge Caching & CDN Global com Latência Sub-20ms:</strong>
-                      Distribuição inteligente de assets estáticos e rotas de API
-                      otimizadas, garantindo páginas instantâneas e blindagem nativa
-                      contra picos repentinos e ataques DDoS.
-                    </li>
-                    <li>
-                      <strong>Checkout Transparente com Menor Fricção:</strong>
-                      Suporte nativo a Pix dinâmico instantâneo, cartões com
-                      recorrência protegida e carteiras digitais, encurtando o funil
-                      de decisão e impulsionando a aprovação líquida.
-                    </li>
+                    {t.blogCloud.pillars.map((pillar, idx) => (
+                      <li key={idx}>
+                        <strong>{pillar.title}</strong> {pillar.desc}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
               <div className="bd-quote">
                 <blockquote>
-                  <q className="light-title-lg">
-                    "Infraestrutura em nuvem e checkout não são centros de custo:
-                    quando bem arquitetados, tornam-se os motores mais poderosos
-                    de conversão, retenção e previsibilidade financeira."
-                  </q>
+                  <q className="light-title-lg">{t.blogCloud.quote}</q>
                 </blockquote>
               </div>
               <div className="bd-content">
                 <div className="bd-content__alt mt-0">
-                  <h4 className="h4">
-                    Engenharia Sob Medida com a ME Hubdigital
-                  </h4>
-                  <p>
-                    Não acreditamos em soluções padronizadas para negócios que
-                    precisam de escala real. Na ME Hubdigital, nós auditamos toda
-                    a sua stack de hospedagem, bancos de dados e contratos de
-                    gateways para desenhar um fluxo operacional robusto e sob
-                    medida.
-                  </p>
-                  <p>
-                    Garantimos migração transparente com zero downtime,
-                    conformidade técnica com normas de segurança (PCI-DSS) e
-                    observabilidade 24/7 com telemetria avançada para que sua
-                    equipe foque exclusivamente em crescer.
-                  </p>
+                  <h4 className="h4">{t.blogCloud.h4}</h4>
+                  <p>{t.blogCloud.p6}</p>
+                  <p>{t.blogCloud.p7}</p>
                 </div>
               </div>
               <div className="bd-tags">
                 <div className="tags-left">
-                  <p>Tags:</p>
+                  <p>{t.blogShared.tags}</p>
                   <div className="tags-content">
-                    <Link href="/blog">Cloud & DevOps</Link>
-                    <Link href="/blog">Gateways de Pagamento</Link>
-                    <Link href="/blog">Alta Disponibilidade</Link>
-                    <Link href="/blog">Software Web</Link>
+                    {t.blogCloud.postTags.map((tag, idx) => (
+                      <Link href="/blog" key={idx}>
+                        {tag}
+                      </Link>
+                    ))}
                   </div>
                 </div>
                 <div className="tags-right">
-                  <p>Compartilhar:</p>
+                  <p>{t.blogShared.share}</p>
                   <ul className="social">
                     <li>
                       <Link
@@ -228,19 +142,19 @@ const BlogDetailsCloudGateways = () => {
                   <div className="single">
                     <Link href="/blog-single">
                       <i className="fa-solid fa-arrow-left-long"></i>
-                      Artigo Anterior
+                      {t.blogCloud.prevLabel}
                     </Link>
                     <div className="latest-single">
                       <div className="latest-thumb">
                         <Link href="/blog-single">
-                          <Image src={blogOne} alt="Como Agentes de IA Reduzem Custos" />
+                          <Image src={blogOne} alt={t.blogCloud.prevTitle} />
                         </Link>
                       </div>
                       <div className="latest-content">
-                        <p>Inteligência Artificial</p>
+                        <p>{t.blogCloud.prevCategory}</p>
                         <p>
                           <Link href="/blog-single">
-                            Como Agentes de IA Reduzem Custos em Operações Web
+                            {t.blogCloud.prevTitle}
                           </Link>
                         </p>
                       </div>
@@ -250,21 +164,19 @@ const BlogDetailsCloudGateways = () => {
                 <div className="col-md-6">
                   <div className="single single--alt">
                     <Link href="/portfolio">
-                      Ver Nossos Cases
+                      {t.blogCloud.nextLabel}
                       <i className="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <div className="latest-single">
                       <div className="latest-thumb">
                         <Link href="/portfolio">
-                          <Image src={portFour} alt="Checkout Personalizado" />
+                          <Image src={portFour} alt={t.blogCloud.nextTitle} />
                         </Link>
                       </div>
                       <div className="latest-content">
-                        <p>Cases & Portfólio</p>
+                        <p>{t.blogShared.casesPortfolio}</p>
                         <p>
-                          <Link href="/portfolio">
-                            Checkout Personalizado e Arquitetura de Gateways
-                          </Link>
+                          <Link href="/portfolio">{t.blogCloud.nextTitle}</Link>
                         </p>
                       </div>
                     </div>
@@ -273,16 +185,20 @@ const BlogDetailsCloudGateways = () => {
               </div>
               <div className="section pb-0 comment-form fade-top">
                 <div className="section__header">
-                  <h2 className="h2 text-start">Deixe seu comentário</h2>
+                  <h2 className="h2 text-start">{t.blogShared.leaveComment}</h2>
                 </div>
-                <form action="#" method="post" onSubmit={(e) => e.preventDefault()}>
+                <form
+                  action="#"
+                  method="post"
+                  onSubmit={(e) => e.preventDefault()}
+                >
                   <div className="form-group-wrapper">
                     <div className="form-group-single">
                       <input
                         type="text"
                         name="comment-name"
                         id="commentName"
-                        placeholder="Seu Nome Completo"
+                        placeholder={t.blogShared.namePlaceholder}
                         required
                       />
                     </div>
@@ -291,7 +207,7 @@ const BlogDetailsCloudGateways = () => {
                         type="email"
                         name="comment-email"
                         id="commentemail"
-                        placeholder="Seu E-mail Corporativo"
+                        placeholder={t.blogShared.emailPlaceholder}
                         required
                       />
                     </div>
@@ -300,14 +216,14 @@ const BlogDetailsCloudGateways = () => {
                     <textarea
                       name="comment-message"
                       id="commentMessage"
-                      placeholder="Escreva sua dúvida técnica sobre cloud ou gateways..."
+                      placeholder={t.blogCloud.commentPlaceholder}
                       rows={5}
                       required
                     ></textarea>
                   </div>
                   <div className="cta__group">
                     <button type="submit" className="btn btn--ocotonary">
-                      publicar comentário
+                      {t.blogShared.publishBtn}
                       <i className="fa-solid fa-arrow-right-long"></i>
                     </button>
                   </div>
@@ -319,18 +235,22 @@ const BlogDetailsCloudGateways = () => {
             <div className="blog-main__sidebar">
               <div className="widget ">
                 <div className="widget__head">
-                  <h5 className="h5">Pesquisar</h5>
+                  <h5 className="h5">{t.blogShared.searchTitle}</h5>
                 </div>
                 <div className="widget-search">
-                  <form action="#" method="post" onSubmit={(e) => e.preventDefault()}>
+                  <form
+                    action="#"
+                    method="post"
+                    onSubmit={(e) => e.preventDefault()}
+                  >
                     <div className="form-group-input">
                       <input
                         type="search"
                         name="blog-search"
                         id="blogSearch"
-                        placeholder="Buscar no blog. . ."
+                        placeholder={t.blogShared.searchPlaceholder}
                       />
-                      <button type="submit" aria-label="Buscar">
+                      <button type="submit" aria-label={t.blogShared.searchTitle}>
                         <i className="fa-solid fa-magnifying-glass"></i>
                       </button>
                     </div>
@@ -339,50 +259,34 @@ const BlogDetailsCloudGateways = () => {
               </div>
               <div className="widget ">
                 <div className="widget__head">
-                  <h5 className="h5">Categorias</h5>
+                  <h5 className="h5">{t.blogShared.categoriesTitle}</h5>
                 </div>
                 <div className="widget__list">
                   <ul>
-                    <li>
-                      <Link href="/blog">Software Web & SaaS</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Gateways & E-commerce</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Cloud VPS & DevOps</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Inteligência Artificial</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Agentes Autônomos</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Automação & CRM</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">UI/UX & Design Figma</Link>
-                    </li>
+                    {t.blogShared.categories.map((cat, idx) => (
+                      <li key={idx}>
+                        <Link href="/blog">{cat}</Link>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
               <div className="widget">
                 <div className="widget__head">
-                  <h5 className="h5">Artigos Recentes</h5>
+                  <h5 className="h5">{t.blogShared.recentTitle}</h5>
                 </div>
                 <div className="widget__latest">
                   <div className="latest-single ">
                     <div className="latest-thumb">
                       <Link href="/arquitetura-cloud-gateways">
-                        <Image src={blogTwo} alt="Arquitetura Cloud e Gateways" />
+                        <Image src={blogTwo} alt={t.blogCloud.bannerTitle} />
                       </Link>
                     </div>
                     <div className="latest-content">
                       <p>18/11/2026</p>
                       <p>
                         <Link href="/arquitetura-cloud-gateways">
-                          Arquitetura Cloud e Gateways: Maximizando o Seu ROI
+                          {t.blogCloud.bannerTitle}
                         </Link>
                       </p>
                     </div>
@@ -390,45 +294,39 @@ const BlogDetailsCloudGateways = () => {
                   <div className="latest-single ">
                     <div className="latest-thumb">
                       <Link href="/blog-single">
-                        <Image src={blogOne} alt="Como Agentes de IA Reduzem Custos" />
+                        <Image src={blogOne} alt={t.blogAi.bannerTitle} />
                       </Link>
                     </div>
                     <div className="latest-content">
                       <p>18/11/2026</p>
                       <p>
-                        <Link href="/blog-single">
-                          Como Agentes de IA Reduzem Custos em Operações Web
-                        </Link>
+                        <Link href="/blog-single">{t.blogAi.bannerTitle}</Link>
                       </p>
                     </div>
                   </div>
                   <div className="latest-single ">
                     <div className="latest-thumb">
                       <Link href="/portfolio">
-                        <Image src={portSeven} alt="Cloud VPS & DevOps" />
+                        <Image src={portSeven} alt={t.blogCloud.recent3} />
                       </Link>
                     </div>
                     <div className="latest-content">
-                      <p>Cases & Nuvem</p>
+                      <p>{t.blogShared.casesCloud}</p>
                       <p>
-                        <Link href="/portfolio">
-                          Hospedagem Cloud, VPS & DevOps de Alta Escala
-                        </Link>
+                        <Link href="/portfolio">{t.blogCloud.recent3}</Link>
                       </p>
                     </div>
                   </div>
                   <div className="latest-single ">
                     <div className="latest-thumb">
                       <Link href="/portfolio">
-                        <Image src={portThree} alt="E-commerce Alta Escala" />
+                        <Image src={portThree} alt={t.blogCloud.recent4} />
                       </Link>
                     </div>
                     <div className="latest-content">
-                      <p>Cases & Vendas</p>
+                      <p>{t.blogShared.casesSales}</p>
                       <p>
-                        <Link href="/portfolio">
-                          E-commerce de Alta Escala e Infraestrutura Confiável
-                        </Link>
+                        <Link href="/portfolio">{t.blogCloud.recent4}</Link>
                       </p>
                     </div>
                   </div>
@@ -436,37 +334,17 @@ const BlogDetailsCloudGateways = () => {
               </div>
               <div className="widget">
                 <div className="widget__head">
-                  <h5 className="h5">Tags</h5>
+                  <h5 className="h5">{t.blogShared.tagsTitle}</h5>
                 </div>
                 <div className="widget__tags">
                   <ul>
-                    <li>
-                      <Link href="/blog">cloud</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">gateways</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">devops</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">checkout</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">roi</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">uptime</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">pagamentos</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">latência</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">saas</Link>
-                    </li>
+                    <li><Link href="/blog">cloud</Link></li>
+                    <li><Link href="/blog">gateways</Link></li>
+                    <li><Link href="/blog">devops</Link></li>
+                    <li><Link href="/blog">checkout</Link></li>
+                    <li><Link href="/blog">roi</Link></li>
+                    <li><Link href="/blog">uptime</Link></li>
+                    <li><Link href="/blog">saas</Link></li>
                   </ul>
                 </div>
               </div>
@@ -474,7 +352,7 @@ const BlogDetailsCloudGateways = () => {
                 <Link href="/contact-us">
                   <Image
                     src={portSeven}
-                    alt="Otimize sua Infraestrutura Cloud com a ME Hubdigital"
+                    alt="ME Hubdigital"
                     style={{ borderRadius: "12px", width: "100%", height: "auto" }}
                   />
                 </Link>

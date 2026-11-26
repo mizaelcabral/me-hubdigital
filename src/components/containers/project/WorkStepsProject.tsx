@@ -2,10 +2,21 @@
 import Image from "next/image";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
 import videoframe from "public/images/video-frame.png";
+import { useLanguage } from "@/context/LanguageContext";
+
+const STEP_PERCENTS = ["25", "50", "75", "100"];
+const STEP_BG = [
+  "/images/work/thumb-one.png",
+  "/images/work/thumb-two.png",
+  "/images/work/thumb-three.png",
+  "/images/work/thumb-four.png",
+];
+const STEP_EXTRA_CLASS = ["", " work-two", " work-three", " work-four"];
 
 const WorkStepsProject = () => {
   const [hover, setHover] = useState(1);
   const [videoActive, setVideoActive] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
@@ -46,20 +57,15 @@ const WorkStepsProject = () => {
                   <div className="col-12 col-lg-5 col-xxl-5">
                     <div className="section__header text-center text-lg-start mb-0">
                       <span className="sub-title">
-                        etapas do processo
+                        {t.workSteps.subTitle}
                         <i className="fa-solid fa-arrow-right"></i>
                       </span>
-                      <h2 className="title title-anim">Processo de Trabalho</h2>
+                      <h2 className="title title-anim">{t.workSteps.title}</h2>
                     </div>
                   </div>
                   <div className="col-12 col-lg-7 col-xxl-5 offset-xxl-2">
                     <div className="text-center text-lg-start">
-                      <p>
-                        Unimos metodologia ágil, design de produto de alto
-                        impacto e engenharia moderna para entregar ecossistemas
-                        digitais escaláveis. Da estratégia à execução com IA,
-                        transformamos ideias em resultados.
-                      </p>
+                      <p>{t.workSteps.description}</p>
                     </div>
                   </div>
                 </div>
@@ -67,90 +73,30 @@ const WorkStepsProject = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 col-sm-6 col-xl-3">
-              <div
-                className={
-                  "work-steps__single fade-top" +
-                  (hover === 0 ? " work-steps__single-active" : " ")
-                }
-                onMouseEnter={() => setHover(0)}
-              >
-                <span>
-                  25
-                  <br />%
-                </span>
-                <h5>Descoberta & Estratégia.</h5>
+            {t.workSteps.steps.map((label, idx) => (
+              <div className="col-12 col-sm-6 col-xl-3" key={idx}>
                 <div
-                  className="work-thumb-hover d-none d-md-block"
-                  style={{
-                    backgroundImage: "url('/images/work/thumb-one.png')",
-                  }}
-                ></div>
+                  className={
+                    "work-steps__single fade-top" +
+                    STEP_EXTRA_CLASS[idx] +
+                    (hover === idx ? " work-steps__single-active" : " ")
+                  }
+                  onMouseEnter={() => setHover(idx)}
+                >
+                  <span>
+                    {STEP_PERCENTS[idx]}
+                    <br />%
+                  </span>
+                  <h5>{label}</h5>
+                  <div
+                    className="work-thumb-hover d-none d-md-block"
+                    style={{
+                      backgroundImage: `url('${STEP_BG[idx]}')`,
+                    }}
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div className="col-12 col-sm-6 col-xl-3">
-              <div
-                className={
-                  "work-steps__single fade-top work-two" +
-                  (hover === 1 ? " work-steps__single-active" : " ")
-                }
-                onMouseEnter={() => setHover(1)}
-              >
-                <span>
-                  50
-                  <br />%
-                </span>
-                <h5>Wireframes & Fluxos UX</h5>
-                <div
-                  className="work-thumb-hover d-none d-md-block"
-                  style={{
-                    backgroundImage: "url('/images/work/thumb-two.png')",
-                  }}
-                ></div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-xl-3">
-              <div
-                className={
-                  "work-steps__single fade-top work-three" +
-                  (hover === 2 ? " work-steps__single-active" : " ")
-                }
-                onMouseEnter={() => setHover(2)}
-              >
-                <span>
-                  75
-                  <br />%
-                </span>
-                <h5>Design de Alta Fidelidade</h5>
-                <div
-                  className="work-thumb-hover d-none d-md-block"
-                  style={{
-                    backgroundImage: "url('/images/work/thumb-three.png')",
-                  }}
-                ></div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-xl-3">
-              <div
-                className={
-                  "work-steps__single fade-top work-four" +
-                  (hover === 3 ? " work-steps__single-active" : " ")
-                }
-                onMouseEnter={() => setHover(3)}
-              >
-                <span>
-                  100
-                  <br />%
-                </span>
-                <h5>Engenharia & Inteligência</h5>
-                <div
-                  className="work-thumb-hover d-none d-md-block"
-                  style={{
-                    backgroundImage: "url('/images/work/thumb-four.png')",
-                  }}
-                ></div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <button

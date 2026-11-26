@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import logo from "public/images/logo.png";
 import logoLight from "public/images/logo-light.png";
 import Offcanvas from "./Offcanvas";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface HeaderProps {
   openNav: boolean;
@@ -14,6 +16,7 @@ interface HeaderProps {
 
 const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,32 +68,32 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           aria-label="dropdown menu"
                           className="navbar__dropdown-label"
                         >
-                          Home
+                          {t.nav.home}
                         </button>
                         <ul className="navbar__sub-menu navbar__sub-menu--lg">
                           <li>
-                            <Link href="/">Agência Criativa</Link>
+                            <Link href="/">{t.nav.creativeAgency}</Link>
                           </li>
                           <li>
                             <Link href="index-light">
-                              Agência Criativa Light
+                              {t.nav.creativeAgencyLight}
                             </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="about-us">Quem Somos</Link>
+                        <Link href="about-us">{t.nav.about}</Link>
                       </li>
                       <li className="navbar__item navbar__item--has-children nav-fade">
                         <button
                           aria-label="dropdown menu"
                           className="navbar__dropdown-label"
                         >
-                          Serviços
+                          {t.nav.services}
                         </button>
                         <ul className="navbar__sub-menu">
                           <li>
-                            <Link href="our-services">Nossos Serviços</Link>
+                            <Link href="our-services">{t.nav.ourServices}</Link>
                           </li>
                         </ul>
                       </li>
@@ -99,26 +102,27 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           aria-label="dropdown menu"
                           className="navbar__dropdown-label"
                         >
-                          Projetos
+                          {t.nav.projects}
                         </button>
                         <ul className="navbar__sub-menu">
                           <li>
-                            <Link href="our-projects">Nossos Projetos</Link>
+                            <Link href="our-projects">{t.nav.ourProjects}</Link>
                           </li>
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="faq">FAQ</Link>
+                        <Link href="faq">{t.nav.faq}</Link>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="contact-us">Contato</Link>
+                        <Link href="contact-us">{t.nav.contact}</Link>
                       </li>
                     </ul>
                   </div>
                   <div className="navbar__options">
+                    <LanguageSwitcher />
                     <div className="navbar__mobile-options d-none d-sm-flex">
                       <Link href="contact-us" className="btn btn--secondary">
-                        Falar Conosco
+                        {t.nav.talkToUs}
                       </Link>
                     </div>
                     <button

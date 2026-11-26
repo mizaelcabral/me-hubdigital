@@ -5,8 +5,11 @@ import phone from "public/images/phone.png";
 import mail from "public/images/mail.png";
 import location from "public/images/location.png";
 import time from "public/images/time.png";
+import { useLanguage } from "@/context/LanguageContext";
 
 const ContactMain = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="section contact-m fade-wrapper">
       <div className="container">
@@ -17,12 +20,14 @@ const ContactMain = () => {
                 <Image src={phone} alt="Image" />
               </div>
               <div className="content">
-                <h4>Telefone & WhatsApp</h4>
+                <h4>{t.contact.phoneTitle}</h4>
                 <p>
                   <Link href="tel:+5583986817291">+55 (83) 98681-7291</Link>
                 </p>
                 <p>
-                  <Link href="https://wa.me/5583986817291" target="_blank">Atendimento WhatsApp</Link>
+                  <Link href="https://wa.me/5583986817291" target="_blank">
+                    {t.contact.whatsappSupport}
+                  </Link>
                 </p>
               </div>
             </div>
@@ -33,7 +38,7 @@ const ContactMain = () => {
                 <Image src={mail} alt="Image" />
               </div>
               <div className="content">
-                <h4>E-mail</h4>
+                <h4>{t.contact.emailTitle}</h4>
                 <p>
                   <Link href="mailto:contato@mehubdigital.com">
                     contato@mehubdigital.com
@@ -48,13 +53,10 @@ const ContactMain = () => {
                 <Image src={location} alt="Image" />
               </div>
               <div className="content">
-                <h4>Our Location</h4>
+                <h4>{t.contact.locationTitle}</h4>
                 <p>
-                  <Link
-                    href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
-                    target="_blank"
-                  >
-                    85 Ketch Harbour RoadBensalem, PA 19020
+                  <Link href="https://maps.google.com" target="_blank">
+                    {t.contact.locationAddress}
                   </Link>
                 </p>
               </div>
@@ -66,9 +68,9 @@ const ContactMain = () => {
                 <Image src={time} alt="Image" />
               </div>
               <div className="content">
-                <h4>Office Hour</h4>
-                <p>Sun - Thu 09 am - 06pm</p>
-                <p>Fri - Sat 4 pm - 10pm</p>
+                <h4>{t.contact.hoursTitle}</h4>
+                <p>{t.contact.hours1}</p>
+                <p>{t.contact.hours2}</p>
               </div>
             </div>
           </div>
@@ -92,7 +94,7 @@ const ContactMain = () => {
                 </div>
                 <div className="col-12 col-lg-6">
                   <div className="contact-main__form  fade-top">
-                    <h3>Leave A Message</h3>
+                    <h3>{t.contact.formTitle}</h3>
                     <form
                       action="#"
                       method="post"
@@ -104,7 +106,7 @@ const ContactMain = () => {
                             type="text"
                             name="contact-name"
                             id="contactName"
-                            placeholder="Name"
+                            placeholder={t.contact.namePlaceholder}
                           />
                         </div>
                         <div className="group-input ">
@@ -112,29 +114,32 @@ const ContactMain = () => {
                             type="email"
                             name="contact-email"
                             id="contactEmail"
-                            placeholder="Email"
+                            placeholder={t.contact.emailPlaceholder}
                           />
                         </div>
                       </div>
                       <div className="group-input drt">
                         <select className="subject">
-                          <option data-display="Subject">Subject</option>
-                          <option value="1">Account</option>
-                          <option value="2">Service</option>
-                          <option value="3">Pricing</option>
-                          <option value="4">Support</option>
+                          <option data-display={t.contact.subjectPlaceholder}>
+                            {t.contact.subjectPlaceholder}
+                          </option>
+                          {t.contact.subjectOptions.map((opt, idx) => (
+                            <option value={String(idx + 1)} key={idx}>
+                              {opt}
+                            </option>
+                          ))}
                         </select>
                       </div>
                       <div className="group-input ">
                         <textarea
                           name="contact-message"
                           id="contactMessage"
-                          placeholder="Message"
+                          placeholder={t.contact.messagePlaceholder}
                         ></textarea>
                       </div>
                       <div className="form-cta justify-content-start">
                         <button type="submit" className="btn btn--primary">
-                          Send Message
+                          {t.contact.submitButton}
                         </button>
                       </div>
                     </form>

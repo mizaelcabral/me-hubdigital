@@ -1,21 +1,20 @@
-﻿import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import hrone from "public/images/projects/hr-one.png";
-import hrtwo from "public/images/projects/hr-two.png";
-import hrthree from "public/images/projects/hr-three.png";
 import hrfour from "public/images/projects/hr-four.png";
 import hrfive from "public/images/projects/hr-five.png";
 import hrsix from "public/images/projects/hr-six.png";
 import abblaCapa from "public/images/projects/projeto-abbla/PROJETO-ABBLA-CAPA.png";
 import quraCapa from "public/images/projects/projeto-qura/PROJETO-QURA-CAPA.png";
 import rootcareCapa from "public/images/projects/projeto-rootcare/PROJETO-ROOTCARE-CAPA.png";
+import { useLanguage } from "@/context/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 const ProjectMain = () => {
   const slider = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const ele = slider.current;
@@ -45,200 +44,67 @@ const ProjectMain = () => {
     }
   }, []);
 
+  const cards = [
+    {
+      href: "project-abbla",
+      img: abblaCapa,
+      line1: t.projectsMain.abblaLine1,
+      line2: t.projectsMain.abblaLine2,
+    },
+    {
+      href: "project-qura",
+      img: quraCapa,
+      line1: t.projectsMain.quraLine1,
+      line2: t.projectsMain.quraLine2,
+    },
+    {
+      href: "project-rootcare",
+      img: rootcareCapa,
+      line1: t.projectsMain.rootcareLine1,
+      line2: t.projectsMain.rootcareLine2,
+    },
+    {
+      href: "project-single",
+      img: hrfour,
+      line1: t.projectsMain.lmsLine1,
+      line2: t.projectsMain.lmsLine2,
+    },
+    {
+      href: "project-single",
+      img: hrfive,
+      line1: t.projectsMain.brandLine1,
+      line2: t.projectsMain.brandLine2,
+    },
+    {
+      href: "project-single",
+      img: hrsix,
+      line1: t.projectsMain.webLine1,
+      line2: t.projectsMain.webLine2,
+    },
+  ];
+
+  const allCards = [...cards, ...cards];
+
   return (
     <section className="section project-sl" ref={slider}>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-abbla">
-            <Image src={abblaCapa} alt="Software CRM Atendimento" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-abbla">
-              Software CRM
-              <br />
-              Atendimento
+      {allCards.map((card, idx) => (
+        <div className="project-sl__single" key={idx}>
+          <div className="thumb">
+            <Link href={card.href}>
+              <Image src={card.img} alt={`${card.line1} ${card.line2}`} />
             </Link>
-          </h2>
+          </div>
+          <div className="content">
+            <h2>
+              <Link href={card.href}>
+                {card.line1}
+                <br />
+                {card.line2}
+              </Link>
+            </h2>
+          </div>
         </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-qura">
-            <Image src={quraCapa} alt="Software ID Carteira Qura" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-qura">
-              Software ID
-              <br />
-              Carteira Qura
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-rootcare">
-            <Image src={rootcareCapa} alt="Software de Consulta Médica" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-rootcare">
-              Software de
-              <br />
-              Consulta Médica
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrfour} alt="Image" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-single">
-              LMS web app
-              <br />
-              lication
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrfive} alt="Image" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-single">
-              brand identity
-              <br />
-              difference
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrsix} alt="Image" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-single">
-              digital website
-              <br />
-              development
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-abbla">
-            <Image src={abblaCapa} alt="Software CRM Atendimento" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-abbla">
-              Software CRM
-              <br />
-              Atendimento
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-qura">
-            <Image src={quraCapa} alt="Software ID Carteira Qura" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-qura">
-              Software ID
-              <br />
-              Carteira Qura
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-rootcare">
-            <Image src={rootcareCapa} alt="Software de Consulta Médica" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-rootcare">
-              Software de
-              <br />
-              Consulta Médica
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrfour} alt="Image" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-single">
-              LMS web app
-              <br />
-              lication
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrfive} alt="Image" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-single">
-              brand identity
-              <br />
-              difference
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="project-single">
-            <Image src={hrsix} alt="Image" />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="project-single">
-              digital website
-              <br />
-              development
-            </Link>
-          </h2>
-        </div>
-      </div>
+      ))}
     </section>
   );
 };

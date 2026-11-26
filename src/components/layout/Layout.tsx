@@ -18,6 +18,7 @@ import VideoModal from "./VideoModal";
 import ScrollProgressBtn from "./ScrollProgressBtn";
 import CustomCursor from "./CustomCursor";
 import SplitType from "split-type";
+import { useLanguage } from "@/context/LanguageContext";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -37,6 +38,8 @@ const Layout = ({
   video,
 }: LayoutProps) => {
 
+  const { lang, t } = useLanguage();
+
   // tilt effect
   useEffect(() => {
     const tiltElements = document.querySelectorAll(".topy-tilt");
@@ -48,7 +51,7 @@ const Layout = ({
         speed: 3000,
       });
     });
-  }, []);
+  }, [lang]);
 
   // navbar
   const [openNav, setOpenNav] = useState(false);
@@ -109,7 +112,7 @@ const Layout = ({
         });
       });
     });
-  }, []);
+  }, [lang]);
 
   // appear down
   useEffect(() => {
@@ -136,7 +139,7 @@ const Layout = ({
         }
       );
     });
-  }, []);
+  }, [lang]);
 
   // split text animation
   useEffect(() => {
@@ -179,7 +182,7 @@ const Layout = ({
         }
       } catch (e) {}
     };
-  }, []);
+  }, [lang]);
 
   return (
     <Fragment>
@@ -191,12 +194,9 @@ const Layout = ({
           href="/images/favicon.png"
           type="image/x-icon"
         />
-        <title>ME Hubdigital — Software Web, IA & Automação</title>
-        <meta name="keywords" content="agentes ia, automação, web, software, cloud" />
-        <meta
-          name="description"
-          content="Software web de alto impacto, agentes autônomos de IA e soluções completas para acelerar sua operação."
-        />
+        <title>{t.meta.siteTitle}</title>
+        <meta name="keywords" content={t.meta.siteKeywords} />
+        <meta name="description" content={t.meta.siteDescription} />
       </Head>
       <div className={combinedClassName}>
         {header === 1 && (
@@ -234,7 +234,7 @@ const Layout = ({
             setOpenNav={setOpenNav}
           />
         )}
-        <main>{children}</main>
+        <main key={lang}>{children}</main>
         {footer === 1 && <Footer />}
         {footer === 2 && <FooterTwo />}
         {footer === 3 && <FooterThree />}

@@ -5,6 +5,7 @@ import Link from "next/link";
 import logo from "public/images/logo.png";
 import logoLight from "public/images/logo-light.png";
 import Offcanvas from "./Offcanvas";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface HeaderProps {
   openNav: boolean;
@@ -59,6 +60,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                     </Link>
                   </div>
                   <div className="navbar__options">
+                    <LanguageSwitcher />
                     <button
                       className="open-offcanvas-nav d-flex"
                       aria-label="toggle mobile menu"

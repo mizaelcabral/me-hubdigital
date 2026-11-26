@@ -16,37 +16,45 @@ import rootcareImgFive from "public/images/projects/projeto-rootcare/PROJETO-ROO
 import iconone from "public/images/projects/icon-one.png";
 import icontwo from "public/images/projects/icon-two.png";
 import iconthree from "public/images/projects/icon-three.png";
+import { useLanguage } from "@/context/LanguageContext";
+
+const SCENES = [rootcareCenaOne, rootcareCenaTwo, rootcareCenaThree];
+const GALLERY = [
+  rootcareCapa,
+  rootcareImgOne,
+  rootcareImgTwo,
+  rootcareImgThree,
+  rootcareImgFour,
+  rootcareImgFive,
+  rootcareCapa,
+  rootcareImgOne,
+  rootcareImgTwo,
+  rootcareImgThree,
+  rootcareImgFour,
+  rootcareImgFive,
+];
 
 const RootCareDetailsMain = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="section project-d">
       <div className="container">
         <div className="row gaper">
           <div className="col-12 col-lg-6">
             <div className="project-d-group">
-              <h3 className="light-title-lg">Telemedicina Humanizada & Acolhimento ao Paciente</h3>
-              <p>
-                A plataforma Software de Consulta Médica da RootCare foi concebida para
-                transformar a experiência de cuidado à saúde, eliminando barreiras geográficas
-                e aproximando pacientes de médicos especialistas de forma segura, acolhedora
-                e ética. Com foco em telemedicina integrada e terapias personalizadas, o
-                sistema digitaliza toda a jornada do paciente: desde a triagem inicial até
-                o agendamento em poucos cliques, realização de videochamadas criptografadas
-                e acompanhamento clínico contínuo com suporte integral.
-              </p>
+              <h3 className="light-title-lg">{t.rootcare.h1}</h3>
+              <p>{t.rootcare.p1}</p>
             </div>
           </div>
           <div className="col-12 col-lg-6">
             <div className="project-d-group">
-              <h3 className="light-title-lg">Funcionalidades da Plataforma RootCare</h3>
-              <p>
-                Solução robusta e escalável desenvolvida para proporcionar máxima segurança
-                aos profissionais de saúde e acolhimento sem burocracia aos pacientes.
-              </p>
+              <h3 className="light-title-lg">{t.rootcare.h2}</h3>
+              <p>{t.rootcare.p2}</p>
               <ul>
-                <li>Agendamento inteligente de consultas online com confirmação instantânea</li>
-                <li>Prontuário eletrônico seguro com prescrições digitais e emissão de laudos</li>
-                <li>Ambiente de videochamada criptografado em total conformidade com a LGPD e CFM</li>
+                {t.rootcare.bullets.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -74,21 +82,17 @@ const RootCareDetailsMain = () => {
                   }}
                   className="poster__slider"
                 >
-                  <SwiperSlide>
-                    <div className="poster__slider-single">
-                      <Image src={rootcareCenaOne} alt="RootCare - Cenário 01" priority />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="poster__slider-single">
-                      <Image src={rootcareCenaTwo} alt="RootCare - Cenário 02" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="poster__slider-single">
-                      <Image src={rootcareCenaThree} alt="RootCare - Cenário 03" />
-                    </div>
-                  </SwiperSlide>
+                  {SCENES.map((img, idx) => (
+                    <SwiperSlide key={idx}>
+                      <div className="poster__slider-single">
+                        <Image
+                          src={img}
+                          alt={`RootCare 0${idx + 1}`}
+                          priority={idx === 0}
+                        />
+                      </div>
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
               <div className="slide-group">
@@ -112,18 +116,18 @@ const RootCareDetailsMain = () => {
           <div className="col-12 col-sm-6 col-xl-4">
             <div className="project-d-o__single fade-top">
               <div className="content">
-                <h5>Segmento</h5>
-                <p>HealthTech & Telemedicina</p>
+                <h5>{t.rootcare.metaSegment}</h5>
+                <p>{t.rootcare.metaSegmentVal}</p>
               </div>
               <div className="thumb">
-                <Image src={iconone} alt="Segmento" />
+                <Image src={iconone} alt={t.rootcare.metaSegment} />
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-xl-4">
             <div className="project-d-o__single fade-top">
               <div className="content">
-                <h5>Website Oficial</h5>
+                <h5>{t.rootcare.metaWebsite}</h5>
                 <p>
                   <Link
                     href="https://www.rootcareclub.com.br"
@@ -131,7 +135,11 @@ const RootCareDetailsMain = () => {
                     rel="noopener noreferrer"
                     className="d-inline-flex align-items-center gap-1"
                   >
-                    rootcareclub.com.br <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: "12px" }}></i>
+                    rootcareclub.com.br{" "}
+                    <i
+                      className="fa-solid fa-arrow-up-right-from-square"
+                      style={{ fontSize: "12px" }}
+                    ></i>
                   </Link>
                 </p>
               </div>
@@ -140,9 +148,9 @@ const RootCareDetailsMain = () => {
                   href="https://www.rootcareclub.com.br"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Acessar site RootCare Club"
+                  aria-label="RootCare Club"
                 >
-                  <Image src={icontwo} alt="Website Oficial" />
+                  <Image src={icontwo} alt={t.rootcare.metaWebsite} />
                 </Link>
               </div>
             </div>
@@ -150,11 +158,11 @@ const RootCareDetailsMain = () => {
           <div className="col-12 col-sm-6 col-xl-4">
             <div className="project-d-o__single fade-top">
               <div className="content">
-                <h5>Tecnologias</h5>
-                <p>Next.js, WebRTC & Nuvem LGPD</p>
+                <h5>{t.rootcare.metaTech}</h5>
+                <p>{t.rootcare.metaTechVal}</p>
               </div>
               <div className="thumb">
-                <Image src={iconthree} alt="Tecnologias" />
+                <Image src={iconthree} alt={t.rootcare.metaTech} />
               </div>
             </div>
           </div>
@@ -162,22 +170,9 @@ const RootCareDetailsMain = () => {
         <div className="row">
           <div className="col-12">
             <div className="details-group text-start section__content-cta">
-              <h3 className="light-title-lg">Visão Geral do Projeto</h3>
-              <p>
-                A RootCare nasceu da necessidade de oferecer um canal de saúde digital ético,
-                eficiente e profundamente acolhedor para pacientes que buscam consultas especializadas
-                e terapias personalizadas. O sistema centraliza a gestão de agendas médicas,
-                triagem facilitada de sintomas e histórico clínico confidencial, permitindo que médicos
-                realizem consultas por telemedicina com estabilidade de áudio e vídeo e total segurança
-                regulatória.
-              </p>
-              <p>
-                Construída sobre uma infraestrutura em nuvem moderna e resiliente, a plataforma assegura
-                interoperabilidade entre laudos, prescrições eletrônicas com assinatura digital certificada
-                e acompanhamento pós-consulta. O resultado é uma redução drástica no tempo de espera para
-                atendimento especializado e uma jornada de cuidado onde o paciente se sente acolhido,
-                orientado e respaldado em cada etapa do seu tratamento.
-              </p>
+              <h3 className="light-title-lg">{t.rootcare.overviewTitle}</h3>
+              <p>{t.rootcare.overviewP1}</p>
+              <p>{t.rootcare.overviewP2}</p>
               <div className="btn-wrapper mt-4">
                 <Link
                   href="https://www.rootcareclub.com.br"
@@ -185,7 +180,8 @@ const RootCareDetailsMain = () => {
                   rel="noopener noreferrer"
                   className="btn btn--primary"
                 >
-                  Visitar Site do Projeto <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                  {t.rootcare.visitBtn}{" "}
+                  <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
                 </Link>
               </div>
             </div>
@@ -199,12 +195,11 @@ const RootCareDetailsMain = () => {
                   <i className="fa-solid fa-quote-right"></i>
                 </div>
                 <blockquote className="secondary-text">
-                  A telemedicina quando unida ao acolhimento verdadeiro devolve ao paciente a tranquilidade
-                  e a dignidade no acesso ao tratamento médico especializado.
+                  {t.rootcare.quote}
                 </blockquote>
               </div>
               <div className="author">
-                <h4>- EQUIPE ROOTCARE</h4>
+                <h4>{t.rootcare.quoteAuthor}</h4>
               </div>
             </div>
           </div>
@@ -212,19 +207,9 @@ const RootCareDetailsMain = () => {
         <div className="row">
           <div className="col-12">
             <div className="details-group text-start section__content-cta">
-              <h3 className="light-title-lg">Resultados Alcançados</h3>
-              <p>
-                Com a implementação da plataforma RootCare, o tempo médio entre a solicitação do
-                paciente e a realização da primeira consulta foi reduzido em mais de 70%, ampliando
-                significativamente o acesso a cuidados médicos de qualidade para pessoas em diversas
-                regiões do Brasil sem necessidade de deslocamento físico.
-              </p>
-              <p>
-                A interface fluida e intuitiva garantiu índices de satisfação superiores a 98%
-                entre pacientes e médicos prescritores, mantendo conformidade rigorosa aos padrões
-                do CFM, ANVISA e LGPD. O ecossistema RootCare estabelece um novo patamar em saúde
-                digital, unindo tecnologia de ponta, acolhimento humano e excelência clínica.
-              </p>
+              <h3 className="light-title-lg">{t.rootcare.resultsTitle}</h3>
+              <p>{t.rootcare.resultsP1}</p>
+              <p>{t.rootcare.resultsP2}</p>
               <div className="btn-wrapper mt-4">
                 <Link
                   href="https://www.rootcareclub.com.br"
@@ -232,7 +217,8 @@ const RootCareDetailsMain = () => {
                   rel="noopener noreferrer"
                   className="btn btn--primary"
                 >
-                  Conhecer a RootCare <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                  {t.rootcare.exploreBtn}{" "}
+                  <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
                 </Link>
               </div>
             </div>
@@ -270,66 +256,13 @@ const RootCareDetailsMain = () => {
           }}
           className="project-d__slider"
         >
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareCapa} alt="RootCare Capa" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgOne} alt="RootCare Imagem 01" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgTwo} alt="RootCare Imagem 02" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgThree} alt="RootCare Imagem 03" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgFour} alt="RootCare Imagem 04" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgFive} alt="RootCare Imagem 05" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareCapa} alt="RootCare Capa" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgOne} alt="RootCare Imagem 01" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgTwo} alt="RootCare Imagem 02" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgThree} alt="RootCare Imagem 03" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgFour} alt="RootCare Imagem 04" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={rootcareImgFive} alt="RootCare Imagem 05" />
-            </div>
-          </SwiperSlide>
+          {GALLERY.map((img, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="project-d__slider-single">
+                <Image src={img} alt={`RootCare 0${(idx % 6) + 1}`} />
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

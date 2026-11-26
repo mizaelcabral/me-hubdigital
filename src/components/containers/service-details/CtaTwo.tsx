@@ -1,7 +1,10 @@
 ﻿import React from "react";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 const CtaTwo = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="cta-two section">
       <div className="container">
@@ -14,11 +17,11 @@ const CtaTwo = () => {
               <div className="row gaper align-items-center">
                 <div className="col-12 col-lg-8">
                   <div className="cta-two__content">
-                    <span>Hello !</span>
-                    <h2 className="title-anim">ready to work with us?</h2>
+                    <span>{t.ctaTwo.greeting}</span>
+                    <h2 className="title-anim">{t.ctaTwo.title}</h2>
                     <h5>
                       <Link href="tel:+5583986817291">
-                        call: +55 (83) 98681-7291
+                        {t.ctaTwo.callPrefix} +55 (83) 98681-7291
                       </Link>
                     </h5>
                   </div>
@@ -26,7 +29,7 @@ const CtaTwo = () => {
                 <div className="col-12 col-lg-4">
                   <div className="text-start text-lg-end">
                     <Link href="contact-us" className="btn btn--tertiary">
-                      start a project
+                      {t.ctaTwo.button}
                       <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                     </Link>
                   </div>

@@ -7,14 +7,17 @@ import TeamMembers from "@/components/containers/TeamMembers";
 import HomeTestimonial from "@/components/containers/home/HomeTestimonial";
 import AboutSponsor from "@/components/containers/home-three/AboutSponsor";
 import AboutCta from "@/components/containers/home-two/AboutCta";
+import { useLanguage } from "@/context/LanguageContext";
 
 const AboutUs = () => {
+  const { t } = useLanguage();
+
   return (
     <Layout header={2} footer={5} video={0}>
       <CmnBanner
-        title="Quem Somos"
-        navigation="Quem Somos"
-        content="Somos uma empresa AI-First especializada em potencializar negócios com software web moderno, inteligência artificial integrada e agentes autônomos de alta performance."
+        title={t.banner.aboutTitle}
+        navigation={t.banner.aboutTitle}
+        content={t.banner.aboutContent}
       />
       <HomeTwoModal />
       <Agency />

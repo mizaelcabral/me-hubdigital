@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "public/images/logo.png";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
   return (
     <footer
       className="footer section pb-0"
@@ -23,7 +25,7 @@ const Footer = () => {
                   target="_blank"
                 >
                   <i className="fa-sharp fa-solid fa-location-dot"></i>
-                  São Paulo, SP — Brasil
+                  {t.footer.location}
                 </Link>
                 <Link href="tel:+5583986817291">
                   <i className="fa-sharp fa-solid fa-phone-volume"></i>
@@ -36,7 +38,7 @@ const Footer = () => {
               </div>
               <div className="footer__cta text-start">
                 <Link href="contact-us" className="btn btn--secondary">
-                  falar com especialista
+                  {t.footer.cta}
                 </Link>
               </div>
             </div>
@@ -44,24 +46,24 @@ const Footer = () => {
           <div className="col-12 col-lg-2 col-xl-2">
             <div className="footer__single">
               <div className="footer__single-intro">
-                <h5>navegação</h5>
+                <h5>{t.footer.navigation}</h5>
               </div>
               <div className="footer__single-content">
                 <ul>
                   <li>
-                    <Link href="about-us">Quem Somos</Link>
+                    <Link href="about-us">{t.nav.about}</Link>
                   </li>
                   <li>
-                    <Link href="our-services">Serviços</Link>
+                    <Link href="our-services">{t.nav.services}</Link>
                   </li>
                   <li>
-                    <Link href="our-projects">Projetos</Link>
+                    <Link href="our-projects">{t.nav.projects}</Link>
                   </li>
                   <li>
-                    <Link href="faq">FAQ</Link>
+                    <Link href="faq">{t.nav.faq}</Link>
                   </li>
                   <li>
-                    <Link href="contact-us">Contato</Link>
+                    <Link href="contact-us">{t.nav.contact}</Link>
                   </li>
                 </ul>
               </div>
@@ -70,13 +72,10 @@ const Footer = () => {
           <div className="col-12 col-lg-5 col-xl-4">
             <div className="footer__single">
               <div className="footer__single-intro">
-                <h5>Receba nossos insights</h5>
+                <h5>{t.footer.newsletterTitle}</h5>
               </div>
               <div className="footer__single-content">
-                <p>
-                  Conteúdos estratégicos sobre software, IA e
-                  automação comercial para acelerar sua empresa.
-                </p>
+                <p>{t.footer.newsletterDesc}</p>
                 <div className="footer__single-form">
                   <form action="#" method="post">
                     <div className="input-email">
@@ -84,7 +83,7 @@ const Footer = () => {
                         type="email"
                         name="subscribe-news"
                         id="subscribeNews"
-                        placeholder="Seu melhor e-mail"
+                        placeholder={t.footer.emailPlaceholder}
                         required
                       />
                       <button type="submit" className="subscribe">
@@ -105,7 +104,7 @@ const Footer = () => {
                   <div className="footer__copyright-text text-center text-lg-start">
                     <p>
                       Copyright &copy;
-                      <span id="copyYear">{currentYear}</span> ME Hubdigital. Todos os direitos reservados.
+                      <span id="copyYear">{currentYear}</span> ME Hubdigital. {t.footer.rights}
                     </p>
                   </div>
                 </div>

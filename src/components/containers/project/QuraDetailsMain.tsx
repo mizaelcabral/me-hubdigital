@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
@@ -18,38 +17,45 @@ import quraImgFour from "public/images/projects/projeto-qura/PROJETO-QURA-ID-IMA
 import iconone from "public/images/projects/icon-one.png";
 import icontwo from "public/images/projects/icon-two.png";
 import iconthree from "public/images/projects/icon-three.png";
+import { useLanguage } from "@/context/LanguageContext";
+
+const SCENES = [quraCenaOne, quraCenaTwo, quraCenaThree, quraCenaFour, quraCenaFive];
+const GALLERY = [
+  quraImgOne,
+  quraImgTwo,
+  quraImgThree,
+  quraImgThreeOne,
+  quraImgFour,
+  quraCapa,
+  quraImgOne,
+  quraImgTwo,
+  quraImgThree,
+  quraImgThreeOne,
+  quraImgFour,
+  quraCapa,
+];
 
 const QuraDetailsMain = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="section project-d">
       <div className="container">
         <div className="row gaper">
           <div className="col-12 col-lg-6">
             <div className="project-d-group">
-              <h3 className="light-title-lg">Identidade Digital & Saúde Integrada</h3>
-              <p>
-                A plataforma Software ID Carteira Qura foi projetada para
-                modernizar e proteger a identificação de pacientes em
-                tratamentos contínuos e terapias regulamentadas. Desenvolvida
-                sob rígidos padrões de segurança digital e conformidade com a
-                LGPD, o ecossistema centraliza prescrições médicas, histórico
-                clínico, documentos regulatórios e carteirinha digital acessível
-                via smartphone com validação criptográfica em tempo real.
-              </p>
+              <h3 className="light-title-lg">{t.qura.h1}</h3>
+              <p>{t.qura.p1}</p>
             </div>
           </div>
           <div className="col-12 col-lg-6">
             <div className="project-d-group">
-              <h3 className="light-title-lg">Funcionalidades da Carteira Qura</h3>
-              <p>
-                Solução digital completa para validação de identidade,
-                conformidade regulatória e prontuário seguro para pacientes,
-                médicos e associações de saúde.
-              </p>
+              <h3 className="light-title-lg">{t.qura.h2}</h3>
+              <p>{t.qura.p2}</p>
               <ul>
-                <li>Carteirinha digital com QR Code dinâmico e validação antifraude</li>
-                <li>Armazenamento seguro de laudos, receitas e autorizações oficiais</li>
-                <li>Infraestrutura em nuvem criptografada em total conformidade com a LGPD</li>
+                {t.qura.bullets.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -77,31 +83,17 @@ const QuraDetailsMain = () => {
                   }}
                   className="poster__slider"
                 >
-                  <SwiperSlide>
-                    <div className="poster__slider-single">
-                      <Image src={quraCenaOne} alt="Qura ID - Cenário 01" priority />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="poster__slider-single">
-                      <Image src={quraCenaTwo} alt="Qura ID - Cenário 02" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="poster__slider-single">
-                      <Image src={quraCenaThree} alt="Qura ID - Cenário 03" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="poster__slider-single">
-                      <Image src={quraCenaFour} alt="Qura ID - Cenário 04" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="poster__slider-single">
-                      <Image src={quraCenaFive} alt="Qura ID - Cenário 05" />
-                    </div>
-                  </SwiperSlide>
+                  {SCENES.map((img, idx) => (
+                    <SwiperSlide key={idx}>
+                      <div className="poster__slider-single">
+                        <Image
+                          src={img}
+                          alt={`Qura ID 0${idx + 1}`}
+                          priority={idx === 0}
+                        />
+                      </div>
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
               <div className="slide-group">
@@ -125,37 +117,38 @@ const QuraDetailsMain = () => {
           <div className="col-12 col-sm-6 col-xl-4">
             <div className="project-d-o__single fade-top">
               <div className="content">
-                <h5>Segmento</h5>
-                <p>HealthTech & Identidade Digital</p>
+                <h5>{t.qura.metaSegment}</h5>
+                <p>{t.qura.metaSegmentVal}</p>
               </div>
               <div className="thumb">
-                <Image src={iconone} alt="Segmento" />
+                <Image src={iconone} alt={t.qura.metaSegment} />
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-xl-4">
             <div className="project-d-o__single fade-top">
               <div className="content">
-                <h5>Plataforma</h5>
+                <h5>{t.qura.metaPlatform}</h5>
                 <p>
                   <span className="d-inline-flex align-items-center gap-1">
-                    Qura Carteira Digital <i className="fa-solid fa-id-card" style={{ fontSize: "12px" }}></i>
+                    {t.qura.metaPlatformVal}{" "}
+                    <i className="fa-solid fa-id-card" style={{ fontSize: "12px" }}></i>
                   </span>
                 </p>
               </div>
               <div className="thumb">
-                <Image src={icontwo} alt="Plataforma Qura" />
+                <Image src={icontwo} alt={t.qura.metaPlatform} />
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-xl-4">
             <div className="project-d-o__single fade-top">
               <div className="content">
-                <h5>Tecnologias</h5>
-                <p>Next.js, QR Code & Cloud LGPD</p>
+                <h5>{t.qura.metaTech}</h5>
+                <p>{t.qura.metaTechVal}</p>
               </div>
               <div className="thumb">
-                <Image src={iconthree} alt="Tecnologias" />
+                <Image src={iconthree} alt={t.qura.metaTech} />
               </div>
             </div>
           </div>
@@ -163,26 +156,9 @@ const QuraDetailsMain = () => {
         <div className="row">
           <div className="col-12">
             <div className="details-group text-start section__content-cta">
-              <h3 className="light-title-lg">Visão Geral do Projeto</h3>
-              <p>
-                O desenvolvimento da Carteira Qura nasceu da urgência de
-                fornecer a pacientes e profissionais de saúde uma identificação
-                digital confiável, ágil e protegida contra falsificações. O
-                aplicativo permite que o usuário carregue seus documentos
-                médicos oficiais no celular com autenticação biométrica,
-                facilitando a comprovação de tratamentos especiais, compra
-                segura de medicamentos controlados e trânsito regulatório sem
-                burocracias.
-              </p>
-              <p>
-                Com arquitetura em nuvem de alta disponibilidade, o sistema
-                integra módulos para verificação instantânea por autoridades e
-                farmacêuticas via leitura de QR Code encriptado. Além de
-                resguardar o sigilo absoluto dos dados médicos conforme a
-                legislação vigente, a plataforma oferece uma interface
-                intuitiva e acolhedora, desenhada para proporcionar autonomia e
-                tranquilidade a pacientes em todas as etapas do cuidado.
-              </p>
+              <h3 className="light-title-lg">{t.qura.overviewTitle}</h3>
+              <p>{t.qura.overviewP1}</p>
+              <p>{t.qura.overviewP2}</p>
             </div>
           </div>
         </div>
@@ -194,13 +170,11 @@ const QuraDetailsMain = () => {
                   <i className="fa-solid fa-quote-right"></i>
                 </div>
                 <blockquote className="secondary-text">
-                  A tecnologia em saúde deve aproximar pessoas, garantir
-                  segurança jurídica e transformar a rotina do paciente com
-                  respeito e agilidade.
+                  {t.qura.quote}
                 </blockquote>
               </div>
               <div className="author">
-                <h4>- EQUIPE QURA</h4>
+                <h4>{t.qura.quoteAuthor}</h4>
               </div>
             </div>
           </div>
@@ -208,25 +182,9 @@ const QuraDetailsMain = () => {
         <div className="row">
           <div className="col-12">
             <div className="details-group text-start section__content-cta">
-              <h3 className="light-title-lg">Resultados Alcançados</h3>
-              <p>
-                A disponibilização da Carteira Qura proporcionou uma evolução
-                significativa na gestão documental de pacientes e associações
-                parceiras. O tempo de validação de prescrições e laudos foi
-                reduzido de dias para poucos segundos, eliminando o extravio de
-                papéis e garantindo tranquilidade jurídica tanto para os
-                médicos prescritores quanto para os pacientes que dependem do
-                acesso contínuo aos seus tratamentos.
-              </p>
-              <p>
-                Com milhares de carteiras digitais emitidas e validadas em todo
-                o país, a plataforma atingiu índice superior a 99% de
-                disponibilidade operacional e zero incidentes de segurança. A
-                solução estabeleceu um novo referencial em saúde digital no
-                Brasil, consolidando um ambiente interoperável, altamente seguro
-                e que coloca o paciente no controle soberano de suas
-                informações clínicas mais sensíveis.
-              </p>
+              <h3 className="light-title-lg">{t.qura.resultsTitle}</h3>
+              <p>{t.qura.resultsP1}</p>
+              <p>{t.qura.resultsP2}</p>
             </div>
           </div>
         </div>
@@ -262,66 +220,13 @@ const QuraDetailsMain = () => {
           }}
           className="project-d__slider"
         >
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgOne} alt="Qura ID Imagem 01" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgTwo} alt="Qura ID Imagem 02" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgThree} alt="Qura ID Imagem 03" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgThreeOne} alt="Qura ID Imagem 03-1" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgFour} alt="Qura ID Imagem 04" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraCapa} alt="Qura ID Capa" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgOne} alt="Qura ID Imagem 01" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgTwo} alt="Qura ID Imagem 02" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgThree} alt="Qura ID Imagem 03" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgThreeOne} alt="Qura ID Imagem 03-1" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraImgFour} alt="Qura ID Imagem 04" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="project-d__slider-single">
-              <Image src={quraCapa} alt="Qura ID Capa" />
-            </div>
-          </SwiperSlide>
+          {GALLERY.map((img, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="project-d__slider-single">
+                <Image src={img} alt={`Qura ID 0${(idx % 6) + 1}`} />
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

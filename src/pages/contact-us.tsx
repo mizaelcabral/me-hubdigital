@@ -2,11 +2,14 @@
 import Layout from "@/components/layout/Layout";
 import CmnBanner from "@/components/layout/banner/CmnBanner";
 import ContactMain from "@/components/containers/ContactMain";
+import { useLanguage } from "@/context/LanguageContext";
 
 const ContactUs = () => {
+  const { t } = useLanguage();
+
   return (
     <Layout header={2} footer={5} video={0}>
-      <CmnBanner title="Contact Us" navigation="Contact Us" />
+      <CmnBanner title={t.banner.contactTitle} navigation={t.nav.contact} />
       <ContactMain />
     </Layout>
   );

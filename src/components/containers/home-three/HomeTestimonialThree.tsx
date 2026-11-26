@@ -7,9 +7,13 @@ import "swiper/swiper-bundle.css";
 import sthumb from "public/images/testimonial/s-thumb.webp";
 import sthumbtwo from "public/images/testimonial/s-thumb-two.webp";
 import sthumbthree from "public/images/testimonial/s-thumb-three.webp";
+import { useLanguage } from "@/context/LanguageContext";
+
+const THUMBS = [sthumb, sthumbtwo, sthumbthree];
 
 const HomeTestimonialThree = () => {
   const [nextSlideIndex, setNextSlideIndex] = useState<number>(1);
+  const { t } = useLanguage();
 
   const handleSlideChange = (swiper: any) => {
     const nextIndex = (swiper.realIndex + 1) % swiper.slides.length;
@@ -33,76 +37,18 @@ const HomeTestimonialThree = () => {
           }}
           className="testimonial__text-slider"
         >
-          <SwiperSlide>
-            <div className="testimonial__text-slider-single">
-              <h2 className="h1">
-                <Link href="client-feedback">
-                  o que dizem nossos clientes
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="testimonial__text-slider-single">
-              <h2 className="h1">
-                <Link href="client-feedback">
-                  o que dizem nossos clientes
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="testimonial__text-slider-single">
-              <h2 className="h1">
-                <Link href="client-feedback">
-                  o que dizem nossos clientes
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="testimonial__text-slider-single">
-              <h2 className="h1">
-                <Link href="client-feedback">
-                  o que dizem nossos clientes
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="testimonial__text-slider-single">
-              <h2 className="h1">
-                <Link href="client-feedback">
-                  o que dizem nossos clientes
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="testimonial__text-slider-single">
-              <h2 className="h1">
-                <Link href="client-feedback">
-                  o que dizem nossos clientes
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="testimonial__text-slider-single">
-              <h2 className="h1">
-                <Link href="client-feedback">
-                  o que dizem nossos clientes
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
+          {[0, 1, 2, 3, 4, 5, 6].map((idx) => (
+            <SwiperSlide key={idx}>
+              <div className="testimonial__text-slider-single">
+                <h2 className="h1">
+                  <Link href="client-feedback">
+                    {t.homeTestimonial.marqueeThree}
+                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+                  </Link>
+                </h2>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <div className="container position-relative">
@@ -131,135 +77,46 @@ const HomeTestimonialThree = () => {
                 onSlideChange={(swiper) => handleSlideChange(swiper)}
                 className="testimonial-s__slider"
               >
-                <SwiperSlide>
-                  <div className="testimonial-s__slider-single">
-                    <div className="row gaper align-items-center">
-                      <div className="col-12 col-lg-4 col-xxl-4">
-                        <div className="thumb">
-                          <Image src={sthumb} alt="Image" />
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="44"
-                            height="322"
-                            viewBox="0 0 44 322"
-                            fill="none"
-                            className="d-none d-lg-block"
-                          >
-                            <path
-                              d="M43 -0.000976562V151.999L2 192.999H43V321.999"
-                              stroke="#414141"
-                            />
-                          </svg>
+                {t.homeTestimonial.itemsThree.map((item, idx) => (
+                  <SwiperSlide key={idx}>
+                    <div className="testimonial-s__slider-single">
+                      <div className="row gaper align-items-center">
+                        <div className="col-12 col-lg-4 col-xxl-4">
+                          <div className="thumb">
+                            <Image src={THUMBS[idx]} alt={item.name} />
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="44"
+                              height="322"
+                              viewBox="0 0 44 322"
+                              fill="none"
+                              className="d-none d-lg-block"
+                            >
+                              <path
+                                d="M43 -0.000976562V151.999L2 192.999H43V321.999"
+                                stroke="#414141"
+                              />
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                      <div className="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
-                        <div className="testimonial-s__content">
-                          <div className="quote">
-                            <i className="fa-solid fa-quote-right"></i>
-                          </div>
-                          <div className="content">
-                            <h4>
-                              A ME Hub reformulou toda a arquitetura de sistemas
-                              da nossa empresa. A integração dos agentes de IA no
-                              fluxo operacional gerou ganho imediato de
-                              produtividade e reduziu o tempo de atendimento.
-                            </h4>
-                          </div>
-                          <div className="content-cta">
-                            <h5>Guilherme Prado</h5>
-                            <p>Diretor de Software</p>
+                        <div className="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+                          <div className="testimonial-s__content">
+                            <div className="quote">
+                              <i className="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div className="content">
+                              <h4>{item.quote}</h4>
+                            </div>
+                            <div className="content-cta">
+                              <h5>{item.name}</h5>
+                              <p>{item.role}</p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="testimonial-s__slider-single">
-                    <div className="row gaper align-items-center">
-                      <div className="col-12 col-lg-4 col-xxl-4">
-                        <div className="thumb">
-                          <Image src={sthumbtwo} alt="Image" />
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="44"
-                            height="322"
-                            viewBox="0 0 44 322"
-                            fill="none"
-                            className="d-none d-lg-block"
-                          >
-                            <path
-                              d="M43 -0.000976562V151.999L2 192.999H43V321.999"
-                              stroke="#414141"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
-                        <div className="testimonial-s__content">
-                          <div className="quote">
-                            <i className="fa-solid fa-quote-right"></i>
-                          </div>
-                          <div className="content">
-                            <h4>
-                              A equipe entregou nossa plataforma SaaS com
-                              qualidade técnica impecável. O sistema suporta
-                              picos de tráfego sem instabilidades e a taxa de
-                              conversão superou todas as metas projetadas.
-                            </h4>
-                          </div>
-                          <div className="content-cta">
-                            <h5>Beatriz Siqueira</h5>
-                            <p>Head de Produto</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="testimonial-s__slider-single">
-                    <div className="row gaper align-items-center">
-                      <div className="col-12 col-lg-4 col-xxl-4">
-                        <div className="thumb">
-                          <Image src={sthumbthree} alt="Image" />
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="44"
-                            height="322"
-                            viewBox="0 0 44 322"
-                            fill="none"
-                            className="d-none d-lg-block"
-                          >
-                            <path
-                              d="M43 -0.000976562V151.999L2 192.999H43V321.999"
-                              stroke="#414141"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
-                        <div className="testimonial-s__content">
-                          <div className="quote">
-                            <i className="fa-solid fa-quote-right"></i>
-                          </div>
-                          <div className="content">
-                            <h4>
-                              Trabalhar com a ME Hub trouxe segurança para nossa
-                              infraestrutura cloud e processos críticos.
-                              Automações precisas, código limpo e atendimento
-                              consultivo sênior em todas as fases da operação.
-                            </h4>
-                          </div>
-                          <div className="content-cta">
-                            <h5>Lucas Vasconcelos</h5>
-                            <p>CTO & Co-fundador</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>

@@ -9,8 +9,11 @@ import blogTwo from "public/images/blog/two.webp";
 import portTwo from "public/images/portfolio/two.webp";
 import portFive from "public/images/portfolio/five.webp";
 import portSix from "public/images/portfolio/six.webp";
+import { useLanguage } from "@/context/LanguageContext";
 
 const BlogDetailsMain = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="section blog-main blog-details fade-wrapper">
       <div className="container">
@@ -18,166 +21,76 @@ const BlogDetailsMain = () => {
           <div className="col-12 col-xl-8">
             <div className="blog-details__content">
               <div className="bd-thumb fade-top">
-                <Image
-                  src={poster}
-                  alt="Como Agentes de IA Reduzem Custos em Operações Web"
-                  priority
-                />
+                <Image src={poster} alt={t.blogAi.bannerTitle} priority />
               </div>
               <div className="bd-content">
                 <div className="bd-meta">
                   <div className="meta__left">
                     <p>
-                      <strong>Escrito por :</strong>
-                      Equipe de Engenharia ME Hubdigital
+                      <strong>{t.blogShared.writtenBy}</strong>{" "}
+                      {t.blogShared.author}
                     </p>
                     <span></span>
                     <p>18/11/2026</p>
                     <span></span>
-                    <p>Leitura: 5 min</p>
+                    <p>{t.blogAi.readTime}</p>
                   </div>
                 </div>
                 <div className="bd-content-info">
-                  <h4 className="h4">
-                    Como Agentes de IA Reduzem Custos em Operações Web
-                  </h4>
+                  <h4 className="h4">{t.blogAi.bannerTitle}</h4>
                   <div className="paragraph">
-                    <p>
-                      No ecossistema corporativo atual, a escalabilidade de uma
-                      operação digital não é mais definida apenas pelo volume de
-                      tráfego ou pelo crescimento do faturamento, mas sim pela
-                      capacidade de manter a eficiência operacional com custos
-                      controlados. Tradicionalmente, toda expansão trazia consigo
-                      um aumento linear nos custos: contratação de mais analistas
-                      de suporte nível 1, plantões contínuos para monitorar
-                      servidores e horas intermináveis de engenharia gastas em
-                      tarefas manuais de conciliação e triagem.
-                    </p>
-                    <p>
-                      Com a consolidação dos agentes autônomos de Inteligência
-                      Artificial, o paradigma mudou radicalmente. Ao contrário
-                      dos chatbots convencionais que se limitam a repetir respostas
-                      rígidas e pré-programadas, os agentes de IA desenvolvidos pela
-                      ME Hubdigital executam ações concretas em tempo real:
-                      consultam bancos de dados, acionam APIs, aplicam regras de
-                      negócio e solucionam incidentes de ponta a ponta sem qualquer
-                      fricção humana.
-                    </p>
+                    <p>{t.blogAi.p1}</p>
+                    <p>{t.blogAi.p2}</p>
                   </div>
-                  <h4 className="h4">
-                    O Gargalo Invisível das Operações Web Tradicionais
-                  </h4>
+                  <h4 className="h4">{t.blogAi.h2}</h4>
                   <div className="paragraph">
-                    <p>
-                      Pesquisas do setor demonstram que mais de 40% das horas de
-                      trabalho em equipes de tecnologia e suporte são consumidas
-                      por processos altamente previsíveis. Quando um cliente entra
-                      em contato para checar o status de um pedido, solicitar uma
-                      segunda via de nota fiscal ou redefinir credenciais com
-                      segurança, cada minuto de fila de espera custa dinheiro e
-                      aumenta a taxa de insatisfação.
-                    </p>
-                    <p>
-                      No ambiente de infraestrutura, o cenário é idêntico:
-                      instabilidades silenciosas em gateways de pagamento ou picos
-                      repentinos de requisições exigem detecção e resposta em
-                      milissegundos. Deixar essa responsabilidade unicamente sob
-                      vigilância humana é convidar o prejuízo no momento mais
-                      inoportuno.
-                    </p>
+                    <p>{t.blogAi.p3}</p>
+                    <p>{t.blogAi.p4}</p>
                   </div>
                 </div>
               </div>
               <div className="bd-group">
-                <Image
-                  src={groupone}
-                  alt="Orquestração de Agentes Autônomos de IA"
-                  className="fade-top"
-                />
-                <Image
-                  src={grouptwo}
-                  alt="Dashboard de Redução de Custos e ROI Operacional"
-                  className="fade-top"
-                />
+                <Image src={groupone} alt={t.blogAi.h3} className="fade-top" />
+                <Image src={grouptwo} alt={t.blogAi.h4} className="fade-top" />
               </div>
               <div className="bd-content ">
                 <div className="bd-content__alt">
-                  <h4 className="h4">
-                    4 Pilares de Redução de Custos com Agentes Autônomos
-                  </h4>
-                  <p>
-                    A implementação estratégica de agentes de IA na camada
-                    operacional de uma empresa gera economias tangíveis e retorno
-                    mensurável desde as primeiras semanas de implantação:
-                  </p>
+                  <h4 className="h4">{t.blogAi.h3}</h4>
+                  <p>{t.blogAi.p5}</p>
                   <ul>
-                    <li>
-                      <strong>Suporte Nível 1 & 2 Autônomo (Até 80% de Redução):</strong>
-                      Resolução instantânea de chamados técnicos, dúvidas de
-                      produtos e fluxos de atendimento com tempo médio de resposta
-                      inferior a 15 segundos, 24 horas por dia.
-                    </li>
-                    <li>
-                      <strong>Detecção Preditiva e Auto-Cura de Falhas:</strong>
-                      Agentes inteligentes monitoram telemetria, consumo de CPU e
-                      erros de API em tempo real, executando rotinas de restart e
-                      redirecionamento de tráfego antes que os usuários percebam.
-                    </li>
-                    <li>
-                      <strong>Blindagem de Conversão em Checkout & Gateways:</strong>
-                      Identificação de quedas repentinas de aprovação em adquirentes
-                      com acionamento de rotas alternativas de contingência,
-                      recuperando vendas que seriam perdidas.
-                    </li>
-                    <li>
-                      <strong>Otimização de Custos de Cloud & LLMs:</strong>
-                      Arquiteturas híbridas com roteamento dinâmico de modelos e
-                      cache semântico, reduzindo os custos de chamadas de API em até 65%.
-                    </li>
+                    {t.blogAi.pillars.map((pillar, idx) => (
+                      <li key={idx}>
+                        <strong>{pillar.title}</strong> {pillar.desc}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
               <div className="bd-quote">
                 <blockquote>
-                  <q className="light-title-lg">
-                    "Automatizar com inteligência artificial não significa
-                    apenas responder mais rápido; significa construir uma infraestrutura
-                    onde o custo marginal de atendimento e escala operacional tende a zero."
-                  </q>
+                  <q className="light-title-lg">{t.blogAi.quote}</q>
                 </blockquote>
               </div>
               <div className="bd-content">
                 <div className="bd-content__alt mt-0">
-                  <h4 className="h4">
-                    Como a ME Hubdigital Transforma a Sua Operação
-                  </h4>
-                  <p>
-                    Na ME Hubdigital, não entregamos soluções genéricas de prateleira.
-                    Nossa equipe sênior conduz um diagnóstico arquitetural minucioso
-                    para mapear os maiores gargalos do seu ecossistema. Desenvolvemos
-                    agentes de IA especializados com guardrails de segurança,
-                    permissões granulares e integração nativa com seu CRM, ERP,
-                    e-commerce e servidores cloud.
-                  </p>
-                  <p>
-                    O resultado é uma operação mais ágil, previsível e lucrativa,
-                    permitindo que seus colaboradores concentrem esforços em estratégia,
-                    inovação e novos negócios enquanto a IA cuida da execução contínua.
-                  </p>
+                  <h4 className="h4">{t.blogAi.h4}</h4>
+                  <p>{t.blogAi.p6}</p>
+                  <p>{t.blogAi.p7}</p>
                 </div>
               </div>
               <div className="bd-tags">
                 <div className="tags-left">
-                  <p>Tags:</p>
+                  <p>{t.blogShared.tags}</p>
                   <div className="tags-content">
-                    <Link href="/blog">Inteligência Artificial</Link>
-                    <Link href="/blog">Agentes Autônomos</Link>
-                    <Link href="/blog">Redução de Custos</Link>
-                    <Link href="/blog">Operações Web</Link>
+                    {t.blogAi.postTags.map((tag, idx) => (
+                      <Link href="/blog" key={idx}>
+                        {tag}
+                      </Link>
+                    ))}
                   </div>
                 </div>
                 <div className="tags-right">
-                  <p>Compartilhar:</p>
+                  <p>{t.blogShared.share}</p>
                   <ul className="social">
                     <li>
                       <Link
@@ -229,20 +142,18 @@ const BlogDetailsMain = () => {
                   <div className="single">
                     <Link href="/portfolio">
                       <i className="fa-solid fa-arrow-left-long"></i>
-                      Ver Nossos Projetos
+                      {t.blogAi.prevLabel}
                     </Link>
                     <div className="latest-single">
                       <div className="latest-thumb">
                         <Link href="/portfolio">
-                          <Image src={portTwo} alt="Agente IA Suporte" />
+                          <Image src={portTwo} alt={t.blogAi.prevTitle} />
                         </Link>
                       </div>
                       <div className="latest-content">
-                        <p>Cases & Portfólio</p>
+                        <p>{t.blogShared.casesPortfolio}</p>
                         <p>
-                          <Link href="/portfolio">
-                            Agentes de IA e Suporte Automatizado em Operações
-                          </Link>
+                          <Link href="/portfolio">{t.blogAi.prevTitle}</Link>
                         </p>
                       </div>
                     </div>
@@ -251,20 +162,20 @@ const BlogDetailsMain = () => {
                 <div className="col-md-6">
                   <div className="single single--alt">
                     <Link href="/arquitetura-cloud-gateways">
-                      Próximo Artigo
+                      {t.blogAi.nextLabel}
                       <i className="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <div className="latest-single">
                       <div className="latest-thumb">
                         <Link href="/arquitetura-cloud-gateways">
-                          <Image src={blogTwo} alt="Arquitetura Cloud e Gateways" />
+                          <Image src={blogTwo} alt={t.blogAi.nextTitle} />
                         </Link>
                       </div>
                       <div className="latest-content">
-                        <p>Software Web & Cloud</p>
+                        <p>{t.blogAi.nextCategory}</p>
                         <p>
                           <Link href="/arquitetura-cloud-gateways">
-                            Arquitetura Cloud e Gateways: Maximizando o Seu ROI
+                            {t.blogAi.nextTitle}
                           </Link>
                         </p>
                       </div>
@@ -274,16 +185,20 @@ const BlogDetailsMain = () => {
               </div>
               <div className="section pb-0 comment-form fade-top">
                 <div className="section__header">
-                  <h2 className="h2 text-start">Deixe seu comentário</h2>
+                  <h2 className="h2 text-start">{t.blogShared.leaveComment}</h2>
                 </div>
-                <form action="#" method="post" onSubmit={(e) => e.preventDefault()}>
+                <form
+                  action="#"
+                  method="post"
+                  onSubmit={(e) => e.preventDefault()}
+                >
                   <div className="form-group-wrapper">
                     <div className="form-group-single">
                       <input
                         type="text"
                         name="comment-name"
                         id="commentName"
-                        placeholder="Seu Nome Completo"
+                        placeholder={t.blogShared.namePlaceholder}
                         required
                       />
                     </div>
@@ -292,7 +207,7 @@ const BlogDetailsMain = () => {
                         type="email"
                         name="comment-email"
                         id="commentemail"
-                        placeholder="Seu E-mail Corporativo"
+                        placeholder={t.blogShared.emailPlaceholder}
                         required
                       />
                     </div>
@@ -301,14 +216,14 @@ const BlogDetailsMain = () => {
                     <textarea
                       name="comment-message"
                       id="commentMessage"
-                      placeholder="Escreva sua mensagem ou dúvida técnica..."
+                      placeholder={t.blogAi.commentPlaceholder}
                       rows={5}
                       required
                     ></textarea>
                   </div>
                   <div className="cta__group">
                     <button type="submit" className="btn btn--ocotonary">
-                      publicar comentário
+                      {t.blogShared.publishBtn}
                       <i className="fa-solid fa-arrow-right-long"></i>
                     </button>
                   </div>
@@ -320,18 +235,22 @@ const BlogDetailsMain = () => {
             <div className="blog-main__sidebar">
               <div className="widget ">
                 <div className="widget__head">
-                  <h5 className="h5">Pesquisar</h5>
+                  <h5 className="h5">{t.blogShared.searchTitle}</h5>
                 </div>
                 <div className="widget-search">
-                  <form action="#" method="post" onSubmit={(e) => e.preventDefault()}>
+                  <form
+                    action="#"
+                    method="post"
+                    onSubmit={(e) => e.preventDefault()}
+                  >
                     <div className="form-group-input">
                       <input
                         type="search"
                         name="blog-search"
                         id="blogSearch"
-                        placeholder="Buscar no blog. . ."
+                        placeholder={t.blogShared.searchPlaceholder}
                       />
-                      <button type="submit" aria-label="Buscar">
+                      <button type="submit" aria-label={t.blogShared.searchTitle}>
                         <i className="fa-solid fa-magnifying-glass"></i>
                       </button>
                     </div>
@@ -340,65 +259,47 @@ const BlogDetailsMain = () => {
               </div>
               <div className="widget ">
                 <div className="widget__head">
-                  <h5 className="h5">Categorias</h5>
+                  <h5 className="h5">{t.blogShared.categoriesTitle}</h5>
                 </div>
                 <div className="widget__list">
                   <ul>
-                    <li>
-                      <Link href="/blog">Inteligência Artificial</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Agentes Autônomos</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Software Web & SaaS</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Gateways & E-commerce</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Automação & CRM</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Cloud VPS & DevOps</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">UI/UX & Design Figma</Link>
-                    </li>
+                    {t.blogShared.categories.map((cat, idx) => (
+                      <li key={idx}>
+                        <Link href="/blog">{cat}</Link>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
               <div className="widget">
                 <div className="widget__head">
-                  <h5 className="h5">Artigos Recentes</h5>
+                  <h5 className="h5">{t.blogShared.recentTitle}</h5>
                 </div>
                 <div className="widget__latest">
                   <div className="latest-single ">
                     <div className="latest-thumb">
                       <Link href="/blog-single">
-                        <Image src={blogOne} alt="Como Agentes de IA Reduzem Custos" />
+                        <Image src={blogOne} alt={t.blogAi.bannerTitle} />
                       </Link>
                     </div>
                     <div className="latest-content">
                       <p>18/11/2026</p>
                       <p>
-                        <Link href="/blog-single">
-                          Como Agentes de IA Reduzem Custos em Operações Web
-                        </Link>
+                        <Link href="/blog-single">{t.blogAi.bannerTitle}</Link>
                       </p>
                     </div>
                   </div>
                   <div className="latest-single ">
                     <div className="latest-thumb">
                       <Link href="/arquitetura-cloud-gateways">
-                        <Image src={blogTwo} alt="Arquitetura Cloud e Gateways" />
+                        <Image src={blogTwo} alt={t.blogCloud.bannerTitle} />
                       </Link>
                     </div>
                     <div className="latest-content">
                       <p>17/11/2026</p>
                       <p>
                         <Link href="/arquitetura-cloud-gateways">
-                          Arquitetura Cloud e Gateways: Maximizando o Seu ROI
+                          {t.blogCloud.bannerTitle}
                         </Link>
                       </p>
                     </div>
@@ -406,30 +307,26 @@ const BlogDetailsMain = () => {
                   <div className="latest-single ">
                     <div className="latest-thumb">
                       <Link href="/portfolio">
-                        <Image src={portFive} alt="Automação WhatsApp" />
+                        <Image src={portFive} alt={t.blogAi.recent3} />
                       </Link>
                     </div>
                     <div className="latest-content">
-                      <p>Cases & Portfólio</p>
+                      <p>{t.blogShared.casesPortfolio}</p>
                       <p>
-                        <Link href="/portfolio">
-                          Automação Inteligente de Atendimento e CRM com IA
-                        </Link>
+                        <Link href="/portfolio">{t.blogAi.recent3}</Link>
                       </p>
                     </div>
                   </div>
                   <div className="latest-single ">
                     <div className="latest-thumb">
                       <Link href="/portfolio">
-                        <Image src={portSix} alt="UI/UX & Design" />
+                        <Image src={portSix} alt={t.blogAi.recent4} />
                       </Link>
                     </div>
                     <div className="latest-content">
-                      <p>Design & Produto</p>
+                      <p>{t.blogShared.designProduct}</p>
                       <p>
-                        <Link href="/portfolio">
-                          UI/UX Moderno e Prototipagem Figma de Alta Conversão
-                        </Link>
+                        <Link href="/portfolio">{t.blogAi.recent4}</Link>
                       </p>
                     </div>
                   </div>
@@ -437,37 +334,18 @@ const BlogDetailsMain = () => {
               </div>
               <div className="widget">
                 <div className="widget__head">
-                  <h5 className="h5">Tags</h5>
+                  <h5 className="h5">{t.blogShared.tagsTitle}</h5>
                 </div>
                 <div className="widget__tags">
                   <ul>
-                    <li>
-                      <Link href="/blog">ia</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">agentes</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">automação</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">cloud</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">gateways</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">saas</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">roi</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">devops</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">eficiência</Link>
-                    </li>
+                    <li><Link href="/blog">AI</Link></li>
+                    <li><Link href="/blog">agents</Link></li>
+                    <li><Link href="/blog">automation</Link></li>
+                    <li><Link href="/blog">cloud</Link></li>
+                    <li><Link href="/blog">gateways</Link></li>
+                    <li><Link href="/blog">saas</Link></li>
+                    <li><Link href="/blog">roi</Link></li>
+                    <li><Link href="/blog">devops</Link></li>
                   </ul>
                 </div>
               </div>
@@ -475,7 +353,7 @@ const BlogDetailsMain = () => {
                 <Link href="/contact-us">
                   <Image
                     src={portTwo}
-                    alt="Implemente Agentes de IA com a ME Hubdigital"
+                    alt="ME Hubdigital"
                     style={{ borderRadius: "12px", width: "100%", height: "auto" }}
                   />
                 </Link>

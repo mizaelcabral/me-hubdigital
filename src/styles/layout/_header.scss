@@ -544,3 +544,77 @@
 /* ==== 
  --------- (4.01) header styles end ---------
  ==== */
+
+// language switcher
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  border: 1px solid #414141;
+  background-color: rgba(25, 25, 25, 0.7);
+  backdrop-filter: blur(8px);
+
+  .lang-switcher__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 13px;
+    padding: 0 4px 0 4px;
+  }
+
+  .lang-switcher__btn {
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 5px 9px;
+    border-radius: 999px;
+    line-height: 1;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--white);
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    &.is-active {
+      background-color: var(--primary-color);
+      color: var(--black);
+    }
+  }
+}
+
+.home-light,
+.home-two-light,
+.home-three-light,
+.home-four-light,
+.home-five-light {
+  .primary-navbar:not(.navbar-active) .lang-switcher {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(0, 0, 0, 0.16);
+
+    .lang-switcher__btn {
+      color: rgba(0, 0, 0, 0.7);
+
+      &:hover {
+        color: var(--black);
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+
+      &.is-active {
+        background-color: var(--primary-color);
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.offcanvas-menu__lang {
+  padding: 0px 20px;
+}

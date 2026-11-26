@@ -1,8 +1,11 @@
 ﻿import React from "react";
 import Image from "next/image";
 import star from "public/images/testimonial/star.png";
+import { useLanguage } from "@/context/LanguageContext";
 
 const AboutCta = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="cta-s section">
       <div className="container">
@@ -16,7 +19,7 @@ const AboutCta = () => {
                 <div className="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-9">
                   <div className="section__header text-center">
                     <h2 className="title" style={{ textTransform: "none" }}>
-                      Fique à frente com nossas soluções digitais e IA
+                      {t.aboutCta.title}
                     </h2>
                   </div>
                   <div className="footer__single-form">
@@ -26,7 +29,7 @@ const AboutCta = () => {
                           type="email"
                           name="subscribe-news"
                           id="subscribeNews"
-                          placeholder="Digite seu e-mail"
+                          placeholder={t.aboutCta.placeholder}
                           required
                         />
                         <button type="submit" className="subscribe">

@@ -5,10 +5,12 @@ import logo from "public/images/logo.png";
 import gsap from "gsap";
 import chroma from "chroma-js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useLanguage } from "@/context/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 const FooterFive = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   const animatedTextRef = useRef<any>(null);
   const [animatedTextContent, setAnimatedTextContent] = useState("");
@@ -117,11 +119,7 @@ const FooterFive = () => {
                 </Link>
               </div>
               <div className="paragraph">
-                <p>
-                  Agência de software digital pioneira em tecnologia AI-First,
-                  especializada em agentes autônomos de IA, plataformas web sob
-                  medida e ecossistemas de alta conversão.
-                </p>
+                <p>{t.footer.footerFiveDesc}</p>
               </div>
               <div className="section__content-cta">
                 <h2>
@@ -175,7 +173,7 @@ const FooterFive = () => {
                   target="_blank"
                 >
                   <i className="fa-sharp fa-solid fa-location-dot"></i>
-                  São Paulo, SP — Brasil
+                  {t.footer.location}
                 </Link>
                 <Link href="tel:+5583986817291">
                   <i className="fa-sharp fa-solid fa-phone-volume"></i>
@@ -197,30 +195,29 @@ const FooterFive = () => {
               <div className="footer__copyright-text text-center text-xl-start">
                 <p>
                   Copyright &copy;
-                  <span id="copyYear">{currentYear}</span> ME Hubdigital. Todos
-                  os direitos reservados.
+                  <span id="copyYear">{currentYear}</span> ME Hubdigital. {t.footer.rights}
                 </p>
               </div>
             </div>
             <div className="col-12 col-xl-6">
               <ul className="justify-content-center justify-content-xl-end">
                 <li>
-                  <Link href="/">Home</Link>
+                  <Link href="/">{t.nav.home}</Link>
                 </li>
                 <li>
-                  <Link href="about-us">Quem Somos</Link>
+                  <Link href="about-us">{t.nav.about}</Link>
                 </li>
                 <li>
-                  <Link href="our-services">Serviços</Link>
+                  <Link href="our-services">{t.nav.services}</Link>
                 </li>
                 <li>
-                  <Link href="our-projects">Projetos</Link>
+                  <Link href="our-projects">{t.nav.projects}</Link>
                 </li>
                 <li>
-                  <Link href="faq">FAQ</Link>
+                  <Link href="faq">{t.nav.faq}</Link>
                 </li>
                 <li>
-                  <Link href="contact-us">Contato</Link>
+                  <Link href="contact-us">{t.nav.contact}</Link>
                 </li>
               </ul>
             </div>

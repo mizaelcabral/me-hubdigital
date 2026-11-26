@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 // bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,7 +17,7 @@ import "@/styles/main.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <LanguageProvider>
       <Head>
         <title>ME Hubdigital — Software Web, IA & Automação</title>
         <meta
@@ -27,6 +28,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Suspense fallback={<div>Loading...</div>}>
         <Component {...pageProps} />
       </Suspense>
-    </>
+    </LanguageProvider>
   );
 }

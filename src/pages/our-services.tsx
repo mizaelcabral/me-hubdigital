@@ -6,11 +6,17 @@ import HomeTwoModal from "@/components/containers/home-two/HomeTwoModal";
 import UxProcessTwo from "@/components/containers/service-details/UxProcessTwo";
 import HomeTestimonialThree from "@/components/containers/home-three/HomeTestimonialThree";
 import CtaTwo from "@/components/containers/service-details/CtaTwo";
+import { useLanguage } from "@/context/LanguageContext";
 
 const OurServices = () => {
+  const { t } = useLanguage();
+
   return (
     <Layout header={2} footer={5} video={0}>
-      <CmnBanner title="Our Services" navigation="Our Services" />
+      <CmnBanner
+        title={t.banner.servicesTitle}
+        navigation={t.banner.servicesTitle}
+      />
       <ServiceMain />
       <HomeTwoModal />
       <UxProcessTwo />
